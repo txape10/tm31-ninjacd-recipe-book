@@ -4,17 +4,21 @@ import { useState } from 'react'
 
 type Props = {
   recipeId: string
-  initialRating: number | null
+  avgRating: number | null
+  ratingCount: number
+  userRating: number | null
   canRate: boolean
 }
 
-export default function StarRating({ recipeId, initialRating, canRate }: Props) {
-  const [rating, setRating] = useState<number | null>(initialRating)
+export default function StarRating({ recipeId, avgRating, ratingCount, userRating, canRate }: Props) {
+  const [avg, setAvg] = useState<number | null>(avgRating)
+  const [count, setCount] = useState(ratingCount)
+  const [myRating, setMyRating] = useState<number | null>(userRating)
   const [hover, setHover] = useState<number | null>(null)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  const displayed = hover ?? rating
+  const displayStars = hover ?? myRating
 
   async function handleClick(value: number) {
     if (!canRate || saving) return
@@ -27,10 +31,11 @@ export default function StarRating({ recipeId, initialRating, canRate }: Props) 
         body: JSON.stringify({ rating: value }),
       })
       if (!res.ok) throw new Error('Error al guardar')
-      const data = await res.json() as unknown
-      const saved = (data as Record<string, unknown>)?.rating
-      if (typeof saved !== 'number') throw new Error('Respuesta inválida')
-      setRating(saved)
+      const data = await res.json() as Record<string, unknown>
+      if (typeof data.rating !== 'number') throw new Error('Respuesta inválida')
+      setMyRating(data.rating as number)
+      if (typeof data.avg_rating === 'number') setAvg(data.avg_rating)
+      if (typeof data.rating_count === 'number') setCount(data.rating_count)
     } catch {
       setError('No se pudo guardar la valoración')
     } finally {
@@ -40,45 +45,52 @@ export default function StarRating({ recipeId, initialRating, canRate }: Props) 
 
   return (
     <div className="space-y-1">
-      <div
-        className="flex items-center gap-0.5"
-        onMouseLeave={() => setHover(null)}
-      >
-        {Array.from({ length: 10 }, (_, i) => i + 1).map((star) => {
-          const filled = displayed !== null && star <= displayed
-          return (
-            <button
-              key={star}
-              type="button"
-              disabled={!canRate || saving}
-              onClick={() => handleClick(star)}
-              onMouseEnter={() => canRate && setHover(star)}
-              className={[
-                'text-xl leading-none transition-colors',
-                filled ? 'text-yellow-400' : 'text-muted-foreground/30',
-                canRate && !saving
-                  ? 'cursor-pointer hover:scale-110 transition-transform'
-                  : 'cursor-default',
-              ].join(' ')}
-              aria-label={`Valorar ${star} de 10`}
-            >
-              ★
-            </button>
-          )
-        })}
-        {displayed !== null && (
-          <span className="ml-2 text-sm font-mono text-muted-foreground">
-            {displayed.toFixed(1)} / 10
+      <div className="flex items-center gap-3">
+        {/* Estrellas interactivas (usuario) */}
+        <div
+          className="flex items-center gap-0.5"
+          onMouseLeave={() => setHover(null)}
+        >
+          {[1, 2, 3, 4, 5].map((star) => {
+            const filled = displayStars !== null && star <= displayStars
+            return (
+              <button
+                key={star}
+                type="button"
+                disabled={!canRate || saving}
+                onClick={() => handleClick(star)}
+                onMouseEnter={() => canRate && setHover(star)}
+                className={[
+                  'text-xl leading-none transition-all',
+                  filled ? 'text-yellow-400' : 'text-muted-foreground/30',
+                  canRate && !saving ? 'cursor-pointer hover:scale-110' : 'cursor-default',
+                ].join(' ')}
+                aria-label={`Valorar ${star} de 5`}
+              >
+                ★
+              </button>
+            )
+          })}
+        </div>
+
+        {/* Media global */}
+        {avg !== null ? (
+          <span className="text-sm text-muted-foreground">
+            <span className="font-semibold text-foreground">{avg.toFixed(1)}</span>
+            {' '}
+            <span className="text-yellow-400">★</span>
+            {' '}
+            <span>({count} {count === 1 ? 'voto' : 'votos'})</span>
           </span>
-        )}
-        {displayed === null && canRate && (
-          <span className="ml-2 text-xs text-muted-foreground">Sin valorar</span>
+        ) : (
+          <span className="text-xs text-muted-foreground">Sin valorar aún</span>
         )}
       </div>
-      {error && <p className="text-xs text-red-400">{error}</p>}
-      {!canRate && rating === null && (
-        <p className="text-xs text-muted-foreground">Sin valorar</p>
+
+      {myRating && !hover && (
+        <p className="text-xs text-muted-foreground">Tu valoración: {myRating} ★</p>
       )}
+      {error && <p className="text-xs text-red-400">{error}</p>}
     </div>
   )
 }

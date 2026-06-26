@@ -19,30 +19,30 @@
 | 4 | Helado de brownie de vainilla y caramelo | Häagen-Dazs | Alta | ~620 |
 | 5 | Helado Peanut Butter Crunch | Häagen-Dazs | Alta | ~640 |
 | 6 | Helado de nueces de macadamia crujientes | Häagen-Dazs | Media | ~580 |
-| 7 | Helado de vainilla sin azúcar | Clásicos | Fácil | ~380 |
-| 8 | Helado de pistacho | Clásicos | Media | ~450 |
-| 9 | Helado de chocolate puro sin azúcar | Clásicos | Media | ~400 |
-| 10 | Helado de chocolate con leche | Clásicos | Media | ~470 |
-| 11 | Helado de chocolate blanco | Clásicos | Media | ~490 |
-| 12 | Helado de café | Clásicos | Fácil | ~410 |
-| 13 | Helado de dulce de leche rápido | Clásicos | Fácil | ~430 |
-| 14 | Helado de leche merengada | Clásicos | Fácil | ~293 |
-| 15 | Helado de lemon pie | Clásicos | Media | ~420 |
-| 16 | Helado de turrón de Jijona | Clásicos | Fácil | ~654 |
-| 17 | Helado de Petit Beurre | Clásicos | Fácil | ~390 |
-| 18 | Helado de cereza | Clásicos | Fácil | ~310 |
-| 19 | Helado de fresas Tagada | Clásicos | Fácil | ~330 |
-| 20 | Helado de Oreo | Clásicos | Fácil | ~440 |
-| 21 | Helado de algodón de azúcar y caramelo | Clásicos | Media | ~460 |
-| 22 | **Helado de cheesecake** | Clásicos | Media | ~647 |
-| 23 | Helado de chicle | Especiales | Fácil | ~360 |
-| 24 | Helado de Selva Negra | Especiales | Media | ~520 |
-| 25 | Helado de chocolate de Dubái | Especiales | Alta | ~886 |
-| 26 | Helado de chocolate y fresa | Especiales | Media | ~430 |
-| 27 | Helado de Kinder Bueno White | Especiales | Media | ~580 |
-| 28 | Helado de tiramisú | Especiales | Media | ~540 |
-| 29 | Helado de caramelo Beurre Salé | Especiales | Media-Alta | ~560 |
-| 30 | Helado de jengibre y especias | Especiales | Fácil | ~340 |
+| 7 | Helado de vainilla sin azúcar | Helados Clásicos | Fácil | ~380 |
+| 8 | Helado de pistacho | Helados Clásicos | Media | ~450 |
+| 9 | Helado de chocolate puro sin azúcar | Helados Clásicos | Media | ~400 |
+| 10 | Helado de chocolate con leche | Helados Clásicos | Media | ~470 |
+| 11 | Helado de chocolate blanco | Helados Clásicos | Media | ~490 |
+| 12 | Helado de café | Helados Clásicos | Fácil | ~410 |
+| 13 | Helado de dulce de leche rápido | Helados Clásicos | Fácil | ~430 |
+| 14 | Helado de leche merengada | Helados Clásicos | Fácil | ~293 |
+| 15 | Helado de lemon pie | Helados Clásicos | Media | ~420 |
+| 16 | Helado de turrón de Jijona | Helados Clásicos | Fácil | ~654 |
+| 17 | Helado de Petit Beurre | Helados Clásicos | Fácil | ~390 |
+| 18 | Helado de cereza | Helados Clásicos | Fácil | ~310 |
+| 19 | Helado de fresas Tagada | Helados Clásicos | Fácil | ~330 |
+| 20 | Helado de Oreo | Helados Clásicos | Fácil | ~440 |
+| 21 | Helado de algodón de azúcar y caramelo | Helados Clásicos | Media | ~460 |
+| 22 | **Helado de cheesecake** | Helados Clásicos | Media | ~647 |
+| 23 | Helado de chicle | Helados Especiales | Fácil | ~360 |
+| 24 | Helado de Selva Negra | Helados Especiales | Media | ~520 |
+| 25 | Helado de chocolate de Dubái | Helados Especiales | Alta | ~886 |
+| 26 | Helado de chocolate y fresa | Helados Especiales | Media | ~430 |
+| 27 | Helado de Kinder Bueno White | Helados Especiales | Media | ~580 |
+| 28 | Helado de tiramisú | Helados Especiales | Media | ~540 |
+| 29 | Helado de caramelo Beurre Salé | Helados Especiales | Media-Alta | ~560 |
+| 30 | Helado de jengibre y especias | Helados Especiales | Fácil | ~340 |
 | 31 | Sorbete de mandarina | Sorbetes | Fácil | ~120 |
 | 32 | Sorbete de naranja | Sorbetes | Fácil | ~110 |
 | 33 | Sorbete de piña | Sorbetes | Fácil | ~100 |
@@ -198,42 +198,49 @@ Enfría en nevera mínimo 2 horas. Rellena la tarrina y congela 24h.
 
 ### 1.3 · Helado de Dulce de Leche al estilo Häagen-Dazs
 
-**⏱ Tiempo:** 35 min · **👨‍🍳 Dificultad:** Media-Alta · **⭐ Valoración: 9/10**
-*Base de vainilla enriquecida con remolino de dulce de leche. El eritritol no carameliza igual que el azúcar, aquí tienes dos opciones.*
+**⏱ Tiempo:** 50 min · **👨‍🍳 Dificultad:** Media-Alta · **⭐ Valoración: 9/10**
+*Base de vainilla con el toque del bicarbonato activado que da ese sabor ligeramente tostado del dulce de leche, y un remolino en espiral.*
 
 #### Ingredientes (1 tarrina 706 ml)
 
-**Base de vainilla:**
+**Base:**
 - 220 ml nata para montar (35% MG)
 - 150 ml leche evaporada desnatada
 - 2 yemas de huevo
 - 60g eritritol
 - 5g extracto de vainilla (1 cdta)
+- ½ cdta bicarbonato de sodio + 1 cda leche entera *(para activar)*
+- 0.2g xantana (1 pizca generosa)
 
-**Remolino de dulce de leche:**
-
-> **Opción A — Casero con eritritol** *(menos calorías, color pálido)*
-> 400 ml leche entera + 120g eritritol + 1 pizca bicarbonato. TM31: **40 min / 90°C / vel 2** con cestillo puesto. Resultado: ~260 kcal.
->
-> **Opción B — Comprado** *(sabor más intenso, más fácil)* *(recomendada para el día a día)*
-> 3-4 cdas de dulce de leche La Lechera o similar, directo del tarro. +~215 kcal adicionales al remolino.
+**Remolino de dulce de leche (casero):**
+- 400 ml leche entera
+- 120g eritritol
+- 1 pizca de bicarbonato
 
 #### Preparación en TM31
 
-**Paso 1 — Base**
-Nata, leche evaporada, yemas, eritritol y vainilla en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera.
+**Paso 1 — Activar el bicarbonato**
+En un vasito pequeño, disuelve el bicarbonato en 1 cda de leche entera y deja reposar 2 minutos. Este truco da a la base ese sabor ligeramente tostado tan característico del dulce de leche.
 
-**Paso 2 — Remolino**
-Si haces el dulce de leche casero, hazlo mientras se enfría la base. Deja enfriar también el dulce de leche.
+**Paso 2 — Base**
+Añade al vaso la nata, la leche evaporada, las yemas, el eritritol, la vainilla y la mezcla de bicarbonato. Programa: **8 min / 80°C / vel 3**. Al terminar, añade la xantana y mezcla **15 seg / vel 6** para integrarla bien. Pasa la espátula por el fondo para asegurarte de que no han quedado grumos de yema.
 
-**Paso 3 — Montaje**
-Vierte la mitad de la base en la tarrina, añade 3-4 cdas de dulce de leche en remolino sin mezclar del todo, añade el resto de la base. Congela 24h.
+**Paso 3 — Enfriar**
+Vierte la base en un bol y deja enfriar en la nevera **al menos 2 horas**. Mientras tanto, prepara el remolino.
+
+**Paso 4 — Remolino casero**
+Sin limpiar el vaso: leche entera, eritritol y una pizca de bicarbonato. Cubilete puesto. Programa: **40 min / 90°C / vel 2**. El eritritol no hace Maillard, así que el color quedará en un dorado suave, no marrón — el bicarbonato ayuda a que no quede totalmente blanco. Deja enfriar completamente.
+
+**Paso 5 — Montar y congelar**
+Cuando base y remolino estén fríos: vierte la mitad de la base en la tarrina, añade 3-4 cdas de remolino en espiral sin mezclar del todo, y cubre con el resto de la base. Con un palillo o la punta de un cuchillo, haz un par de movimientos en zigzag para el efecto marmolado sin destruir las vetas. No superes la línea MAX. Cierra y congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2 min. Programa **Ice Cream**. Re-Spin con 1-2 cdas de nata.
+1. Saca la tarrina del congelador y déjala templar **2-3 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Esta base tiene mucha grasa — casi seguro que necesitará Re-Spin. Haz un hueco en el centro, añade 2 cdas de nata fría y ejecuta **Re-Spin**.
 
-#### Calorías (con Opción A, casero)
+#### Calorías
 
 | Ingrediente | Cantidad | Kcal |
 |---|---|---|
@@ -245,7 +252,7 @@ Vierte la mitad de la base en la tarrina, añade 3-4 cdas de dulce de leche en r
 | **TOTAL tarrina** | | **~1.233 kcal** |
 | **Por ración (÷3)** | | **~411 kcal** |
 
-**Versión sin restricciones (Opción B):** +~215 kcal con La Lechera, pero sabor incomparable.
+**Versión sin restricciones:** Para el remolino, sustituye por 3-4 cdas de dulce de leche comprado (La Lechera o similar, +~72 kcal/ración) — más fácil y con sabor más intenso. O hazlo casero con leche condensada azucarada: 200 ml condensada + ¼ cdta bicarbonato + ½ cdta pectina, **35 min / 90°C / vel 2 / giro inverso** con cubilete — Maillard real, color y sabor intenso.
 
 ---
 
@@ -275,9 +282,7 @@ Vierte la mitad de la base en la tarrina, añade 3-4 cdas de dulce de leche en r
 - 1g sal (1 pizca)
 
 **Salsa de caramelo (remolino):**
-> **Opción A — Casera con eritritol:** 100g eritritol + 60 ml nata + 20g mantequilla + sal. Calentar en sartén a fuego medio hasta que el eritritol se funda (color más pálido). ~80 kcal.
->
-> **Opción B — Comprada:** 3-4 cdas de salsa de caramelo en bote (Monin, etc.). Mucho más fácil. +~120 kcal adicionales.
+- 3-4 cdas de salsa de caramelo sin azúcar en bote (Monin, Torani…)
 
 #### Preparación en TM31
 
@@ -285,15 +290,19 @@ Vierte la mitad de la base en la tarrina, añade 3-4 cdas de dulce de leche en r
 Precalienta el horno a 170°C. Funde el chocolate con la mantequilla: **3 min / 50°C / vel 2**. Añade huevo, eritritol, harina, cacao, bicarbonato y sal: **20 seg / vel 4**. Vierte en molde pequeño engrasado y hornea **18-20 min**. Deja enfriar completamente y reserva en nevera.
 
 **Paso 2 — Base de vainilla**
-Nata, leche evaporada, yemas, eritritol, vainilla y sal en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera mínimo 2 horas.
+Nata, leche evaporada, yemas, eritritol, vainilla y sal en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera al menos 2 horas.
 
 **Paso 3 — Montaje en tarrina**
-Vierte la base. Añade el caramelo en remolino (sin mezclar). Congela 24h.
+Vierte la mitad de la base en la tarrina, añade 3-4 cdas de salsa de caramelo en remolino sin mezclar del todo, cubre con el resto de la base. No superes la línea MAX. Congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2 min. Programa **Ice Cream**. Re-Spin con 1-2 cdas de nata fría.
-2. **Mix-In:** brownie troceado en dados de 1 cm bien frío, programa Mix-In.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
+4. **Mix-In:** brownie troceado en dados de ~1 cm bien frío, programa Mix-In.
+
+**Versión sin restricciones:** Salsa de caramelo casera real: 100g azúcar + 60 ml nata caliente + 20g mantequilla + sal marina. Funde el azúcar en sartén a fuego medio hasta caramelo dorado, añade la nata con cuidado (salpica), incorpora la mantequilla y la sal. Deja enfriar. El eritritol no forma caramelo real — cristaliza y queda sin color.
 
 #### Calorías
 
@@ -345,18 +354,20 @@ Vierte la base. Añade el caramelo en remolino (sin mezclar). Congela 24h.
 En sartén a fuego medio: derrite el azúcar hasta caramelo dorado, añade los cacahuetes y remueve rápido. Extiende en papel de horno, deja enfriar 20 min, rompe en trozos. Reserva en nevera.
 
 **Paso 2 — Base**
-Nata, leche evaporada, mantequilla de cacahuete, yemas, eritritol, vainilla y sal en el vaso. Programa: **8 min / 80°C / vel 3**. La mantequilla de cacahuete se integrará completamente. Enfría en nevera.
+Nata, leche evaporada, mantequilla de cacahuete, yemas, eritritol, vainilla y sal en el vaso. Programa: **8 min / 80°C / vel 3**. La mantequilla de cacahuete se integrará completamente. Enfría en nevera al menos 2 horas.
 
 **Paso 3 — Salsa de remolino**
-Sin limpiar el vaso: mantequilla de cacahuete, leche, eritritol y sal. Mezcla: **30 seg / vel 4**. Templa.
+Sin limpiar el vaso: mantequilla de cacahuete, leche, eritritol y sal. Mezcla: **30 seg / vel 4**. Deja enfriar.
 
 **Paso 4 — Montaje**
-Vierte la base en la tarrina, añade el remolino de salsa en espiral sin mezclar. Congela 24h.
+Cuando base y salsa estén fríos: vierte la base en la tarrina, añade la salsa en espiral sin mezclar del todo. No superes la línea MAX. Congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata fría.
-2. **Mix-In:** cacahuetes caramelizados bien fríos, programa Mix-In.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de nata fría y ejecuta **Re-Spin**.
+4. **Mix-In:** cacahuetes caramelizados bien fríos, programa Mix-In.
 
 #### Calorías
 
@@ -410,8 +421,10 @@ Rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2 min. Programa **Ice Cream**. Re-Spin con 1-2 cdas de nata.
-2. **Mix-In:** nueces garrapiñadas bien frías, programa Mix-In.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
+4. **Mix-In:** nueces garrapiñadas bien frías, programa Mix-In.
 
 #### Calorías
 
@@ -430,7 +443,7 @@ Rellena la tarrina y congela 24h en posición plana.
 
 ---
 
-## 🍦 Sección 2 — Clásicos de Heladería Española
+## 🍦 Sección 2 — Helados Clásicos
 
 *Los helados de toda la vida. Sencillos de preparar, resultado garantizado.*
 
@@ -456,8 +469,9 @@ Rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2-3 min. Programa **Ice Cream**.
-2. Re-Spin con 1-2 cdas de leche fría.
+1. Saca la tarrina del congelador y déjala templar **2-3 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -499,13 +513,14 @@ Leche, nata, yemas, eritritol, vainilla y sal en el vaso. Programa: **8 min / 80
 Deja bajar a 50°C. Añade la pasta de pistacho: **30 seg / vel 5** hasta completamente integrada.
 
 **Paso 3 — Enfriar y congelar**
-Enfría en nevera 2 horas. Congela 24h en posición plana.
+Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2 min. Programa **Gelato** (o Ice Cream).
-2. Re-Spin con 1 cda de nata fría.
-3. Mix-In opcional: pistachos tostados troceados.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Gelato** (o Ice Cream si prefieres más aire).
+3. Haz un hueco en el centro, añade 1 cda de nata fría y ejecuta **Re-Spin**.
+4. Mix-In opcional: pistachos tostados troceados bien fríos, programa Mix-In.
 
 #### Calorías
 
@@ -537,11 +552,13 @@ Enfría en nevera 2 horas. Congela 24h en posición plana.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera. Congela 24h.
+Todos los ingredientes en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche fría.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -573,11 +590,13 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche fría.
 
 #### Preparación en TM31
 
-Funde el chocolate: **3 min / 50°C / vel 2**. Añade el resto: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Funde el chocolate: **3 min / 50°C / vel 2**. Añade el resto de ingredientes: **8 min / 80°C / vel 3**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de nata fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -609,11 +628,13 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata.
 
 #### Preparación en TM31
 
-Funde el chocolate blanco: **3 min / 45°C / vel 2** (atención: el blanco se quema fácil). Añade el resto: **8 min / 75°C / vel 3**. Enfría. Congela 24h.
+Funde el chocolate blanco: **3 min / 45°C / vel 2** (atención: el blanco se quema fácil, no subas la temperatura). Añade el resto de ingredientes: **8 min / 75°C / vel 3**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -645,11 +666,13 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso (el café debe estar frío). Programa: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Todos los ingredientes en el vaso — el café debe estar completamente frío antes de añadirlo. Programa: **8 min / 80°C / vel 3**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche fría.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -668,7 +691,7 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche fría.
 ### 2.7 · Helado de Dulce de Leche Rápido
 
 **⏱ Tiempo:** 5 min · **👨‍🍳 Dificultad:** Fácil · **⭐ Valoración: 8/10**
-*Versión express sin cocinar. Dulce de leche La Lechera como base, sin elaboración.*
+*Versión express sin cocinar. Dulce de leche La Lechera como base, sin elaboración. Esta receta usa La Lechera (lleva azúcar) como ingrediente principal — no hay sustitución posible por eritritol para el dulce de leche aquí.*
 
 #### Ingredientes (1 tarrina 706 ml)
 
@@ -679,11 +702,13 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche fría.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. Mezcla: **30 seg / vel 5** hasta completamente liso. Congela 24h.
+Todos los ingredientes en el vaso. Mezcla: **30 seg / vel 5** hasta completamente liso. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -717,7 +742,7 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche.
 #### Preparación en TM31
 
 **Paso 1 — Infusión de limón y canela**
-Leche, nata, eritritol, piel de limón y rama de canela en el vaso. Programa: **10 min / 90°C / vel 2**. La leche absorbe los aromas perfectamente. Retira la piel de limón y la rama de canela con el cestillo.
+Leche, nata, eritritol, piel de limón y rama de canela en el vaso. Programa: **10 min / 90°C / vel 2**. La leche absorbe los aromas perfectamente. Cuela la mezcla a través del cestillo o un colador para retirar la piel de limón y la rama de canela.
 
 **Paso 2 — Claras y xantana**
 Deja enfriar a 40°C. Añade las claras y la xantana. Mezcla: **30 seg / vel 5**. Las claras dan la textura aireada característica.
@@ -727,9 +752,10 @@ Enfría en nevera mínimo 2 horas. Rellena la tarrina y congela 24h en posición
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2 min. Programa **Ice Cream**.
-2. Re-Spin: hueco, 1-2 cdas de leche fría, Re-Spin.
-3. Sirve con canela molida espolvoreada por encima.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Sirve con canela molida espolvoreada por encima.
 
 #### Notas clave
 - La xantana es necesaria: base sin yemas con mucha leche.
@@ -779,13 +805,14 @@ Nata, leche, yemas, eritritol y xantana en el vaso. Programa: **8 min / 80°C / 
 Añade el zumo y la ralladura de limón. Mezcla: **20 seg / vel 4**. Enfría en nevera 2 horas.
 
 **Paso 3 — Congelar**
-Rellena la tarrina y congela 24h.
+Rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 3 min (base ácida con fruta, necesita más tiempo).
-2. Programa **Ice Cream**. Re-Spin con 1 cda de leche.
-3. **Mix-In:** galletas bien frías y troceadas, programa Mix-In.
+1. Saca la tarrina del congelador y déjala templar **3 minutos** fuera (base ácida con fruta, necesita algo más).
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
+4. **Mix-In:** galletas bien frías y troceadas, programa Mix-In.
 
 #### Calorías
 
@@ -831,9 +858,10 @@ Enfría en nevera 2 horas. Rellena la tarrina y congela 24h.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2 min. Programa **Ice Cream** o **Gelato**.
-2. Re-Spin con 1-2 cdas de nata.
-3. Mix-In opcional: almendras tostadas.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream** o **Gelato** (Gelato da un resultado más denso y compacto).
+3. Haz un hueco en el centro, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
+4. Mix-In opcional: almendras tostadas bien frías, programa Mix-In.
 
 #### Notas clave
 - El eritritol está reducido a 40g deliberadamente: el turrón ya lleva miel y azúcar. Prueba la base antes de congelar.
@@ -875,7 +903,14 @@ Enfría en nevera 2 horas. Rellena la tarrina y congela 24h.
 
 #### Preparación en TM31
 
-Todos los ingredientes de la base en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría. Congela 24h. Mix-In al procesar.
+Todos los ingredientes de la base en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
+
+#### En la Ninja CREAMi Deluxe
+
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
+4. **Mix-In:** galletas Petit Beurre troceadas bien frías, programa Mix-In.
 
 #### Calorías
 
@@ -908,11 +943,13 @@ Todos los ingredientes de la base en el vaso. Programa: **8 min / 80°C / vel 3*
 
 #### Preparación en TM31
 
-Cerezas, leche, eritritol y xantana en el vaso. Programa: **5 min / 80°C / vel 3**. Añade nata, vainilla y limón. Mezcla: **30 seg / vel 5**. Cuela si quedan pieles. Enfría. Congela 24h.
+Cerezas, leche, eritritol y xantana en el vaso. Programa: **5 min / 80°C / vel 3**. Añade nata, vainilla y limón. Mezcla: **30 seg / vel 5**. Si quedan pieles, cuela con un colador fino. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3-4 min (base de fruta). Programa **Sorbet** o **Ice Cream**. Re-Spin con 1 cda de leche.
+1. Saca la tarrina del congelador y déjala templar **3-4 minutos** fuera (base con fruta, necesita algo más).
+2. Monta en la máquina y ejecuta el programa **Ice Cream** (lleva nata, no es sorbete puro).
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -943,13 +980,15 @@ Templa 3-4 min (base de fruta). Programa **Sorbet** o **Ice Cream**. Re-Spin con
 
 #### Preparación en TM31
 
-Leche y caramelos Tagada en el vaso. Programa: **5 min / 80°C / vel 3** hasta que los caramelos se disuelvan completamente. Añade nata, eritritol y xantana. Mezcla: **20 seg / vel 4**. Enfría. Congela 24h.
+Leche y caramelos Tagada en el vaso. Programa: **5 min / 80°C / vel 3** hasta que los caramelos se disuelvan completamente. Añade nata, eritritol y xantana. Mezcla: **20 seg / vel 4**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
 
 > **Nota:** Los caramelos Tagada llevan azúcar, no hay sustitución posible aquí. Es una receta de capricho ocasional.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -981,7 +1020,14 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de leche.
 
 #### Preparación en TM31
 
-Leche, nata, yemas, eritritol, vainilla y sal. Programa: **8 min / 80°C / vel 3**. Enfría. Congela 24h. Mix-In al procesar.
+Leche, nata, yemas, eritritol, vainilla y sal en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
+
+#### En la Ninja CREAMi Deluxe
+
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. **Mix-In:** Oreos troceadas bien frías, programa Mix-In.
 
 #### Calorías
 
@@ -1014,7 +1060,13 @@ Leche, nata, yemas, eritritol, vainilla y sal. Programa: **8 min / 80°C / vel 3
 
 #### Preparación en TM31
 
-Leche, nata, yemas, eritritol y aromas en el vaso. Programa: **8 min / 80°C / vel 3**. Añade colorante si se usa. Enfría. Congela 24h.
+Leche, nata, yemas, eritritol y aromas en el vaso. Programa: **8 min / 80°C / vel 3**. Deja enfriar a 40°C y añade el colorante si lo usas. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
+
+#### En la Ninja CREAMi Deluxe
+
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -1096,7 +1148,7 @@ Enfría en nevera mínimo 1 hora. Rellena la tarrina y congela 24h en posición 
 
 ---
 
-## 🌟 Sección 3 — Especiales y Tendencias
+## 🌟 Sección 3 — Helados Especiales
 
 *Recetas más elaboradas o de sabores virales. Algunas requieren ingredientes específicos.*
 
@@ -1118,7 +1170,13 @@ Enfría en nevera mínimo 1 hora. Rellena la tarrina y congela 24h en posición 
 
 #### Preparación en TM31
 
-Leche, nata, yemas y eritritol en el vaso. Programa: **8 min / 80°C / vel 3**. Añade el aroma y colorante al enfriar. Congela 24h. Programa **Ice Cream**.
+Leche, nata, yemas y eritritol en el vaso. Programa: **8 min / 80°C / vel 3**. Deja enfriar a ~40°C y añade entonces el aroma de chicle (el calor destruye los aromas, no lo pongas antes) y el colorante si lo usas. Mezcla **10 seg / vel 3**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
+
+#### En la Ninja CREAMi Deluxe
+
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -1154,7 +1212,18 @@ Leche, nata, yemas y eritritol en el vaso. Programa: **8 min / 80°C / vel 3**. 
 
 #### Preparación en TM31
 
-Base de chocolate: **8 min / 80°C / vel 3** (funde el chocolate primero como en 1.1). Enfría. Congela 24h. Programa **Ice Cream**. Mix-In al servir.
+**Paso 1 — Fundir el chocolate**
+Trocea el chocolate negro. Vierte en el vaso y programa **3 min / 50°C / vel 2** hasta fundido. Reserva.
+
+**Paso 2 — Base**
+Sin limpiar el vaso: añade nata, leche, yemas, cacao, eritritol y vainilla. Programa: **8 min / 80°C / vel 3**. Añade el chocolate fundido y mezcla **20 seg / vel 4**. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
+
+#### En la Ninja CREAMi Deluxe
+
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de nata fría y ejecuta **Re-Spin**.
+4. **Mix-In:** cerezas escurridas y virutas de chocolate bien frías, programa Mix-In.
 
 #### Calorías
 
@@ -1208,7 +1277,10 @@ En sartén con mantequilla a fuego medio, saltea los fideos kataifi removiendo c
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata. Sirve con el kataifi crujiente por encima.
+1. Saca cada tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de nata fría y ejecuta **Re-Spin**.
+4. Sirve inmediatamente con el kataifi crujiente por encima — el crujiente dura poco, no lo hagas antes.
 
 #### Notas clave
 - Pasta kataifi: tiendas árabes, Carrefour grandes superficies o Amazon. Se congela bien, ten un paquete de reserva.
@@ -1248,11 +1320,17 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata. Sirve con el ka
 
 #### Preparación en TM31
 
-**Base:** **8 min / 80°C / vel 3**. Enfría.
+**Base:** Todos los ingredientes de la base en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera al menos 2 horas.
 
-**Coulis de fresa:** Fresas + eritritol + limón en el vaso. **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 7**. Cuela. Deja enfriar.
+**Coulis de fresa:** Fresas, eritritol y limón en el vaso. Programa: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 7**. Cuela con un colador fino. Deja enfriar completamente.
 
-**Montaje:** Vierte la base en la tarrina, añade el coulis en remolino sin mezclar del todo. Congela 24h.
+**Montaje:** Cuando base y coulis estén fríos, vierte la mitad de la base en la tarrina, añade el coulis en remolino sin mezclar del todo, cubre con el resto de la base. No superes la línea MAX. Congela **24 horas en posición plana**.
+
+#### En la Ninja CREAMi Deluxe
+
+1. Saca la tarrina del congelador y déjala templar **2-3 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de nata fría y ejecuta **Re-Spin**.
 
 #### Calorías
 
@@ -1288,7 +1366,14 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata. Sirve con el ka
 
 #### Preparación en TM31
 
-Funde el chocolate blanco: **3 min / 45°C / vel 2**. Añade el resto de la base: **8 min / 75°C / vel 3**. Añade la crema de avellanas: **20 seg / vel 4**. Enfría. Congela 24h. Mix-In al procesar.
+Funde el chocolate blanco: **3 min / 45°C / vel 2** (no subas la temperatura, el blanco se quema fácil). Añade el resto de la base: **8 min / 75°C / vel 3**. Añade la crema de avellanas: **20 seg / vel 4** hasta completamente integrada. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
+
+#### En la Ninja CREAMi Deluxe
+
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de leche fría y ejecuta **Re-Spin**.
+4. **Mix-In:** Kinder Bueno White troceados bien fríos, programa Mix-In.
 
 #### Calorías
 
@@ -1336,9 +1421,11 @@ Enfría en nevera 2 horas. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-1. Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata.
-2. **Mix-In:** bizcochos empapados y troceados bien fríos, programa Mix-In.
-3. Al servir: espolvorea cacao puro por encima.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de nata fría y ejecuta **Re-Spin**.
+4. **Mix-In:** bizcochos empapados y troceados bien fríos, programa Mix-In.
+5. Al servir: espolvorea cacao puro por encima.
 
 #### Calorías
 
@@ -1371,19 +1458,23 @@ Enfría en nevera 2 horas. Congela 24h en posición plana.
 - 5g extracto de vainilla (1 cdta)
 
 **Salsa de caramelo salado:**
-> **Opción A — Casera:** 80g eritritol + 60 ml nata + 20g mantequilla + ½ cdta sal marina en escamas. Funde eritritol en sartén hasta líquido, añade nata caliente (cuidado, salpica), incorpora mantequilla y sal. Deja enfriar.
->
-> **Opción B — Comprada:** 3-4 cdas de salsa de caramelo salado en bote. Más sencillo, resultado muy bueno.
+- 3-4 cdas de salsa de caramelo salado en bote (sin azúcar si la encuentras, o tipo Monin)
 
 #### Preparación en TM31
 
-**Base:** **8 min / 80°C / vel 3**. Enfría.
+**Paso 1 — Base**
+Nata, leche, yemas, eritritol y vainilla en el vaso. Programa: **8 min / 80°C / vel 3**. Enfría en nevera al menos 2 horas.
 
-**Montaje:** Vierte la base, añade la salsa de caramelo salado en remolino sin mezclar del todo. Congela 24h.
+**Paso 2 — Montaje**
+Vierte la mitad de la base en la tarrina, añade la salsa de caramelo en remolino sin mezclar del todo, cubre con el resto de la base. No superes la línea MAX. Congela **24 horas en posición plana**.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata.
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1 cda de nata fría y ejecuta **Re-Spin**.
+
+**Versión sin restricciones — caramelo salado casero real:** 80g azúcar + 60 ml nata caliente + 20g mantequilla + ½ cdta sal marina en escamas. Funde el azúcar en sartén a fuego medio hasta caramelo dorado, añade la nata con cuidado (salpica), incorpora mantequilla y sal. Deja enfriar. El eritritol no forma caramelo real — cristaliza sin dar color ni sabor a caramelo.
 
 #### Calorías (con salsa casera)
 
@@ -1420,7 +1511,13 @@ Templa 2 min. Programa **Ice Cream**. Re-Spin con 1 cda de nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. Programa: **8 min / 80°C / vel 3**. Las especias se infusionan en la crema perfectamente. Enfría. Congela 24h.
+Todos los ingredientes en el vaso. Programa: **8 min / 80°C / vel 3**. Las especias se infusionan en la crema perfectamente. Enfría en nevera al menos 2 horas. Rellena la tarrina hasta la línea MAX y congela **24 horas en posición plana**.
+
+#### En la Ninja CREAMi Deluxe
+
+1. Saca la tarrina del congelador y déjala templar **2 minutos** fuera.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 #### Calorías
 

@@ -196,7 +196,7 @@
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **8 min / 80°C / vel 3** hasta que el cacao se disuelva y la mezcla espese ligeramente. Enfría en nevera 1 hora. Congela 24h.
+Todos los ingredientes en el vaso. **8 min / 80°C / vel 3** hasta que el cacao se disuelva y la mezcla espese ligeramente. Enfría en nevera 1 hora. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -220,7 +220,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda de leche fría si ne
 
 #### Preparación en TM31
 
-Cerezas, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Deja enfriar a 40°C. Añade kéfir y xantana: **30 seg / vel 5**. Congela 24h.
+Cerezas, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Deja enfriar a 40°C. Añade kéfir y xantana: **30 seg / vel 5**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -245,7 +245,7 @@ Templa 3 min (base con fruta) · Programa **Ice Cream** · Re-Spin con 1 cda de 
 
 #### Preparación en TM31
 
-Leche, nata, yemas, eritritol y pasta de pistacho en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade agua de azahar: **10 seg / vel 3**. Congela 24h.
+Leche, nata, yemas, eritritol y pasta de pistacho en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade agua de azahar: **10 seg / vel 3**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -270,7 +270,7 @@ Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 30g pistachos tostado
 
 #### Preparación en TM31
 
-Leche, nata y malvaviscos en el vaso. **5 min / 70°C / vel 3** hasta que se fundan. Añade eritritol, vainilla y xantana: **20 seg / vel 4**. Enfría. Congela 24h.
+Leche, nata y malvaviscos en el vaso. **5 min / 70°C / vel 3** hasta que se fundan. Añade eritritol, vainilla y xantana: **20 seg / vel 4**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -296,7 +296,7 @@ Templa 2 min · Programa **Ice Cream** · Mix-In opcional: malvaviscos extra bie
 
 #### Preparación en TM31
 
-50g de turrón troceado en el vaso. **3 min / 60°C / vel 3** hasta pasta. Sin limpiar: añade nata, leche, yemas, cacao, eritritol y vainilla. **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+50g de turrón troceado en el vaso. **3 min / 60°C / vel 3** hasta pasta. Sin limpiar: añade nata, leche, yemas, cacao, eritritol y vainilla. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -324,7 +324,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Mix-In: 50g 
 #### Preparación en TM31
 
 **Infusión:** Leche, nata, piel de limón y canela en rama. **10 min / 90°C / vel 2**. Retira piel y canela con cestillo.
-**Crema:** Añade yemas, eritritol y maicena. **5 min / 80°C / vel 3**. Enfría. Congela 24h.
+**Crema:** Añade yemas, eritritol y maicena. **5 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -350,7 +350,7 @@ Templa 2 min · Programa **Ice Cream** · Sirve con canela molida. Soplete opcio
 
 #### Preparación en TM31
 
-Si usas almendra molida: tritura primero **30 seg / vel 9**. Añade el resto. **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Si usas almendra molida: tritura primero **30 seg / vel 9**. Añade el resto. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -376,7 +376,7 @@ Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 30g almendras tostada
 
 #### Preparación en TM31
 
-Leche, arroz, eritritol, piel de limón y canela en rama. **30 min / 90°C / vel 1** con giro inverso. Retira piel y canela. Añade vainilla. Tritura: **45 seg / vel progresiva 5-7-9** hasta crema suave. Enfría en nevera. Congela 24h.
+Leche, arroz, eritritol, piel de limón y canela en rama. **30 min / 90°C / vel 1** con giro inverso. Retira piel y canela. Añade vainilla. Tritura: **45 seg / vel progresiva 5-7-9** hasta crema suave. Enfría en nevera. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -400,7 +400,7 @@ Templa 3-4 min (base densa) · Programa **Ice Cream** · Re-Spin con 2 cdas lech
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. Mezcla: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso. Mezcla: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -424,7 +424,7 @@ Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 3 cdas del fruto seco
 
 #### Preparación en TM31
 
-400 ml de leche, eritritol y vainilla en el vaso. **5 min / 90°C / vel 3**. Disuelve la maicena en los 100 ml restantes y añade. **5 min / 90°C / vel 3** hasta que espese. Enfría. Congela 24h.
+400 ml de leche, eritritol y vainilla en el vaso. **5 min / 90°C / vel 3**. Disuelve la maicena en los 100 ml restantes y añade. **5 min / 90°C / vel 3** hasta que espese. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -449,7 +449,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: cho
 
 #### Preparación en TM31
 
-Mascarpone en el vaso: **20 seg / vel 4** hasta liso. Añade nata, eritritol, limoncello, ralladura y xantana: **30 seg / vel 5**. Congela 24h.
+Mascarpone en el vaso: **20 seg / vel 4** hasta liso. Añade nata, eritritol, limoncello, ralladura y xantana: **30 seg / vel 5**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -473,7 +473,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -499,7 +499,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco fría.
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol, mantequilla y vainilla en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade la salsa de caramelo: **10 seg / vel 3** en remolino. Congela 24h.
+Nata, leche, yemas, eritritol, mantequilla y vainilla en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade la salsa de caramelo: **10 seg / vel 3** en remolino. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -524,7 +524,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes (café completamente frío) en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Todos los ingredientes (café completamente frío) en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -551,7 +551,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In opci
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h.
+Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -576,7 +576,7 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: gal
 
 #### Preparación en TM31
 
-Albaricoques, miel, limón y xantana en el vaso. Tritura: **30 seg / vel 9**. Añade nata y leche: **20 seg / vel 4**. *(Sin cocción.)* Congela 24h.
+Albaricoques, miel, limón y xantana en el vaso. Tritura: **30 seg / vel 9**. Añade nata y leche: **20 seg / vel 4**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -600,7 +600,7 @@ Templa 3-4 min · Programa **Sorbet** o **Ice Cream** · Re-Spin con 1 cda leche
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 4**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso. **30 seg / vel 4**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -625,7 +625,7 @@ Templa 2-3 min · Programa **Frozen Yogurt** · Re-Spin con 1 cda leche fría.
 
 #### Preparación en TM31
 
-Moras, miel y xantana en el vaso. **3 min / 80°C / vel 3**. Deja enfriar. Tritura: **30 seg / vel 9**. Cuela si hay semillas. Añade nata, leche y vainilla: **20 seg / vel 4**. Congela 24h.
+Moras, miel y xantana en el vaso. **3 min / 80°C / vel 3**. Deja enfriar. Tritura: **30 seg / vel 9**. Cuela si hay semillas. Añade nata, leche y vainilla: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -651,7 +651,7 @@ Templa 3-4 min · Programa **Ice Cream** o **Sorbet** · Re-Spin con 1 cda leche
 
 #### Preparación en TM31
 
-Leche, nata, eritritol, vainilla, aroma y xantana en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Leche, nata, eritritol, vainilla, aroma y xantana en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -677,7 +677,7 @@ Templa 2 min · Programa **Ice Cream** · Mix-In: bastones de caramelo bien frí
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. Congela 24h.
+Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -703,7 +703,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **8 min / 80°C / vel 3** hasta crema espesa. Enfría mínimo 2 horas. Congela 24h.
+Todos los ingredientes en el vaso. **8 min / 80°C / vel 3** hasta crema espesa. Enfría mínimo 2 horas. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -729,7 +729,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 40°C. Añade mermelada y whisky: **20 seg / vel 3**. Congela 24h.
+Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 40°C. Añade mermelada y whisky: **20 seg / vel 3**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -754,7 +754,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Frambuesas, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela las semillas. Añade nata, leche y xantana: **20 seg / vel 4**. Congela 24h.
+Frambuesas, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela las semillas. Añade nata, leche y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -780,7 +780,7 @@ Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Infusiona el azafrán en 2 cdas de leche caliente durante 10 min. Añade todos los ingredientes (incluido azafrán con su leche) al vaso. **8 min / 80°C / vel 3**. Enfría mínimo 2 horas para que el azafrán desarrolle su aroma. Congela 24h.
+Infusiona el azafrán en 2 cdas de leche caliente durante 10 min. Añade todos los ingredientes (incluido azafrán con su leche) al vaso. **8 min / 80°C / vel 3**. Enfría mínimo 2 horas para que el azafrán desarrolle su aroma. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -805,7 +805,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -830,7 +830,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Todos los ingredientes en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -855,7 +855,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Si usas sésamo entero: tritura primero **30 seg / vel 9** hasta pasta. Añade el resto. **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Si usas sésamo entero: tritura primero **30 seg / vel 9** hasta pasta. Añade el resto. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -881,7 +881,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h.
+Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -906,7 +906,7 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 5** hasta disolver el extracto de malta. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso. **30 seg / vel 5** hasta disolver el extracto de malta. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -930,7 +930,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -955,7 +955,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco.
 
 #### Preparación en TM31
 
-Pulpa, eritritol y limón en el vaso. **2 min / 60°C / vel 3** para disolver el eritritol. Añade nata, leche y xantana: **20 seg / vel 4**. Congela 24h.
+Pulpa, eritritol y limón en el vaso. **2 min / 60°C / vel 3** para disolver el eritritol. Añade nata, leche y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -981,7 +981,7 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes (café frío) en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes (café frío) en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1007,7 +1007,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. Congela 24h.
+Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1032,7 +1032,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Nata, leche, yemas y eritritol en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h.
+Nata, leche, yemas y eritritol en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1059,7 +1059,7 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Melocotones, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade nata, leche, vainilla y xantana: **20 seg / vel 4**. Congela 24h.
+Melocotones, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade nata, leche, vainilla y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1085,7 +1085,7 @@ Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Sirve con 
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1109,7 +1109,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: chi
 
 **Praliné:** En sartén, funde azúcar hasta caramelo dorado, añade sésamo, extiende en papel de horno, deja enfriar y rompe en trozos.
 
-**Base:** Todos los ingredientes de la base en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+**Base:** Todos los ingredientes de la base en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1135,7 +1135,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: pra
 
 #### Preparación en TM31
 
-Fresas, eritritol y limón en el vaso. **5 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade nata, leche, cordial y xantana: **20 seg / vel 4**. Congela 24h.
+Fresas, eritritol y limón en el vaso. **5 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade nata, leche, cordial y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1159,7 +1159,7 @@ Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **5 min / 60°C / vel 3** para disolver eritritol y maicena. Deja enfriar. Congela 24h.
+Todos los ingredientes en el vaso. **5 min / 60°C / vel 3** para disolver eritritol y maicena. Deja enfriar. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1190,7 +1190,7 @@ Templa 2-3 min · Programa **Frozen Yogurt** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Funde el chocolate: **3 min / 50°C / vel 2**. Sin limpiar el vaso añade leche, nata, yemas, eritritol, cacao y vainilla: **8 min / 80°C / vel 3**. Enfría completamente. Congela 24h.
+Funde el chocolate: **3 min / 50°C / vel 2**. Sin limpiar el vaso añade leche, nata, yemas, eritritol, cacao y vainilla: **8 min / 80°C / vel 3**. Enfría completamente. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1216,7 +1216,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Leche de coco, eritritol, zumo, ralladura, vainilla y xantana en el vaso. **30 seg / vel 5**. Congela 24h.
+Leche de coco, eritritol, zumo, ralladura, vainilla y xantana en el vaso. **30 seg / vel 5**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1242,7 +1242,7 @@ Templa 3 min · Programa **Gelato** · Re-Spin con 1 cda leche de coco · Mix-In
 
 #### Preparación en TM31
 
-Funde el chocolate: **3 min / 50°C / vel 2**. Añade leche de coco, eritritol, cacao, vainilla, xantana y sal: **5 min / 60°C / vel 3**. Enfría. Congela 24h.
+Funde el chocolate: **3 min / 50°C / vel 2**. Añade leche de coco, eritritol, cacao, vainilla, xantana y sal: **5 min / 60°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1269,7 +1269,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche de coco.
 #### Preparación en TM31
 
 **Infusión:** Leche, nata y verbena: **10 min / 80°C / vel 2**. Cuela las hojas.
-**Crema:** Añade yemas, eritritol, ralladura y zumo: **5 min / 80°C / vel 3**. Enfría. Congela 24h.
+**Crema:** Añade yemas, eritritol, ralladura y zumo: **5 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1296,7 +1296,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 #### Preparación en TM31
 
 **Paso 1:** Reduce la cerveza en un cazo pequeño a fuego medio hasta la mitad (~100 ml). Deja enfriar.
-**Paso 2:** Leche, nata, yemas, eritritol, vainilla y xantana en el vaso: **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade la cerveza reducida: **10 seg / vel 3**. Congela 24h.
+**Paso 2:** Leche, nata, yemas, eritritol, vainilla y xantana en el vaso: **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade la cerveza reducida: **10 seg / vel 3**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1324,7 +1324,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 #### Preparación en TM31
 
 **Infusión:** Leche, nata y tomillo: **15 min / 80°C / vel 1**. Retira las ramitas.
-**Crema:** Añade yemas, eritritol, ralladura y zumo: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+**Crema:** Añade yemas, eritritol, ralladura y zumo: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1348,7 +1348,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche · Mix-In: piñon
 
 **Coulis:** Frambuesas, eritritol y limón: **3 min / 80°C / vel 3**. Cuela semillas. Reserva.
 **Base:** Funde choc. blanco: **3 min / 45°C / vel 2**. Añade leche, nata, yemas y eritritol: **8 min / 75°C / vel 3**. Enfría.
-**Montaje:** Vierte base en tarrina, añade coulis en espiral sin mezclar. Congela 24h.
+**Montaje:** Vierte base en tarrina, añade coulis en espiral sin mezclar. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1374,7 +1374,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Funde el chocolate: **3 min / 50°C / vel 2**. Añade el resto: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Funde el chocolate: **3 min / 50°C / vel 2**. Añade el resto: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1400,7 +1400,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Funde choc. blanco: **3 min / 45°C / vel 2**. Añade leche, nata, yemas, eritritol y vainilla: **8 min / 75°C / vel 3**. Enfría. Congela 24h.
+Funde choc. blanco: **3 min / 45°C / vel 2**. Añade leche, nata, yemas, eritritol y vainilla: **8 min / 75°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1426,7 +1426,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda nata · Mix-In: pretzel
 
 #### Preparación en TM31
 
-Leche, nata, yemas, eritritol, haba tonka y vainilla en el vaso: **8 min / 80°C / vel 3**. Enfría mínimo 2 horas. Congela 24h.
+Leche, nata, yemas, eritritol, haba tonka y vainilla en el vaso: **8 min / 80°C / vel 3**. Enfría mínimo 2 horas. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1453,7 +1453,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche · Mix-In: viruta
 #### Preparación en TM31
 
 **Infusión:** Leche, nata y palomitas: **10 min / 80°C / vel 2**. Cuela con cestillo presionando bien.
-**Base:** Añade yemas, eritritol, vainilla y sal: **5 min / 80°C / vel 3**. Enfría. Congela 24h.
+**Base:** Añade yemas, eritritol, vainilla y sal: **5 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1480,7 +1480,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche · Mix-In opciona
 
 #### Preparación en TM31
 
-Funde el chocolate: **3 min / 50°C / vel 2**. Añade leche, nata, yemas, eritritol y nuez moscada: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Funde el chocolate: **3 min / 50°C / vel 2**. Añade leche, nata, yemas, eritritol y nuez moscada: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1505,7 +1505,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Leche, nata, yemas, eritritol y vainilla: **8 min / 80°C / vel 3**. Deja enfriar a 40°C. Añade el Génépi: **10 seg / vel 3**. Congela 24h.
+Leche, nata, yemas, eritritol y vainilla: **8 min / 80°C / vel 3**. Deja enfriar a 40°C. Añade el Génépi: **10 seg / vel 3**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1531,7 +1531,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Leche, nata, yemas, eritritol, cardamomo y vainilla: **8 min / 80°C / vel 3**. Deja enfriar. Añade café frío: **10 seg / vel 3**. Congela 24h.
+Leche, nata, yemas, eritritol, cardamomo y vainilla: **8 min / 80°C / vel 3**. Deja enfriar. Añade café frío: **10 seg / vel 3**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1557,7 +1557,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 #### Preparación en TM31
 
 **Infusión larga:** Leche, nata y laurel: **30 min / 60°C / vel 1**. Retira las hojas.
-**Crema:** Añade yemas, eritritol y vainilla: **8 min / 80°C / vel 3**. Enfría mínimo 2 horas. Congela 24h.
+**Crema:** Añade yemas, eritritol y vainilla: **8 min / 80°C / vel 3**. Enfría mínimo 2 horas. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1582,7 +1582,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1608,7 +1608,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto galletas en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Todos los ingredientes excepto galletas en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1630,7 +1630,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Mix-In: gall
 
 #### Preparación en TM31
 
-Base en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Base en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1657,7 +1657,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Mix-In: gall
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol, miel, agua de rosas y vainilla en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Nata, leche, yemas, eritritol, miel, agua de rosas y vainilla en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1683,7 +1683,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Mix-In: nuec
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso: **10 min / 85°C / vel 3**. La crema espesa notablemente. Enfría mínimo 2 horas en nevera. Congela 24h.
+Todos los ingredientes en el vaso: **10 min / 85°C / vel 3**. La crema espesa notablemente. Enfría mínimo 2 horas en nevera. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1710,7 +1710,7 @@ Templa 3-4 min (base muy densa) · Programa **Ice Cream** · Re-Spin con 2 cdas 
 #### Preparación en TM31
 
 **Infusión:** Leche, nata y avena: **10 min / 80°C / vel 2**. Cuela la avena.
-**Base:** Añade yemas, eritritol, vainilla y canela: **5 min / 80°C / vel 3**. Enfría. Congela 24h.
+**Base:** Añade yemas, eritritol, vainilla y canela: **5 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1739,7 +1739,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In opci
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto el pan en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Todos los ingredientes excepto el pan en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1765,7 +1765,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: pan
 
 #### Preparación en TM31
 
-Mazapán troceado en el vaso: **3 min / 60°C / vel 3** hasta pasta. Añade el resto: **5 min / 80°C / vel 3**. Enfría. Congela 24h.
+Mazapán troceado en el vaso: **3 min / 60°C / vel 3** hasta pasta. Añade el resto: **5 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1787,7 +1787,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Base en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Base en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1814,7 +1814,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Mix-In: malv
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso: **5 min / 70°C / vel 3** para disolver el cacao. Enfría. Congela 24h.
+Todos los ingredientes en el vaso: **5 min / 70°C / vel 3** para disolver el cacao. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1839,7 +1839,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1-2 cdas leche fría.
 
 #### Preparación en TM31
 
-Todos los ingredientes (café frío) en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes (café frío) en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1867,7 +1867,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso: **45 seg / vel progresiva 5-7-9** hasta completamente liso. Congela 24h.
+Todos los ingredientes en el vaso: **45 seg / vel progresiva 5-7-9** hasta completamente liso. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1896,7 +1896,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Leche, nata, yemas, eritritol, especias, vainilla y ralladura en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h.
+Leche, nata, yemas, eritritol, especias, vainilla y ralladura en el vaso: **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1925,7 +1925,7 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche · Mix-In: pasas 
 
 #### Preparación en TM31
 
-Fresas, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade leche de coco y xantana: **20 seg / vel 4**. Congela 24h.
+Fresas, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade leche de coco y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1950,7 +1950,7 @@ Templa 3-4 min · Programa **Ice Cream** o **Sorbet** · Re-Spin con 1 cda leche
 
 #### Preparación en TM31
 
-Arándanos, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade yogur, ralladura y xantana: **20 seg / vel 4**. Congela 24h.
+Arándanos, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade yogur, ralladura y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1974,7 +1974,7 @@ Templa 3 min · Programa **Ice Cream** o **Frozen Yogurt** · Re-Spin con 1 cda 
 
 #### Preparación en TM31
 
-Leche de coco, eritritol, vainilla y xantana: **30 seg / vel 5**. Congela 24h.
+Leche de coco, eritritol, vainilla y xantana: **30 seg / vel 5**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1998,7 +1998,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2024,7 +2024,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1-2 cdas leche vegetal fr�
 #### Preparación en TM31
 
 **Infusión:** Leche de coco y 60g de cornflakes: **15 min / 70°C / vel 1**. Cuela con cestillo.
-**Base:** Añade eritritol, vainilla y xantana: **30 seg / vel 5**. Congela 24h.
+**Base:** Añade eritritol, vainilla y xantana: **30 seg / vel 5**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2048,7 +2048,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h.
+Todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2076,7 +2076,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco.
 
 #### Preparación en TM31
 
-Manzana, eritritol, canela, jengibre y limón: **5 min / 80°C / vel 3**. Tritura: **20 seg / vel 7**. Añade leche de almendra, nata de coco y xantana: **20 seg / vel 4**. Congela 24h.
+Manzana, eritritol, canela, jengibre y limón: **5 min / 80°C / vel 3**. Tritura: **20 seg / vel 7**. Añade leche de almendra, nata de coco y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2100,7 +2100,7 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de almendra ·
 
 #### Preparación en TM31
 
-Bayas y eritritol: **3 min / 70°C / vel 3**. Tritura: **20 seg / vel 9**. Añade Skyr, vainilla y xantana: **20 seg / vel 4**. Congela 24h.
+Bayas y eritritol: **3 min / 70°C / vel 3**. Tritura: **20 seg / vel 9**. Añade Skyr, vainilla y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2126,7 +2126,7 @@ Templa 2-3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso: **45 seg / vel progresiva 5-7-9** hasta completamente liso. Congela 24h.
+Todos los ingredientes en el vaso: **45 seg / vel progresiva 5-7-9** hasta completamente liso. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2155,7 +2155,7 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In opci
 
 #### Preparación en TM31
 
-Infusiona el azafrán en 2 cdas de leche de coco caliente durante 10 min. Añade todos los ingredientes al vaso: **5 min / 70°C / vel 3**. Enfría. Congela 24h.
+Infusiona el azafrán en 2 cdas de leche de coco caliente durante 10 min. Añade todos los ingredientes al vaso: **5 min / 70°C / vel 3**. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2179,7 +2179,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco.
 
 #### Preparación en TM31
 
-Frambuesas, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela las semillas. Añade leche de coco y xantana: **20 seg / vel 4**. Congela 24h.
+Frambuesas, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela las semillas. Añade leche de coco y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2205,7 +2205,7 @@ Templa 3 min · Programa **Ice Cream** o **Sorbet** · Re-Spin con 1 cda leche d
 #### Preparación en TM31
 
 **Nueces garrapiñadas:** En sartén: 30g eritritol + ½ cdta canela. Funde a fuego medio, añade nueces, revuelve, extiende en papel y deja enfriar.
-**Base:** Leche de coco, margarina, eritritol, vainilla y xantana: **5 min / 70°C / vel 3** hasta que la margarina se funda. Enfría. Congela 24h.
+**Base:** Leche de coco, margarina, eritritol, vainilla y xantana: **5 min / 70°C / vel 3** hasta que la margarina se funda. Enfría. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2230,7 +2230,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto las nueces: **45 seg / vel progresiva 5-7-9** hasta liso. Congela 24h.
+Todos los ingredientes excepto las nueces: **45 seg / vel progresiva 5-7-9** hasta liso. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2256,7 +2256,7 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso: **45 seg / vel progresiva 5-7-9** hasta completamente liso. Congela 24h.
+Todos los ingredientes en el vaso: **45 seg / vel progresiva 5-7-9** hasta completamente liso. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2280,7 +2280,7 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco.
 
 #### Preparación en TM31
 
-Leche fría, Angel Delight y xantana: **30 seg / vel 5** hasta que espese. *(Sin cocción — espesa en frío.)* Congela 24h.
+Leche fría, Angel Delight y xantana: **30 seg / vel 5** hasta que espese. *(Sin cocción — espesa en frío.)* Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2305,7 +2305,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche fría.
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel progresiva 5-7-9** hasta completamente liso. Congela 24h.
+Todos los ingredientes: **45 seg / vel progresiva 5-7-9** hasta completamente liso. Congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -2332,7 +2332,7 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco.
 
 #### Preparación en TM31
 
-Todos los ingredientes: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2348,7 +2348,7 @@ Todos los ingredientes: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h. Progr
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2364,7 +2364,7 @@ Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h. Progra
 
 #### Preparación en TM31
 
-Frutas, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Congela 24h. Programa **Sorbet**.
+Frutas, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2380,7 +2380,7 @@ Frutas, eritritol y limón: **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9
 
 #### Preparación en TM31
 
-Frambuesas, agua, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela semillas. Añade agua de rosas y xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Frambuesas, agua, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela semillas. Añade agua de rosas y xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. No excedas el agua de rosas — es muy delicada.
 
@@ -2396,7 +2396,7 @@ Frambuesas, agua, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 s
 
 #### Preparación en TM31
 
-Fresas, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Añade zumo de granada y xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Fresas, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Añade zumo de granada y xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2412,7 +2412,7 @@ Fresas, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2428,7 +2428,7 @@ Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h. Progra
 
 #### Preparación en TM31
 
-Todos los ingredientes: **30 seg / vel 9**. Cuela si hay restos de piel. Añade xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **30 seg / vel 9**. Cuela si hay restos de piel. Añade xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. La única fruta que Roberto disfruta — este sorbete es para ti, Roberto.
 
@@ -2444,7 +2444,7 @@ Todos los ingredientes: **30 seg / vel 9**. Cuela si hay restos de piel. Añade 
 
 #### Preparación en TM31
 
-Grosellas, agua, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela. Añade nata y xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Grosellas, agua, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela. Añade nata y xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2460,7 +2460,7 @@ Grosellas, agua, eritritol y limón: **3 min / 70°C / vel 3**. Tritura: **30 se
 
 #### Preparación en TM31
 
-Todos los ingredientes: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El sorbete de fresa más clásico del recetario.
 
@@ -2476,7 +2476,7 @@ Todos los ingredientes: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. 
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2492,7 +2492,7 @@ Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h. Progra
 
 #### Preparación en TM31
 
-Todos los ingredientes: **2 min / 60°C / vel 3** para disolver el eritritol. Enfría. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **2 min / 60°C / vel 3** para disolver el eritritol. Enfría. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El sorbete más ligero del recetario — casi sin calorías.
 
@@ -2508,7 +2508,7 @@ Todos los ingredientes: **2 min / 60°C / vel 3** para disolver el eritritol. En
 
 #### Preparación en TM31
 
-Todos los ingredientes: **30 seg / vel 9**. *(La sandía es tan dulce y acuosa que no necesita cocción.)* Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **30 seg / vel 9**. *(La sandía es tan dulce y acuosa que no necesita cocción.)* Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. La receta más refrescante del recetario.
 
@@ -2524,7 +2524,7 @@ Todos los ingredientes: **30 seg / vel 9**. *(La sandía es tan dulce y acuosa q
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9**. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Piña colada en versión sorbete.
 
@@ -2540,7 +2540,7 @@ Todos los ingredientes: **45 seg / vel 9**. Congela 24h. Programa **Sorbet**.
 
 #### Preparación en TM31
 
-Todos los ingredientes: **30 seg / vel 9**. Cuela si quedan semillas. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **30 seg / vel 9**. Cuela si quedan semillas. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2556,7 +2556,7 @@ Todos los ingredientes: **30 seg / vel 9**. Cuela si quedan semillas. Congela 24
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2572,7 +2572,7 @@ Todos los ingredientes: **45 seg / vel 9** hasta puré fino. Congela 24h. Progra
 
 #### Preparación en TM31
 
-Todos los ingredientes: **3 min / 70°C / vel 3** para ablandar. Tritura: **30 seg / vel 9**. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **3 min / 70°C / vel 3** para ablandar. Tritura: **30 seg / vel 9**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2588,7 +2588,7 @@ Todos los ingredientes: **3 min / 70°C / vel 3** para ablandar. Tritura: **30 s
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9** hasta completamente liso. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9** hasta completamente liso. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Plátanos maduros endulzan solos — reduce el eritritol si están muy maduros.
 
@@ -2604,7 +2604,7 @@ Todos los ingredientes: **45 seg / vel 9** hasta completamente liso. Congela 24h
 
 #### Preparación en TM31
 
-Uvas, agua, eritritol y limón: **45 seg / vel 9**. Cuela. Añade cordial y xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Uvas, agua, eritritol y limón: **45 seg / vel 9**. Cuela. Añade cordial y xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2620,7 +2620,7 @@ Uvas, agua, eritritol y limón: **45 seg / vel 9**. Cuela. Añade cordial y xant
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9**. Cuela. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9**. Cuela. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Color morado intenso.
 
@@ -2636,7 +2636,7 @@ Todos los ingredientes: **45 seg / vel 9**. Cuela. Congela 24h. Programa **Sorbe
 
 #### Preparación en TM31
 
-Agua, eritritol y romero: **5 min / 80°C / vel 2** para infusionar. Retira romero. Añade albaricoques y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Añade xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Agua, eritritol y romero: **5 min / 80°C / vel 2** para infusionar. Retira romero. Añade albaricoques y limón: **3 min / 70°C / vel 3**. Tritura: **30 seg / vel 9**. Añade xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Combinación mediterránea elegante.
 
@@ -2652,7 +2652,7 @@ Agua, eritritol y romero: **5 min / 80°C / vel 2** para infusionar. Retira rome
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9** hasta liso. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9** hasta liso. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El melón maduro endulza mucho — prueba antes de añadir todo el eritritol.
 
@@ -2668,7 +2668,7 @@ Todos los ingredientes: **45 seg / vel 9** hasta liso. Congela 24h. Programa **S
 
 #### Preparación en TM31
 
-Agua y eritritol: **3 min / 70°C / vel 3** para disolver. Enfría. Añade zumos, ralladura y xantana: **30 seg / vel 5**. Congela 24h. Programa **Sorbet**.
+Agua y eritritol: **3 min / 70°C / vel 3** para disolver. Enfría. Añade zumos, ralladura y xantana: **30 seg / vel 5**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El más ácido del recetario.
 
@@ -2684,7 +2684,7 @@ Agua y eritritol: **3 min / 70°C / vel 3** para disolver. Enfría. Añade zumos
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9**. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El lichi tiene un perfil floral muy particular — combina bien con agua de rosas.
 
@@ -2700,7 +2700,7 @@ Todos los ingredientes: **45 seg / vel 9**. Congela 24h. Programa **Sorbet**.
 
 #### Preparación en TM31
 
-Agua, eritritol y jengibre: **3 min / 70°C / vel 3** para infusionar. Tritura: **20 seg / vel 9**. Cuela. Añade zumo, ralladura y xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Agua, eritritol y jengibre: **3 min / 70°C / vel 3** para infusionar. Tritura: **20 seg / vel 9**. Cuela. Añade zumo, ralladura y xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2716,7 +2716,7 @@ Agua, eritritol y jengibre: **3 min / 70°C / vel 3** para infusionar. Tritura: 
 
 #### Preparación en TM31
 
-Agua, cacao, eritritol y sal: **5 min / 80°C / vel 3** hasta completamente disuelto. Deja enfriar. Añade chocolate fundido y xantana: **30 seg / vel 5**. Congela 24h. Programa **Sorbet**.
+Agua, cacao, eritritol y sal: **5 min / 80°C / vel 3** hasta completamente disuelto. Deja enfriar. Añade chocolate fundido y xantana: **30 seg / vel 5**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El sorbete más intenso de chocolate del recetario.
 
@@ -2732,7 +2732,7 @@ Agua, cacao, eritritol y sal: **5 min / 80°C / vel 3** hasta completamente disu
 
 #### Preparación en TM31
 
-Agua, cacao y eritritol: **5 min / 80°C / vel 3** hasta disolver. Deja enfriar. Añade zumo, ralladura y xantana: **20 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Agua, cacao y eritritol: **5 min / 80°C / vel 3** hasta disolver. Deja enfriar. Añade zumo, ralladura y xantana: **20 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Maridaje clásico chocolate-naranja.
 
@@ -2748,7 +2748,7 @@ Agua, cacao y eritritol: **5 min / 80°C / vel 3** hasta disolver. Deja enfriar.
 
 #### Preparación en TM31
 
-Todos los ingredientes: **45 seg / vel 9** hasta completamente liso. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **45 seg / vel 9** hasta completamente liso. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Color verde vibrante. El aguacate suaviza el amargor del matcha.
 
@@ -2764,7 +2764,7 @@ Todos los ingredientes: **45 seg / vel 9** hasta completamente liso. Congela 24h
 
 #### Preparación en TM31
 
-Agua, eritritol y menta: **5 min / 70°C / vel 2** para infusionar. Tritura: **30 seg / vel 9**. Cuela. Añade zumo, ralladura y xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Agua, eritritol y menta: **5 min / 70°C / vel 2** para infusionar. Tritura: **30 seg / vel 9**. Cuela. Añade zumo, ralladura y xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2787,7 +2787,7 @@ Agua, eritritol y menta: **5 min / 70°C / vel 2** para infusionar. Tritura: **3
 
 #### Preparación en TM31
 
-Agua, eritritol y menta: **3 min / 60°C / vel 2**. Deja enfriar completamente. Añade prosecco, agua con gas, cordial, lima y xantana: **20 seg / vel 3** *(velocidad baja para no perder el gas)*. Congela 24h. Programa **Sorbet**.
+Agua, eritritol y menta: **3 min / 60°C / vel 2**. Deja enfriar completamente. Añade prosecco, agua con gas, cordial, lima y xantana: **20 seg / vel 3** *(velocidad baja para no perder el gas)*. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El cordial de saúco lleva algo de azúcar — usa extracto sin azúcar para versión light.
 
@@ -2803,7 +2803,7 @@ Agua, eritritol y menta: **3 min / 60°C / vel 2**. Deja enfriar completamente. 
 
 #### Preparación en TM31
 
-Eritritol y zumo de limón: **3 min / 60°C / vel 3** para disolver. Deja enfriar. Añade ginebra, agua con gas, cordial y xantana: **20 seg / vel 3**. Congela 24h. Programa **Sorbet**.
+Eritritol y zumo de limón: **3 min / 60°C / vel 3** para disolver. Deja enfriar. Añade ginebra, agua con gas, cordial y xantana: **20 seg / vel 3**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Tom Collins en versión sorbete.
 
@@ -2819,7 +2819,7 @@ Eritritol y zumo de limón: **3 min / 60°C / vel 3** para disolver. Deja enfria
 
 #### Preparación en TM31
 
-Agua, cacao y eritritol: **5 min / 80°C / vel 3**. Deja enfriar. Añade pulpa de maracuyá, ron y xantana: **20 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Agua, cacao y eritritol: **5 min / 80°C / vel 3**. Deja enfriar. Añade pulpa de maracuyá, ron y xantana: **20 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2837,7 +2837,7 @@ Agua, cacao y eritritol: **5 min / 80°C / vel 3**. Deja enfriar. Añade pulpa d
 
 #### Preparación en TM31
 
-Agua y eritritol: **3 min / 60°C / vel 3** para disolver. Deja enfriar. Añade zumo, vodka, ralladura y xantana: **20 seg / vel 3**. Congela 24h. Programa **Sorbet**.
+Agua y eritritol: **3 min / 60°C / vel 3** para disolver. Deja enfriar. Añade zumo, vodka, ralladura y xantana: **20 seg / vel 3**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El vodka da la textura semi-líquida característica.
 
@@ -2853,7 +2853,7 @@ Agua y eritritol: **3 min / 60°C / vel 3** para disolver. Deja enfriar. Añade 
 
 #### Preparación en TM31
 
-Eritritol y limón: **2 min / 50°C / vel 3** para disolver. Deja enfriar completamente. Añade sidra y xantana: **15 seg / vel 2** *(baja velocidad para no perder el gas)*. Congela 24h. Programa **Sorbet**.
+Eritritol y limón: **2 min / 50°C / vel 3** para disolver. Deja enfriar completamente. Añade sidra y xantana: **15 seg / vel 2** *(baja velocidad para no perder el gas)*. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Sidra natural brut sin azúcar añadido.
 
@@ -2869,7 +2869,7 @@ Eritritol y limón: **2 min / 50°C / vel 3** para disolver. Deja enfriar comple
 
 #### Preparación en TM31
 
-Todos los ingredientes: **5 min / 70°C / vel 3** hasta completamente disuelto. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes: **5 min / 70°C / vel 3** hasta completamente disuelto. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** La mermelada lleva azúcar. Usa mermelada sin azúcar para versión más light.
 
@@ -2887,7 +2887,7 @@ Todos los ingredientes: **5 min / 70°C / vel 3** hasta completamente disuelto. 
 
 #### Preparación en TM31
 
-Eritritol y limón: **2 min / 50°C / vel 3**. Deja enfriar. Añade cerveza, granadina y xantana: **15 seg / vel 2**. Congela 24h. Programa **Sorbet**.
+Eritritol y limón: **2 min / 50°C / vel 3**. Deja enfriar. Añade cerveza, granadina y xantana: **15 seg / vel 2**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada con eritritol y granadina sin azúcar.
 
@@ -2903,7 +2903,7 @@ Eritritol y limón: **2 min / 50°C / vel 3**. Deja enfriar. Añade cerveza, gra
 
 #### Preparación en TM31
 
-Eritritol y lima: **2 min / 50°C / vel 3**. Deja enfriar. Añade ginebra, tónica y xantana: **15 seg / vel 2**. Congela 24h. Programa **Sorbet**.
+Eritritol y lima: **2 min / 50°C / vel 3**. Deja enfriar. Añade ginebra, tónica y xantana: **15 seg / vel 2**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. La tónica sin azúcar funciona perfectamente.
 
@@ -2919,7 +2919,7 @@ Eritritol y lima: **2 min / 50°C / vel 3**. Deja enfriar. Añade ginebra, tóni
 
 #### Preparación en TM31
 
-Eritritol, limón y menta: **2 min / 50°C / vel 3**. Deja enfriar. Añade Pimm's, limonada, ralladura y xantana: **15 seg / vel 2**. Congela 24h. Programa **Sorbet**.
+Eritritol, limón y menta: **2 min / 50°C / vel 3**. Deja enfriar. Añade Pimm's, limonada, ralladura y xantana: **15 seg / vel 2**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. El Pimm's lleva azúcar en su composición — inevitable.
 
@@ -2935,7 +2935,7 @@ Eritritol, limón y menta: **2 min / 50°C / vel 3**. Deja enfriar. Añade Pimm'
 
 #### Preparación en TM31
 
-Agua, cacao, eritritol y sal: **5 min / 80°C / vel 3**. Deja enfriar. Añade aroma de menta y xantana: **10 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Agua, cacao, eritritol y sal: **5 min / 80°C / vel 3**. Deja enfriar. Añade aroma de menta y xantana: **10 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2953,7 +2953,7 @@ Agua, cacao, eritritol y sal: **5 min / 80°C / vel 3**. Deja enfriar. Añade ar
 
 #### Preparación en TM31
 
-Agua, cacao y eritritol: **5 min / 80°C / vel 3**. Deja enfriar. Añade leche de coco, aroma y xantana: **20 seg / vel 4**. Congela 24h. Programa **Sorbet**.
+Agua, cacao y eritritol: **5 min / 80°C / vel 3**. Deja enfriar. Añade leche de coco, aroma y xantana: **20 seg / vel 4**. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -2969,7 +2969,7 @@ Agua, cacao y eritritol: **5 min / 80°C / vel 3**. Deja enfriar. Añade leche d
 
 #### Preparación en TM31
 
-Leche de coco, agua, eritritol y matcha: **3 min / 60°C / vel 3** para disolver. Deja enfriar. Añade zumo, ralladura y xantana: **20 seg / vel 4**. Incorpora las semillas de chía con espátula *(sin triturar)*. Congela 24h. Programa **Sorbet**.
+Leche de coco, agua, eritritol y matcha: **3 min / 60°C / vel 3** para disolver. Deja enfriar. Añade zumo, ralladura y xantana: **20 seg / vel 4**. Incorpora las semillas de chía con espátula *(sin triturar)*. Congela 24h en posición plana. Programa **Sorbet**.
 
 **📝 Sin azúcar:** Ya adaptada. Las semillas de chía dan textura y omega-3.
 

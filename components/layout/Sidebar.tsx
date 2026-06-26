@@ -8,7 +8,11 @@ const NAV_ITEMS = [
   { href: '/recetas', label: '🍦 Recetas' },
 ]
 
-export default function Sidebar() {
+type Props = {
+  isLoggedIn: boolean
+}
+
+export default function Sidebar({ isLoggedIn }: Props) {
   const pathname = usePathname()
   const router = useRouter()
 
@@ -45,6 +49,19 @@ export default function Sidebar() {
             </Link>
           )
         })}
+
+        {isLoggedIn && (
+          <Link
+            href="/recetas/nueva"
+            className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+              pathname === '/recetas/nueva'
+                ? 'bg-sidebar-accent text-foreground'
+                : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
+            }`}
+          >
+            + Nueva receta
+          </Link>
+        )}
       </nav>
 
       <div className="mt-4 space-y-2">

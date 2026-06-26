@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
+import { ratingSchema } from '@/lib/validation'
 
 function buildVisibilityArgs(userEmail?: string, isAdmin?: boolean): { clause: string; args: string[] } {
   if (isAdmin) return { clause: '1=1', args: [] }
@@ -23,20 +24,12 @@ export async function POST(request: NextRequest, props: { params: Promise<{ id: 
     return NextResponse.json({ error: 'JSON no válido' }, { status: 400 })
   }
 
-  const rating = (body as Record<string, unknown>)?.rating
-  if (
-    typeof rating !== 'number' ||
-    rating < 1 ||
-    rating > 10 ||
-    rating % 0.5 !== 0
-  ) {
-    return NextResponse.json(
-      { error: 'Valoración no válida (1–10, pasos de 0.5)' },
-      { status: 400 },
-    )
+  const result = ratingSchema.safeParse(body)
+  if (!result.success) {
+    return NextResponse.json({ error: 'Valoración no válida (1–5, pasos de 0.5)' }, { status: 400 })
   }
+  const { rating } = result.data
 
-  // Verificar que el usuario tenga acceso a esta receta (respeta visibilidad)
   const { clause, args } = buildVisibilityArgs(session.user.email, session.user.isAdmin)
   const { rows } = await db.execute({
     sql: `SELECT id FROM recipes WHERE id = ? AND ${clause}`,
@@ -47,9 +40,21 @@ export async function POST(request: NextRequest, props: { params: Promise<{ id: 
   }
 
   await db.execute({
-    sql: `UPDATE recipes SET rating = ?, updated_at = datetime('now') WHERE id = ?`,
-    args: [rating, id],
+    sql: `INSERT OR REPLACE INTO recipe_ratings (recipe_id, user_email, rating, created_at)
+          VALUES (?, ?, ?, datetime('now'))`,
+    args: [id, session.user.email, rating],
   })
 
-  return NextResponse.json({ ok: true, rating })
+  const { rows: statsRows } = await db.execute({
+    sql: `SELECT AVG(rating) AS avg_rating, COUNT(*) AS rating_count
+            FROM recipe_ratings WHERE recipe_id = ?`,
+    args: [id],
+  })
+
+  return NextResponse.json({
+    ok: true,
+    rating,
+    avg_rating: statsRows[0]?.avg_rating != null ? Number(statsRows[0].avg_rating) : rating,
+    rating_count: Number(statsRows[0]?.rating_count ?? 1),
+  })
 }

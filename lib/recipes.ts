@@ -34,7 +34,13 @@ export type Recipe = {
   updated_at: string
 }
 
-export type RecipeWithTags = Recipe & { tags: string[] }
+export type RecipeWithTags = Recipe & {
+  tags: string[]
+  avg_rating: number | null
+  rating_count: number
+  user_rating: number | null
+  is_favorited: boolean
+}
 
 export type RecipeDetail = RecipeWithTags & {
   ingredient_groups: IngredientGroup[]
@@ -73,24 +79,35 @@ function rowToRecipe(row: Record<string, unknown>): RecipeWithTags {
     created_at: row.created_at as string,
     updated_at: row.updated_at as string,
     tags: row.tags_concat ? (row.tags_concat as string).split(',') : [],
+    avg_rating: row.avg_rating != null ? Number(row.avg_rating) : null,
+    rating_count: row.rating_count != null ? Number(row.rating_count) : 0,
+    user_rating: row.user_rating != null ? Number(row.user_rating) : null,
+    is_favorited: (row.is_favorited as number) === 1,
   }
 }
 
 export async function getRecipes(user?: SessionUser): Promise<RecipeWithTags[]> {
   const { sql: clause, args } = buildVisibilityFilter(user)
+  const userEmail = user?.email ?? null
 
   const { rows } = await db.execute({
     sql: `
       SELECT r.*,
-             GROUP_CONCAT(t.name, ',') AS tags_concat
+             GROUP_CONCAT(DISTINCT t.name) AS tags_concat,
+             AVG(rr.rating)               AS avg_rating,
+             COUNT(rr.recipe_id)          AS rating_count,
+             MAX(CASE WHEN rr.user_email = ? THEN rr.rating END) AS user_rating,
+             MAX(CASE WHEN rf.user_email = ? THEN 1 ELSE 0 END)  AS is_favorited
         FROM recipes r
         LEFT JOIN recipe_tags rt ON rt.recipe_id = r.id
         LEFT JOIN tags t ON t.id = rt.tag_id
+        LEFT JOIN recipe_ratings rr ON rr.recipe_id = r.id
+        LEFT JOIN recipe_favorites rf ON rf.recipe_id = r.id AND rf.user_email = ?
        WHERE ${clause}
        GROUP BY r.id
        ORDER BY r.section, r.title
     `,
-    args,
+    args: [userEmail, userEmail, userEmail, ...args],
   })
 
   return rows.map(rowToRecipe)
@@ -100,18 +117,25 @@ export async function getRecipeBySlug(slug: string, user?: SessionUser): Promise
   if (!slug || !/^[a-z0-9-]+$/.test(slug)) return null
 
   const { sql: clause, args } = buildVisibilityFilter(user)
+  const userEmail = user?.email ?? null
 
   const { rows } = await db.execute({
     sql: `
       SELECT r.*,
-             GROUP_CONCAT(t.name, ',') AS tags_concat
+             GROUP_CONCAT(DISTINCT t.name) AS tags_concat,
+             AVG(rr.rating)               AS avg_rating,
+             COUNT(rr.recipe_id)          AS rating_count,
+             MAX(CASE WHEN rr.user_email = ? THEN rr.rating END) AS user_rating,
+             MAX(CASE WHEN rf.user_email = ? THEN 1 ELSE 0 END)  AS is_favorited
         FROM recipes r
         LEFT JOIN recipe_tags rt ON rt.recipe_id = r.id
         LEFT JOIN tags t ON t.id = rt.tag_id
+        LEFT JOIN recipe_ratings rr ON rr.recipe_id = r.id
+        LEFT JOIN recipe_favorites rf ON rf.recipe_id = r.id AND rf.user_email = ?
        WHERE r.slug = ? AND ${clause}
        GROUP BY r.id
     `,
-    args: [slug, ...args],
+    args: [userEmail, userEmail, userEmail, slug, ...args],
   })
 
   if (rows.length === 0) return null

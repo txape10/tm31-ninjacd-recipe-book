@@ -1,9 +1,11 @@
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getSession } from '@/lib/auth'
 import { getRecipeDetail, canEditRecipe } from '@/lib/recipes'
 import IngredientsList from '@/components/recipe/IngredientsList'
 import StepsList from '@/components/recipe/StepsList'
 import StarRating from '@/components/recipe/StarRating'
+import FavoriteButton from '@/components/recipe/FavoriteButton'
 
 export default async function RecetaPage(props: PageProps<'/recetas/[slug]'>) {
   const { slug } = await props.params
@@ -23,6 +25,11 @@ export default async function RecetaPage(props: PageProps<'/recetas/[slug]'>) {
             {recipe.title}
           </h1>
           <div className="flex items-center gap-2 shrink-0 mt-1">
+            <FavoriteButton
+              recipeId={recipe.id}
+              initialFavorited={recipe.is_favorited}
+              canFavorite={!!session.user}
+            />
             <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
               recipe.is_public
                 ? 'bg-green-500/15 text-green-400'
@@ -31,9 +38,12 @@ export default async function RecetaPage(props: PageProps<'/recetas/[slug]'>) {
               {recipe.is_public ? 'Pública' : 'Privada'}
             </span>
             {canEdit && (
-              <span className="text-xs px-2 py-0.5 rounded-full bg-primary/15 text-primary font-medium">
+              <Link
+                href={`/recetas/${recipe.slug}/editar`}
+                className="text-xs px-2 py-0.5 rounded-full bg-primary/15 text-primary font-medium hover:bg-primary/25 transition-colors"
+              >
                 Editar
-              </span>
+              </Link>
             )}
           </div>
         </div>
@@ -45,7 +55,9 @@ export default async function RecetaPage(props: PageProps<'/recetas/[slug]'>) {
 
         <StarRating
           recipeId={recipe.id}
-          initialRating={recipe.rating}
+          avgRating={recipe.avg_rating}
+          ratingCount={recipe.rating_count}
+          userRating={recipe.user_rating}
           canRate={!!session.user}
         />
 

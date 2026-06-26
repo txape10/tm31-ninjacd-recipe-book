@@ -1,34 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
-import { canEditRecipe } from '@/lib/recipes'
 import { recipeSchema } from '@/lib/validation'
 import crypto from 'crypto'
 
-async function getRecipeById(id: string): Promise<{ id: string; created_by: string } | null> {
-  const { rows } = await db.execute({
-    sql: 'SELECT id, created_by FROM recipes WHERE id = ?',
-    args: [id],
-  })
-  if (!rows[0]) return null
-  return { id: rows[0].id as string, created_by: rows[0].created_by as string }
-}
-
-export async function PUT(request: NextRequest, props: RouteContext<'/api/recipes/[id]'>) {
-  const { id } = await props.params
+export async function POST(request: NextRequest) {
   const session = await getSession()
-
   if (!session.user) {
     return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
-  }
-
-  const recipe = await getRecipeById(id)
-  if (!recipe) {
-    return NextResponse.json({ error: 'Receta no encontrada' }, { status: 404 })
-  }
-
-  if (!canEditRecipe(recipe, session.user)) {
-    return NextResponse.json({ error: 'Sin permiso' }, { status: 403 })
   }
 
   let body: unknown
@@ -45,32 +24,33 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
 
   const d = result.data
 
-  // Verificar que el slug no lo use otra receta
-  const { rows: slugCheck } = await db.execute({
-    sql: 'SELECT id FROM recipes WHERE slug = ? AND id != ?',
-    args: [d.slug, id],
+  // Verificar slug único
+  const { rows: existing } = await db.execute({
+    sql: 'SELECT id FROM recipes WHERE slug = ?',
+    args: [d.slug],
   })
-  if (slugCheck.length > 0) {
+  if (existing.length > 0) {
     return NextResponse.json({ error: 'El slug ya existe, elige otro' }, { status: 409 })
   }
 
+  const id = crypto.randomUUID()
+
+  // Insertar receta
   await db.execute({
-    sql: `UPDATE recipes
-             SET title = ?, slug = ?, section = ?, appliance = ?, program = ?,
-                 difficulty = ?, calories_per_serving = ?,
-                 source = ?, notes = ?, has_mixin = ?, is_public = ?,
-                 updated_at = datetime('now')
-           WHERE id = ?`,
+    sql: `INSERT INTO recipes
+            (id, title, slug, section, appliance, program, difficulty,
+             calories_per_serving, source, notes, has_mixin, is_public,
+             created_by, created_at, updated_at)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'), datetime('now'))`,
     args: [
-      d.title, d.slug, d.section, d.appliance, d.program,
-      d.difficulty, d.calories_per_serving,
-      d.source, d.notes, d.has_mixin ? 1 : 0, d.is_public ? 1 : 0,
-      id,
+      id, d.title, d.slug, d.section, d.appliance, d.program, d.difficulty,
+      d.calories_per_serving, d.source, d.notes,
+      d.has_mixin ? 1 : 0, d.is_public ? 1 : 0,
+      session.user.email,
     ],
   })
 
-  // Re-insertar ingredientes (delete + insert)
-  await db.execute({ sql: 'DELETE FROM ingredient_groups WHERE recipe_id = ?', args: [id] })
+  // Insertar grupos de ingredientes e ingredientes
   for (let gi = 0; gi < d.ingredient_groups.length; gi++) {
     const group = d.ingredient_groups[gi]
     const groupId = crypto.randomUUID()
@@ -86,8 +66,7 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
     }
   }
 
-  // Re-insertar pasos
-  await db.execute({ sql: 'DELETE FROM recipe_steps WHERE recipe_id = ?', args: [id] })
+  // Insertar pasos
   const stepsByAppliance: Record<string, typeof d.steps> = {}
   for (const step of d.steps) {
     if (!stepsByAppliance[step.appliance]) stepsByAppliance[step.appliance] = []
@@ -104,8 +83,7 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
     }
   }
 
-  // Re-insertar tags
-  await db.execute({ sql: 'DELETE FROM recipe_tags WHERE recipe_id = ?', args: [id] })
+  // Insertar tags: primero INSERT OR IGNORE de todos, luego leer IDs en batch
   if (d.tags.length > 0) {
     for (const tagName of d.tags) {
       await db.execute({
@@ -126,27 +104,5 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
     }
   }
 
-  return NextResponse.json({ ok: true, slug: d.slug })
-}
-
-export async function DELETE(_request: NextRequest, props: RouteContext<'/api/recipes/[id]'>) {
-  const { id } = await props.params
-  const session = await getSession()
-
-  if (!session.user) {
-    return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
-  }
-
-  const recipe = await getRecipeById(id)
-  if (!recipe) {
-    return NextResponse.json({ error: 'Receta no encontrada' }, { status: 404 })
-  }
-
-  if (!canEditRecipe(recipe, session.user)) {
-    return NextResponse.json({ error: 'Sin permiso' }, { status: 403 })
-  }
-
-  await db.execute({ sql: 'DELETE FROM recipes WHERE id = ?', args: [id] })
-
-  return NextResponse.json({ ok: true })
+  return NextResponse.json({ ok: true, id, slug: d.slug }, { status: 201 })
 }
