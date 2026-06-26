@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const NAV_ITEMS = [
   { href: '/recetas', label: '🍦 Recetas' },
@@ -46,12 +47,15 @@ export default function Sidebar() {
         })}
       </nav>
 
-      <button
-        onClick={handleLogout}
-        className="mt-4 px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50 text-left transition-colors"
-      >
-        Cerrar sesión
-      </button>
+      <div className="mt-4 space-y-2">
+        <ThemeToggle />
+        <button
+          onClick={handleLogout}
+          className="w-full px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50 text-left transition-colors"
+        >
+          Cerrar sesión
+        </button>
+      </div>
     </aside>
   )
 }

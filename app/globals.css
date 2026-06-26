@@ -48,8 +48,44 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* Paleta proyecto — modo oscuro por defecto */
+/* Paleta proyecto — modo claro */
 :root {
+  --background: #f8f9fc;
+  --foreground: #0f0f1e;
+  --card: #ffffff;
+  --card-foreground: #0f0f1e;
+  --popover: #ffffff;
+  --popover-foreground: #0f0f1e;
+  --primary: hsl(210 100% 45%);
+  --primary-foreground: #ffffff;
+  --secondary: #e8edf5;
+  --secondary-foreground: #0f3460;
+  --muted: #f0f3f8;
+  --muted-foreground: oklch(0.45 0.02 250);
+  --accent: hsl(185 80% 40%);
+  --accent-foreground: #ffffff;
+  --destructive: oklch(0.55 0.22 27);
+  --border: oklch(0.88 0.01 250);
+  --input: oklch(0.92 0.01 250);
+  --ring: hsl(210 100% 45%);
+  --radius: 0.75rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0f0f1e;
+  --sidebar-primary: hsl(210 100% 45%);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f0f3f8;
+  --sidebar-accent-foreground: #0f0f1e;
+  --sidebar-border: oklch(0.88 0.01 250);
+  --sidebar-ring: hsl(210 100% 45%);
+  --chart-1: hsl(210 100% 45%);
+  --chart-2: hsl(185 80% 40%);
+  --chart-3: hsl(30 100% 55%);
+  --chart-4: oklch(0.55 0.15 300);
+  --chart-5: oklch(0.55 0.15 150);
+}
+
+/* Paleta proyecto — modo oscuro */
+.dark {
   --background: #1a1a2e;
   --foreground: oklch(0.92 0.01 240);
   --card: #16213e;
