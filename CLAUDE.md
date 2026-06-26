@@ -136,3 +136,123 @@ npm run build      # build de producción
 npm run lint       # ESLint
 npx turso db shell recetario   # consola Turso (nombre BD a confirmar)
 ```
+
+---
+
+## Estado del proyecto — continuación de sesión
+
+> **Instrucciones para Claude al inicio de una nueva sesión:**
+> El plan de implementación está aprobado y listo para ejecutar. La siguiente acción es
+> **iniciar la Fase 1** — no hace falta volver a planificar. Leer esta sección completa antes de empezar.
+
+### Plan aprobado: 7 fases
+
+| Fase | Contenido | Estado |
+|---|---|---|
+| **1** | Inicializar Next.js + schema Turso + autenticación + login | ⏳ Pendiente — **SIGUIENTE** |
+| **2** | Script seed (.md → Turso) + listado con filtros | ⏳ Pendiente |
+| **3** | Detalle de receta (tabs Thermomix / Ninja CREAMi) | ⏳ Pendiente |
+| **4** | Formularios crear/editar recetas (solo admin) | ⏳ Pendiente |
+| **5** | Diseño visual + shadcn personalizado | ⏳ Pendiente |
+| **6** | PWA + offline | ⏳ Pendiente |
+| **7** | Tests + QA | ⏳ Pendiente |
+
+### Decisiones técnicas aprobadas
+
+| Decisión | Elección |
+|---|---|
+| Auth | `iron-session` v8 + credenciales en variables de entorno |
+| PWA | `@ducanh2912/next-pwa` |
+| Validación formularios | `zod` |
+| Tipografía headings | **Poppins** 600/700 (Google Fonts) |
+| Tipografía body | **Inter** 400/500 (Google Fonts) |
+| Tipografía mono (ingredientes) | **JetBrains Mono** (Google Fonts) |
+| Modo oscuro | Por defecto — `darkMode: 'class'` en Tailwind |
+
+### Paleta de colores aprobada
+
+```css
+--color-bg-dark:     #1a1a2e   /* fondo principal */
+--color-bg-darker:   #0f0f1e   /* fondo más oscuro */
+--color-primary:     hsl(210 100% 50%)   /* azul vivo — CTA */
+--color-accent-cold: hsl(185 100% 50%)   /* cyan frío — accents */
+--color-accent-warm: hsl(30 100% 60%)    /* naranja suave — atención */
+--color-cream-50:    hsl(40 100% 95%)    /* crema muy clara */
+```
+
+### Schema de BD aprobado (5 tablas)
+
+```
+recipes
+  ├── recipe_tags       (many-to-many: recipe ↔ tag)
+  ├── ingredient_groups (grupos "Base", "Mix-In", etc.)
+  │     └── ingredients (items dentro de cada grupo)
+  └── recipe_steps      (pasos por appliance: thermomix / ninja-creami)
+```
+
+### Variables de entorno necesarias (crear .env.local)
+
+```
+TURSO_DATABASE_URL=         # libsql://... desde el dashboard de Turso
+TURSO_AUTH_TOKEN=           # token de Turso
+IRON_SESSION_PASSWORD=      # openssl rand -hex 32 (mínimo 32 caracteres)
+USER1_EMAIL=
+USER1_PASSWORD=
+USER1_ADMIN=true
+USER2_EMAIL=
+USER2_PASSWORD=
+USER2_ADMIN=false
+```
+
+### Repositorio GitHub
+
+- **Repo:** https://github.com/txape10/ninjacd-recipe-book
+- **Branch principal:** `master`
+- **Hosting:** Vercel (conectar al repo tras el primer push con código)
+
+### Estructura de carpetas completa aprobada
+
+```
+/app
+  layout.tsx
+  globals.css
+  /login
+    page.tsx
+  /recetas
+    layout.tsx
+    page.tsx
+    /[slug]
+      page.tsx
+      /editar/page.tsx
+    /nueva/page.tsx
+  /api
+    /auth/login/route.ts
+    /auth/logout/route.ts
+    /auth/session/route.ts
+    /recetas/route.ts
+    /recetas/[id]/route.ts
+/components
+  /ui                          — shadcn/ui generados
+  /recipe
+    recipe-card.tsx
+    recipe-detail.tsx
+    recipe-form.tsx
+    ingredient-group-editor.tsx
+    step-editor.tsx
+    filter-sidebar.tsx
+  /layout
+    header.tsx
+    sidebar.tsx
+/lib
+  db.ts                        — cliente Turso singleton
+  auth.ts                      — iron-session helpers
+  recipes.ts                   — queries (read + write)
+  validation.ts                — zod schemas
+/scripts
+  seed.ts                      — parse .md → INSERT en Turso
+/migrations
+  001_init.sql                 — schema completo
+/public
+  /icons
+  manifest.json
+```
