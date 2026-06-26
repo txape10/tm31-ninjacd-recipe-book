@@ -23,6 +23,7 @@ Diseñada para crecer hacia otras secciones (Thermomix, sous vide, etc.) en el f
 - `middleware.ts` → `proxy.ts`, export `middleware` → `proxy`
 - `params` y `searchParams` son Promises — hay que `await props.params`
 - Tipos globales: `PageProps<'/ruta'>`, `LayoutProps<'/ruta'>`, `RouteContext<'/ruta'>` (NO `RouteProps`)
+- `RouteContext<T>` solo funciona para rutas en `AppRouteHandlerRoutes`; para rutas anidadas usar `props: { params: Promise<{ id: string }> }` directamente
 
 ## Autenticación
 
@@ -36,11 +37,11 @@ USER2_EMAIL=...        USER2_PASSWORD=...   USER2_ADMIN=false
 ```
 
 - **Admin** (`USER1_ADMIN=true`): puede ver, crear y editar todas las recetas
-- **Usuario normal**: puede ver recetas públicas + las suyas, crear recetas propias y editarlas
+- **Usuario normal**: puede ver recetas públicas + las suyas, crear y editar las propias
 - Cada receta tiene `created_by` (email) y `is_public` (0/1)
 - Sesión gestionada con `iron-session`, config en `lib/session-config.ts`
 
-## Modelo de datos
+## Modelo de datos actual
 
 ```typescript
 type Recipe = {
@@ -52,7 +53,7 @@ type Recipe = {
   program: string          // "Ice Cream" | "Gelato" | "Sorbet" | "Milkshake" | "Frappé"
   difficulty: string       // "Fácil" | "Media" | "Media-Alta" | "Alta"
   calories_per_serving: number | null
-  rating: number | null    // 1–10 con pasos de 0.5
+  rating: number | null    // 1-10 pasos 0.5 — campo legacy, se migra a recipe_ratings en Fase 4
   source: string | null
   notes: string | null
   has_mixin: boolean
@@ -78,49 +79,67 @@ type RecipeStep = {
 }
 ```
 
+## Migraciones aplicadas
+
+| # | Fichero | Contenido |
+|---|---------|-----------|
+| 001 | `001_init.sql` | Schema inicial: recipes, ingredient_groups, ingredients, recipe_steps, tags, recipe_tags |
+| 002 | `002_add_ownership.sql` | Columnas `created_by`, `is_public` en recipes |
+
 ## Estructura de carpetas
 
 ```
-/app
+app/
   layout.tsx
   globals.css
-  /login / page.tsx
-  /recetas
+  login/page.tsx
+  recetas/
     layout.tsx              — sidebar + main
     page.tsx                — listado por secciones
-    /[slug] / page.tsx      — detalle de receta
-  /api
-    /auth/login/route.ts
-    /auth/logout/route.ts
-    /auth/session/route.ts
-    /recipes/[id]/route.ts          — PUT, DELETE
-    /recipes/[id]/rating/route.ts   — POST valoración
-/components
-  /ui                       — shadcn/ui generados
-  /recipe
+    [slug]/page.tsx         — detalle de receta
+  api/
+    auth/login/route.ts
+    auth/logout/route.ts
+    auth/session/route.ts
+    recipes/[id]/route.ts           — PUT, DELETE
+    recipes/[id]/rating/route.ts    — POST valoración directa
+
+components/
+  ui/                       — shadcn/ui generados
+  recipe/
     RecipeCard.tsx
-    StarRating.tsx
-    IngredientsList.tsx
-    StepsList.tsx
-  /layout
+    StarRating.tsx           — valoración 1-10, pasos 0.5, guarda via POST /rating
+    IngredientsList.tsx      — grupos de ingredientes con etiqueta opcional
+    StepsList.tsx            — pasos por appliance (TM31 naranja, Ninja azul)
+  layout/
     Sidebar.tsx
   ThemeProvider.tsx
-  ThemeToggle.tsx
-/lib
+  ThemeToggle.tsx            — toggle sistema/claro/oscuro con next-themes
+
+lib/
   db.ts                     — cliente Turso singleton
   auth.ts                   — iron-session helpers + validateCredentials
   session-config.ts         — getSessionConfig() compartida
-  recipes.ts                — queries (getRecipes, getRecipeBySlug, getRecipeDetail, canEditRecipe)
+  recipes.ts                — getRecipes, getRecipeBySlug, getRecipeDetail, canEditRecipe
   validation.ts             — zod schemas
-/scripts
-  seed.mjs                  — seed con 4 recetas de prueba
-/migrations
+
+scripts/
+  seed.mjs                  — seed con 4 recetas reales
+
+migrations/
   001_init.sql
   002_add_ownership.sql
-/docs                       — NO sube a git (.gitignore)
+
+docs/                       — NO sube a git (.gitignore)
   recetario_helados_ninja.md
   recetario_ninja_oficial.md
 ```
+
+## Decisiones técnicas relevantes
+
+- **Tema oscuro/claro**: `next-themes` con `attribute="class"`. En Tailwind v4 usar `@custom-variant dark (&:where(.dark, .dark *))` — el patrón `&:is(.dark *)` excluye el propio `<html>` y rompe el tema.
+- **Visibilidad de recetas**: `buildVisibilityFilter(user)` en SQL — admin ve todo, usuario normal ve las suyas + las públicas.
+- **Valoración**: campo `rating` directo en `recipes` (campo legacy). En Fase 4 se migra a tabla `recipe_ratings` con media y contador de votos.
 
 ## Diseño y UX
 
@@ -156,13 +175,62 @@ type RecipeStep = {
 | **2** | Listado de recetas + layout sidebar + tema claro/oscuro | ✅ Completada |
 | **2b** | Multi-usuario: ownership, visibilidad pública/privada | ✅ Completada |
 | **2c** | Seed con 4 recetas reales del recetario | ✅ Completada |
-| **3** | Detalle de receta: ingredientes, pasos por appliance, valoración con estrellas | 🔄 En curso |
-| **4** | Formularios crear/editar recetas | ⏳ Pendiente |
-| **5** | Diseño visual avanzado + shadcn personalizado | ⏳ Pendiente |
+| **3** | Detalle de receta: ingredientes, pasos por appliance, valoración con estrellas | ✅ Completada |
+| **3b** | Fix tema claro/oscuro (Tailwind v4 @custom-variant) | ✅ Completada |
+| **4** | Sistema de votos + favoritos + formularios crear/editar | ⏳ Pendiente |
+| **5** | Diseño visual avanzado + fotos de receta | ⏳ Pendiente |
 | **6** | PWA + offline | ⏳ Pendiente |
 | **7** | Tests + QA | ⏳ Pendiente |
 
-## Backlog / ideas apuntadas
+## Hoja de ruta — detalle por fase
 
-- **Fotos de receta** — subida y visualización por receta (decidir storage: Vercel Blob, Cloudflare R2…)
-- **Valoración interactiva** — campo `rating` ya existe en BD; falta la UI (en Fase 3)
+### Fase 4 — Interacción y gestión de recetas
+
+**4a — Sistema de votos real**
+- Migración `003_ratings_and_favorites.sql`: tabla `recipe_ratings` (recipe_id, user_email, rating, created_at)
+- `getRecipes` y `getRecipeDetail` devuelven `avg_rating`, `rating_count`, `user_rating`
+- API `/api/recipes/[id]/rating` pasa a INSERT OR REPLACE en `recipe_ratings`
+- `StarRating` muestra 5 estrellas con media + votos ("4.2 — 3 votos")
+- `RecipeCard` muestra rating con estrellas y contador
+
+**4b — Favoritos**
+- Tabla `recipe_favorites` (recipe_id, user_email) en la misma migración
+- API `/api/recipes/[id]/favorite` → POST (añadir) / DELETE (quitar)
+- Componente `FavoriteButton` (corazón) en detalle y en card
+
+**4c — Formularios crear/editar receta**
+- Página `/recetas/nueva/page.tsx` (solo autenticados)
+- Página `/recetas/[slug]/editar/page.tsx` (solo el creador o admin)
+- Formulario: título, sección, programa, dificultad, calorías, tags, grupos de ingredientes, pasos TM31/Ninja, notas, visibilidad
+- Validación zod en cliente y servidor
+- API `POST /api/recipes` para crear (el `PUT /api/recipes/[id]` ya existe)
+
+### Fase 5 — Diseño visual avanzado
+
+- Personalización profunda de shadcn/ui con la paleta del proyecto
+- Fotos de receta: subida a Vercel Blob (o Cloudflare R2), campo `cover_image_url` en BD
+- Cards con foto y animaciones hover
+- Filtro de favoritos en sidebar
+- Vista "mis recetas" separada de "todas"
+- Mejoras responsive en mobile (menú hamburguesa para sidebar)
+
+### Fase 6 — PWA + offline
+
+- Configurar `@ducanh2912/next-pwa` con service worker
+- Cache offline de recetas ya visitadas
+- Instalable en iPhone/iPad/Android/Windows
+- Splash screen e iconos
+
+### Fase 7 — Tests + QA
+
+- Unit tests de helpers (auth, recipes, validation) con Vitest
+- Tests de integración de las rutas API
+- Tests E2E del flujo login → listado → detalle con Playwright
+
+## Backlog / ideas para el futuro
+
+- Secciones adicionales: Thermomix TM31, sous vide, horno de vapor...
+- Búsqueda full-text por título e ingredientes
+- Compartir receta con link público (sin login)
+- Exportar receta a PDF
+- Importar recetas desde el recetario oficial Ninja (scraper / markdown parser)
