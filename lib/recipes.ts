@@ -1,6 +1,20 @@
 import { db } from './db'
 import type { SessionUser } from './auth'
 
+export type IngredientGroup = {
+  id: string
+  label: string | null
+  items: string[]
+}
+
+export type RecipeStep = {
+  id: string
+  appliance: 'tm31' | 'ninja'
+  step_order: number
+  title: string | null
+  description: string
+}
+
 export type Recipe = {
   id: string
   title: string
@@ -21,6 +35,11 @@ export type Recipe = {
 }
 
 export type RecipeWithTags = Recipe & { tags: string[] }
+
+export type RecipeDetail = RecipeWithTags & {
+  ingredient_groups: IngredientGroup[]
+  steps: RecipeStep[]
+}
 
 function buildVisibilityFilter(user: SessionUser | undefined): { sql: string; args: string[] } {
   if (user?.isAdmin) {
@@ -103,4 +122,62 @@ export function canEditRecipe(recipe: Pick<Recipe, 'created_by'>, user?: Session
   if (!user) return false
   if (user.isAdmin) return true
   return recipe.created_by === user.email
+}
+
+export async function getRecipeDetail(slug: string, user?: SessionUser): Promise<RecipeDetail | null> {
+  const base = await getRecipeBySlug(slug, user)
+  if (!base) return null
+
+  const [groupsResult, stepsResult] = await Promise.all([
+    db.execute({
+      sql: `
+        SELECT ig.id AS group_id, ig.label, ig.position,
+               i.id AS item_id, i.text, i.position AS item_position
+          FROM ingredient_groups ig
+          LEFT JOIN ingredients i ON i.group_id = ig.id
+         WHERE ig.recipe_id = ?
+         ORDER BY ig.position, i.position
+      `,
+      args: [base.id],
+    }),
+    db.execute({
+      sql: `
+        SELECT id, appliance, step_order, title, description
+          FROM recipe_steps
+         WHERE recipe_id = ?
+         ORDER BY appliance, step_order
+      `,
+      args: [base.id],
+    }),
+  ])
+
+  // Agrupar filas de ingredientes en grupos
+  const groupMap = new Map<string, IngredientGroup>()
+  for (const row of groupsResult.rows) {
+    const gid = row.group_id as string
+    if (!groupMap.has(gid)) {
+      groupMap.set(gid, {
+        id: gid,
+        label: row.label as string | null,
+        items: [],
+      })
+    }
+    if (row.text) {
+      groupMap.get(gid)!.items.push(row.text as string)
+    }
+  }
+
+  const steps: RecipeStep[] = stepsResult.rows.map((row) => ({
+    id: row.id as string,
+    appliance: row.appliance as 'tm31' | 'ninja',
+    step_order: row.step_order as number,
+    title: row.title as string | null,
+    description: row.description as string,
+  }))
+
+  return {
+    ...base,
+    ingredient_groups: [...groupMap.values()],
+    steps,
+  }
 }
