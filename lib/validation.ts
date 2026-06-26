@@ -17,6 +17,7 @@ export const recipeSchema = z.object({
   source: z.string().nullable(),
   notes: z.string().nullable(),
   has_mixin: z.boolean(),
+  is_public: z.boolean(),
   tags: z.array(z.string()),
 })
 

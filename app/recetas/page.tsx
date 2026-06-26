@@ -1,8 +1,10 @@
+import { getSession } from '@/lib/auth'
 import { getRecipes } from '@/lib/recipes'
 import RecipeCard from '@/components/recipe/RecipeCard'
 
 export default async function RecetasPage() {
-  const recipes = await getRecipes()
+  const session = await getSession()
+  const recipes = await getRecipes(session.user)
 
   const bySection = recipes.reduce<Record<string, typeof recipes>>((acc, r) => {
     if (!acc[r.section]) acc[r.section] = []
@@ -35,7 +37,7 @@ export default async function RecetasPage() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {sectionRecipes.map((recipe) => (
-              <RecipeCard key={recipe.id} recipe={recipe} />
+              <RecipeCard key={recipe.id} recipe={recipe} currentUserEmail={session.user?.email} />
             ))}
           </div>
         </section>
