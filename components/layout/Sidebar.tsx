@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import ThemeToggle from '@/components/ThemeToggle'
 
 const NAV_ITEMS = [
@@ -15,6 +15,20 @@ type Props = {
 export default function Sidebar({ isLoggedIn }: Props) {
   const pathname = usePathname()
   const router = useRouter()
+  const searchParams = useSearchParams()
+
+  const showMine = searchParams.get('showMine') === '1'
+  const showFavorites = searchParams.get('showFavorites') === '1'
+
+  function toggleFilter(key: 'showMine' | 'showFavorites') {
+    const params = new URLSearchParams(searchParams.toString())
+    if (params.get(key) === '1') {
+      params.delete(key)
+    } else {
+      params.set(key, '1')
+    }
+    router.push(`/recetas?${params.toString()}`)
+  }
 
   async function handleLogout() {
     const res = await fetch('/api/auth/logout', { method: 'POST' })
@@ -22,6 +36,8 @@ export default function Sidebar({ isLoggedIn }: Props) {
     router.push('/login')
     router.refresh()
   }
+
+  const isRecetasActive = pathname === '/recetas' || pathname.startsWith('/recetas/')
 
   return (
     <aside className="flex flex-col w-64 min-h-screen bg-sidebar border-r border-sidebar-border px-3 py-6 shrink-0">
@@ -49,6 +65,35 @@ export default function Sidebar({ isLoggedIn }: Props) {
             </Link>
           )
         })}
+
+        {/* Filtros — solo en la sección de recetas y si está logueado */}
+        {isLoggedIn && isRecetasActive && (
+          <div className="pt-2 pb-1">
+            <p className="px-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">
+              Filtrar
+            </p>
+            <button
+              onClick={() => toggleFilter('showMine')}
+              className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
+                showMine
+                  ? 'bg-primary/15 text-primary font-medium'
+                  : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
+              }`}
+            >
+              📌 Mis recetas
+            </button>
+            <button
+              onClick={() => toggleFilter('showFavorites')}
+              className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
+                showFavorites
+                  ? 'bg-primary/15 text-primary font-medium'
+                  : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
+              }`}
+            >
+              ❤️ Favoritos
+            </button>
+          </div>
+        )}
 
         {isLoggedIn && (
           <Link

@@ -53,7 +53,10 @@ type Recipe = {
   program: string          // "Ice Cream" | "Gelato" | "Sorbet" | "Milkshake" | "Frappé"
   difficulty: string       // "Fácil" | "Media" | "Media-Alta" | "Alta"
   calories_per_serving: number | null
-  rating: number | null    // 1-10 pasos 0.5 — campo legacy, se migra a recipe_ratings en Fase 4
+  avg_rating: number | null  // media de recipe_ratings (1-5 estrellas)
+  rating_count: number       // votos totales
+  user_rating: number | null // valoración del usuario actual
+  is_favorited: boolean      // si el usuario actual la tiene en favoritos
   source: string | null
   notes: string | null
   has_mixin: boolean
@@ -85,6 +88,7 @@ type RecipeStep = {
 |---|---------|-----------|
 | 001 | `001_init.sql` | Schema inicial: recipes, ingredient_groups, ingredients, recipe_steps, tags, recipe_tags |
 | 002 | `002_add_ownership.sql` | Columnas `created_by`, `is_public` en recipes |
+| 003 | `003_ratings_and_favorites.sql` | Tablas `recipe_ratings` (votos 1-5★) y `recipe_favorites` |
 
 ## Estructura de carpetas
 
@@ -101,18 +105,27 @@ app/
     auth/login/route.ts
     auth/logout/route.ts
     auth/session/route.ts
+    recipes/route.ts                — POST crear receta
     recipes/[id]/route.ts           — PUT, DELETE
-    recipes/[id]/rating/route.ts    — POST valoración directa
+    recipes/[id]/rating/route.ts    — POST valoración (INSERT OR REPLACE en recipe_ratings)
+    recipes/[id]/favorite/route.ts  — POST añadir / DELETE quitar favorito
+  recetas/
+    nueva/page.tsx          — formulario crear receta (solo autenticados)
+    [slug]/editar/page.tsx  — formulario editar receta (solo creador/admin)
 
 components/
   ui/                       — shadcn/ui generados
   recipe/
-    RecipeCard.tsx
-    StarRating.tsx           — valoración 1-10, pasos 0.5, guarda via POST /rating
+    RecipeCard.tsx           — card con foto, rating, favorito
+    StarRating.tsx           — 5 estrellas, media + votos, guarda via POST /rating
+    FavoriteButton.tsx       — toggle favorito con optimistic update
     IngredientsList.tsx      — grupos de ingredientes con etiqueta opcional
     StepsList.tsx            — pasos por appliance (TM31 naranja, Ninja azul)
+    RecipeForm.tsx           — formulario crear/editar (modo create|edit)
+    IngredientGroupEditor.tsx — editor dinámico de grupos de ingredientes
+    RecipeStepsEditor.tsx    — editor dinámico de pasos TM31/Ninja
   layout/
-    Sidebar.tsx
+    Sidebar.tsx              — recibe isLoggedIn como prop (sin useEffect flash)
   ThemeProvider.tsx
   ThemeToggle.tsx            — toggle sistema/claro/oscuro con next-themes
 
@@ -121,14 +134,16 @@ lib/
   auth.ts                   — iron-session helpers + validateCredentials
   session-config.ts         — getSessionConfig() compartida
   recipes.ts                — getRecipes, getRecipeBySlug, getRecipeDetail, canEditRecipe
-  validation.ts             — zod schemas
+  validation.ts             — zod schemas (recipeSchema, ratingSchema)
 
 scripts/
   seed.mjs                  — seed con 4 recetas reales
+  migrate.mjs               — runner genérico de migraciones SQL
 
 migrations/
   001_init.sql
   002_add_ownership.sql
+  003_ratings_and_favorites.sql
 
 docs/                       — NO sube a git (.gitignore)
   recetario_helados_ninja.md
@@ -139,7 +154,9 @@ docs/                       — NO sube a git (.gitignore)
 
 - **Tema oscuro/claro**: `next-themes` con `attribute="class"`. En Tailwind v4 usar `@custom-variant dark (&:where(.dark, .dark *))` — el patrón `&:is(.dark *)` excluye el propio `<html>` y rompe el tema.
 - **Visibilidad de recetas**: `buildVisibilityFilter(user)` en SQL — admin ve todo, usuario normal ve las suyas + las públicas.
-- **Valoración**: campo `rating` directo en `recipes` (campo legacy). En Fase 4 se migra a tabla `recipe_ratings` con media y contador de votos.
+- **Valoración**: tabla `recipe_ratings` (recipe_id, user_email, rating REAL, PK compuesto). 1-5★ en pasos 0.5. Validación: `Number.isInteger(v * 2)` (no `v % 0.5 === 0` — bug de precisión flotante).
+- **Favoritos**: tabla `recipe_favorites` (recipe_id, user_email, PK compuesto). FavoriteButton hace optimistic update y revierte en error.
+- **Sidebar sin flash**: `recetas/layout.tsx` es async, llama `getSession()` server-side y pasa `isLoggedIn` como prop. Sin `useEffect`/fetch en cliente.
 
 ## Diseño y UX
 
@@ -177,8 +194,8 @@ docs/                       — NO sube a git (.gitignore)
 | **2c** | Seed con 4 recetas reales del recetario | ✅ Completada |
 | **3** | Detalle de receta: ingredientes, pasos por appliance, valoración con estrellas | ✅ Completada |
 | **3b** | Fix tema claro/oscuro (Tailwind v4 @custom-variant) | ✅ Completada |
-| **4** | Sistema de votos + favoritos + formularios crear/editar | ⏳ Pendiente |
-| **5** | Diseño visual avanzado + fotos de receta | ⏳ Pendiente |
+| **4** | Sistema de votos + favoritos + formularios crear/editar | ✅ Completada |
+| **5** | Diseño visual avanzado + fotos de receta | ✅ Completada |
 | **6** | PWA + offline | ⏳ Pendiente |
 | **7** | Tests + QA | ⏳ Pendiente |
 

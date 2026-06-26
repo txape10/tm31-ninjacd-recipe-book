@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { getSession } from '@/lib/auth'
 import { getRecipeDetail, canEditRecipe } from '@/lib/recipes'
@@ -17,9 +18,26 @@ export default async function RecetaPage(props: PageProps<'/recetas/[slug]'>) {
   const canEdit = canEditRecipe(recipe, session.user)
 
   return (
-    <div className="p-6 max-w-2xl space-y-8">
+    <div className="max-w-2xl space-y-8">
+      {/* Hero — foto o gradiente */}
+      <div className="relative h-56 w-full overflow-hidden bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/10">
+        {recipe.cover_image_url ? (
+          <Image
+            src={recipe.cover_image_url}
+            alt={recipe.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center">
+            <span className="text-7xl select-none" aria-hidden>🍦</span>
+          </div>
+        )}
+      </div>
+
       {/* Cabecera */}
-      <div className="space-y-3">
+      <div className="px-6 space-y-3">
         <div className="flex items-start justify-between gap-4">
           <h1 className="font-heading text-3xl font-bold text-foreground">
             {recipe.title}
@@ -82,14 +100,18 @@ export default async function RecetaPage(props: PageProps<'/recetas/[slug]'>) {
       <hr className="border-border" />
 
       {/* Ingredientes */}
-      <IngredientsList groups={recipe.ingredient_groups} />
+      <div className="px-6">
+        <IngredientsList groups={recipe.ingredient_groups} />
+      </div>
 
       {/* Pasos */}
-      <StepsList steps={recipe.steps} />
+      <div className="px-6">
+        <StepsList steps={recipe.steps} />
+      </div>
 
       {/* Notas */}
       {recipe.notes && (
-        <section className="space-y-2">
+        <section className="px-6 space-y-2">
           <h2 className="font-heading text-xl font-semibold text-foreground">Notas</h2>
           <p className="text-sm text-muted-foreground leading-relaxed">{recipe.notes}</p>
         </section>
@@ -97,7 +119,7 @@ export default async function RecetaPage(props: PageProps<'/recetas/[slug]'>) {
 
       {/* Fuente */}
       {recipe.source && (
-        <p className="text-xs text-muted-foreground border-t border-border pt-4">
+        <p className="px-6 pb-6 text-xs text-muted-foreground border-t border-border pt-4">
           Fuente: {recipe.source}
         </p>
       )}

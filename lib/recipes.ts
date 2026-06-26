@@ -24,6 +24,7 @@ export type Recipe = {
   program: string
   difficulty: string
   calories_per_serving: number | null
+  cover_image_url: string | null
   rating: number | null
   source: string | null
   notes: string | null
@@ -70,6 +71,7 @@ function rowToRecipe(row: Record<string, unknown>): RecipeWithTags {
     program: row.program as string,
     difficulty: row.difficulty as string,
     calories_per_serving: row.calories_per_serving as number | null,
+    cover_image_url: row.cover_image_url as string | null,
     rating: row.rating as number | null,
     source: row.source as string | null,
     notes: row.notes as string | null,

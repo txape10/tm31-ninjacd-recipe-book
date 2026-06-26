@@ -4,6 +4,7 @@ import { useState, KeyboardEvent } from 'react'
 import { useRouter } from 'next/navigation'
 import IngredientGroupEditor, { type GroupData } from './IngredientGroupEditor'
 import RecipeStepsEditor, { type StepData } from './RecipeStepsEditor'
+import ImageUploadField from '@/components/form/ImageUploadField'
 
 const SECTIONS = ['Häagen-Dazs', 'Clásicos', 'Especiales', 'Sorbetes', 'Batidos']
 const PROGRAMS = ['Ice Cream', 'Gelato', 'Sorbet', 'Milkshake', 'Frappé', 'Light Ice Cream', 'Smoothie Bowl']
@@ -11,6 +12,7 @@ const DIFFICULTIES = ['Fácil', 'Media', 'Media-Alta', 'Alta']
 
 export type RecipeFormData = {
   id?: string
+  cover_image_url?: string | null
   title: string
   slug: string
   section: string
@@ -198,6 +200,22 @@ export default function RecipeForm({ mode, initial }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Foto de portada — solo disponible en modo edición (se necesita el ID de receta) */}
+      {mode === 'edit' && form.id && (
+        <section className="space-y-3">
+          <h2 className="font-heading text-lg font-semibold text-foreground">Foto de portada</h2>
+          <ImageUploadField
+            recipeId={form.id}
+            initialUrl={form.cover_image_url ?? null}
+          />
+        </section>
+      )}
+      {mode === 'create' && (
+        <p className="text-sm text-muted-foreground bg-muted/50 rounded-lg px-4 py-2">
+          💡 Podrás añadir una foto de portada después de crear la receta, desde la página de edición.
+        </p>
+      )}
 
       {/* Ingredientes */}
       <section className="space-y-3">
