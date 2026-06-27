@@ -18,8 +18,8 @@ export default function IngredientsList({ groups }: Props) {
             </h3>
           )}
           <ul className="space-y-1.5">
-            {group.items.map((item) => (
-              <li key={`${group.id}-${item}`} className="flex items-start gap-2 text-sm font-mono text-foreground">
+            {group.items.map((item, index) => (
+              <li key={`${group.id}-${index}`} className="flex items-start gap-2 text-sm font-mono text-foreground">
                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                 {item}
               </li>

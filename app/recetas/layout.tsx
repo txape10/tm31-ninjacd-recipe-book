@@ -6,6 +6,7 @@ import MobileNav from '@/components/layout/MobileNav'
 export default async function RecetasLayout({ children }: LayoutProps<'/recetas'>) {
   const session = await getSession()
   const isLoggedIn = !!session.user
+  const isAdmin = session.user?.isAdmin ?? false
 
   return (
     <div className="flex min-h-screen">
@@ -13,7 +14,7 @@ export default async function RecetasLayout({ children }: LayoutProps<'/recetas'
       <div className="hidden lg:flex">
         {/* Suspense necesario porque Sidebar usa useSearchParams() */}
         <Suspense fallback={<div className="w-64 min-h-screen bg-sidebar border-r border-sidebar-border shrink-0" />}>
-          <Sidebar isLoggedIn={isLoggedIn} />
+          <Sidebar isLoggedIn={isLoggedIn} isAdmin={isAdmin} />
         </Suspense>
       </div>
 
@@ -30,7 +31,7 @@ export default async function RecetasLayout({ children }: LayoutProps<'/recetas'
           </div>
         </header>
 
-        <main className="flex-1 overflow-auto">{children}</main>
+        <main id="main-content" className="flex-1 overflow-auto">{children}</main>
       </div>
     </div>
   )

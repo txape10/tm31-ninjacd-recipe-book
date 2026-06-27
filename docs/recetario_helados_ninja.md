@@ -465,7 +465,7 @@ Rellena la tarrina y congela 24h en posición plana.
 
 #### Preparación en TM31
 
-**Paso único:** Vierte todos los ingredientes en el vaso. Mezcla: **30 seg / vel 5** hasta completamente liso y sin grumos. Comprueba que el eritritol esté disuelto. Rellena la tarrina y congela 24h en posición plana.
+**Paso 1 — Mezclar y congelar:** Vierte todos los ingredientes en el vaso. Mezcla: **30 seg / vel 5** hasta completamente liso y sin grumos. Comprueba que el eritritol esté disuelto. Rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
@@ -1578,7 +1578,11 @@ Templa 3-4 min. Programa **Sorbet**. Re-Spin si es necesario.
 
 #### Preparación en TM31
 
-Igual que el de mandarina. Congela 24h. Programa **Sorbet**.
+Todos los ingredientes en el vaso. Mezcla: **1 min / vel 5**. Cuela. Congela 24h en posición plana.
+
+#### En la Ninja CREAMi Deluxe
+
+Templa 3-4 min. Programa **Sorbet**. Re-Spin si es necesario.
 
 #### Calorías ~330 kcal tarrina / ~110 kcal por ración.
 
@@ -1598,7 +1602,11 @@ Igual que el de mandarina. Congela 24h. Programa **Sorbet**.
 
 #### Preparación en TM31
 
-Piña y agua en el vaso. Tritura: **30 seg / vel 8**. Añade eritritol, limón y xantana. Mezcla: **20 seg / vel 4**. Cuela. Congela 24h. Programa **Sorbet**.
+Piña y agua en el vaso. Tritura: **30 seg / vel 8**. Añade eritritol, limón y xantana. Mezcla: **20 seg / vel 4**. Cuela. Congela 24h en posición plana.
+
+#### En la Ninja CREAMi Deluxe
+
+Templa 3-4 min. Programa **Sorbet**. Re-Spin si es necesario.
 
 #### Calorías ~300 kcal tarrina / ~100 kcal por ración.
 
@@ -1619,7 +1627,9 @@ Piña y agua en el vaso. Tritura: **30 seg / vel 8**. Añade eritritol, limón y
 - 400g helado de vainilla sin azúcar *(receta 2.1)*
 - 150 ml leche entera
 
-**Preparación:** Mezcla en la tarrina, congela 1-2h, programa **Milkshake**.
+#### En la Ninja CREAMi Deluxe
+
+Mezcla en la tarrina, congela 1-2h en posición plana. Templa 1-2 min. Programa **Milkshake**.
 
 **Calorías:** ~870 kcal tarrina / ~290 kcal por ración.
 
@@ -1635,7 +1645,9 @@ Piña y agua en el vaso. Tritura: **30 seg / vel 8**. Añade eritritol, limón y
 - 150 ml leche entera
 - 8g cacao puro extra (1 cda)
 
-**Preparación:** Todo en tarrina, congela 1-2h, programa **Milkshake**.
+#### En la Ninja CREAMi Deluxe
+
+Todo en tarrina, congela 1-2h en posición plana. Templa 1-2 min. Programa **Milkshake**.
 
 **Calorías:** ~720 kcal tarrina / ~240 kcal por ración.
 
@@ -1652,7 +1664,9 @@ Piña y agua en el vaso. Tritura: **30 seg / vel 8**. Añade eritritol, limón y
 - 150 ml leche entera
 - 30g salsa de caramelo sin azúcar (2 cdas)
 
-**Preparación:** Todo en tarrina, congela 1-2h, programa **Milkshake**.
+#### En la Ninja CREAMi Deluxe
+
+Todo en tarrina, congela 1-2h en posición plana. Templa 1-2 min. Programa **Milkshake**.
 
 **Calorías:** ~550 kcal tarrina / ~183 kcal por ración.
 
@@ -1668,7 +1682,9 @@ Piña y agua en el vaso. Tritura: **30 seg / vel 8**. Añade eritritol, limón y
 - 150 ml leche entera
 - 20g pasta de pistacho pura (1 cda)
 
-**Preparación:** Todo en tarrina, congela 1-2h, programa **Milkshake**.
+#### En la Ninja CREAMi Deluxe
+
+Todo en tarrina, congela 1-2h en posición plana. Templa 1-2 min. Programa **Milkshake**.
 
 **Calorías:** ~900 kcal tarrina / ~300 kcal por ración.
 
@@ -1686,7 +1702,9 @@ Piña y agua en el vaso. Tritura: **30 seg / vel 8**. Añade eritritol, limón y
 - 3g canela molida (1 cdta)
 - 20g sirope de caramelo sin azúcar (1 cda)
 
-**Preparación:** Todo en tarrina, congela 1-2h, programa **Frappé** *(o Milkshake)*.
+#### En la Ninja CREAMi Deluxe
+
+Todo en tarrina, congela 1-2h en posición plana. Templa 1-2 min. Programa **Frappé** *(o Milkshake)*.
 
 **Calorías:** ~890 kcal tarrina / ~297 kcal por ración.
 

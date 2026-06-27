@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react'
 import Image from 'next/image'
+import { MAX_IMAGE_SIZE_BYTES, ALLOWED_IMAGE_TYPES } from '@/lib/constants'
 
 type Props = {
   recipeId: string
@@ -21,11 +22,11 @@ export default function ImageUploadField({ recipeId, initialUrl, onImageChange }
     if (!file) return
     setError(null)
 
-    if (file.size > 5 * 1024 * 1024) {
+    if (file.size > MAX_IMAGE_SIZE_BYTES) {
       setError('La imagen no puede superar 5 MB')
       return
     }
-    if (!['image/jpeg', 'image/png', 'image/webp', 'image/avif'].includes(file.type)) {
+    if (!(ALLOWED_IMAGE_TYPES as readonly string[]).includes(file.type)) {
       setError('Solo se admiten JPEG, PNG, WebP o AVIF')
       return
     }

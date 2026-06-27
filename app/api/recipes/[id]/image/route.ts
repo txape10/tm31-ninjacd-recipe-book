@@ -4,9 +4,7 @@ import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { canEditRecipe } from '@/lib/recipes'
 import crypto from 'crypto'
-
-const MAX_SIZE_BYTES = 5 * 1024 * 1024 // 5 MB
-const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/avif']
+import { MAX_IMAGE_SIZE_BYTES, ALLOWED_IMAGE_TYPES } from '@/lib/constants'
 
 async function getRecipeOwner(id: string): Promise<{ id: string; created_by: string; cover_image_url: string | null } | null> {
   const { rows } = await db.execute({
@@ -48,10 +46,10 @@ export async function POST(request: NextRequest, props: { params: Promise<{ id: 
   if (!file || !(file instanceof File)) {
     return NextResponse.json({ error: 'Falta el campo image' }, { status: 400 })
   }
-  if (!ALLOWED_TYPES.includes(file.type)) {
+  if (!(ALLOWED_IMAGE_TYPES as readonly string[]).includes(file.type)) {
     return NextResponse.json({ error: 'Tipo de imagen no permitido (JPEG, PNG, WebP, AVIF)' }, { status: 400 })
   }
-  if (file.size > MAX_SIZE_BYTES) {
+  if (file.size > MAX_IMAGE_SIZE_BYTES) {
     return NextResponse.json({ error: 'La imagen no puede superar 5 MB' }, { status: 400 })
   }
 

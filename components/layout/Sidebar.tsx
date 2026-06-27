@@ -10,9 +10,10 @@ const NAV_ITEMS = [
 
 type Props = {
   isLoggedIn: boolean
+  isAdmin?: boolean
 }
 
-export default function Sidebar({ isLoggedIn }: Props) {
+export default function Sidebar({ isLoggedIn, isAdmin = false }: Props) {
   const pathname = usePathname()
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -93,6 +94,19 @@ export default function Sidebar({ isLoggedIn }: Props) {
               ❤️ Favoritos
             </button>
           </div>
+        )}
+
+        {isLoggedIn && isAdmin && (
+          <Link
+            href="/recetas/tags"
+            className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+              pathname === '/recetas/tags'
+                ? 'bg-sidebar-accent text-foreground'
+                : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
+            }`}
+          >
+            🏷️ Gestionar tags
+          </Link>
         )}
 
         {isLoggedIn && (

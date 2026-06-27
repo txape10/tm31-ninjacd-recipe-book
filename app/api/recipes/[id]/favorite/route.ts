@@ -1,15 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
+import { buildVisibilityFilter } from '@/lib/recipes'
 
-function buildVisibilityArgs(userEmail?: string, isAdmin?: boolean): { clause: string; args: string[] } {
-  if (isAdmin) return { clause: '1=1', args: [] }
-  if (userEmail) return { clause: '(is_public = 1 OR created_by = ?)', args: [userEmail] }
-  return { clause: 'is_public = 1', args: [] }
-}
-
-async function checkAccess(id: string, userEmail?: string, isAdmin?: boolean): Promise<boolean> {
-  const { clause, args } = buildVisibilityArgs(userEmail, isAdmin)
+async function checkAccess(id: string, user: { email: string; isAdmin: boolean }): Promise<boolean> {
+  const { sql: clause, args } = buildVisibilityFilter(user)
   const { rows } = await db.execute({
     sql: `SELECT id FROM recipes WHERE id = ? AND ${clause}`,
     args: [id, ...args],
@@ -25,7 +20,7 @@ export async function POST(_request: NextRequest, props: { params: Promise<{ id:
     return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
   }
 
-  const hasAccess = await checkAccess(id, session.user.email, session.user.isAdmin)
+  const hasAccess = await checkAccess(id, session.user)
   if (!hasAccess) {
     return NextResponse.json({ error: 'Receta no encontrada' }, { status: 404 })
   }
@@ -47,7 +42,7 @@ export async function DELETE(_request: NextRequest, props: { params: Promise<{ i
     return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
   }
 
-  const hasAccess = await checkAccess(id, session.user.email, session.user.isAdmin)
+  const hasAccess = await checkAccess(id, session.user)
   if (!hasAccess) {
     return NextResponse.json({ error: 'Receta no encontrada' }, { status: 404 })
   }

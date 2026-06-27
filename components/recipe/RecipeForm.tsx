@@ -304,7 +304,7 @@ export default function RecipeForm({ mode, initial }: Props) {
 
       {/* Acciones */}
       {error && (
-        <p className="text-sm text-destructive bg-destructive/10 rounded-lg px-4 py-2">{error}</p>
+        <p role="alert" className="text-sm text-destructive bg-destructive/10 rounded-lg px-4 py-2">{error}</p>
       )}
 
       <div className="flex items-center gap-3 pt-2 border-t border-border">

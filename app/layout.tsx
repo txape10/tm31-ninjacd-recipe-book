@@ -60,6 +60,12 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-primary-foreground focus:px-4 focus:py-2 focus:rounded-lg focus:outline-none"
+        >
+          Saltar al contenido
+        </a>
         <ThemeProvider>{children}</ThemeProvider>
         <Suspense fallback={null}>
           <InstallBanner />

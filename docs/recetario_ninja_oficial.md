@@ -196,11 +196,13 @@
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **8 min / 80°C / vel 3** hasta que el cacao se disuelva y la mezcla espese ligeramente. Enfría en nevera 1 hora. Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso. Programa **8 min / 80°C / vel 3** hasta que el cacao se disuelva y la mezcla espese ligeramente. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina hasta la línea MAX y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda de leche fría si necesario.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. La sal potencia el cacao — no la reduzcas.
 
@@ -220,11 +222,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda de leche fría si ne
 
 #### Preparación en TM31
 
-Cerezas, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Deja enfriar a 40°C. Añade kéfir y xantana: **30 seg / vel 5**. Congela 24h en posición plana.
+Pon las cerezas, el eritritol y el limón en el vaso. Programa **3 min / 80°C / vel 3**. Deja enfriar a 40°C (unos 10 minutos). Añade el kéfir y la xantana: **30 seg / vel 5**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3 min (base con fruta) · Programa **Ice Cream** · Re-Spin con 1 cda de kéfir frío.
+1. Saca la tarrina del congelador y deja templar 3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de kéfir frío y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. Xantana imprescindible — base sin nata.
 
@@ -245,11 +249,14 @@ Templa 3 min (base con fruta) · Programa **Ice Cream** · Re-Spin con 1 cda de 
 
 #### Preparación en TM31
 
-Leche, nata, yemas, eritritol y pasta de pistacho en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade agua de azahar: **10 seg / vel 3**. Congela 24h en posición plana.
+Pon la leche, la nata, las yemas, el eritritol y la pasta de pistacho en el vaso. Programa **8 min / 80°C / vel 3**. Deja enfriar a 50°C y añade el agua de azahar: **10 seg / vel 3**. Vierte en la tarrina y deja enfriar a temperatura ambiente antes de congelar 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 30g pistachos tostados sin sal.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Opcional: añade 30g de pistachos tostados sin sal bien fríos y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Ya adaptada. El agua de azahar es delicada — no excedas la cantidad.
 
@@ -270,11 +277,14 @@ Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 30g pistachos tostado
 
 #### Preparación en TM31
 
-Leche, nata y malvaviscos en el vaso. **5 min / 70°C / vel 3** hasta que se fundan. Añade eritritol, vainilla y xantana: **20 seg / vel 4**. Enfría. Congela 24h en posición plana.
+Pon la leche, la nata y los malvaviscos en el vaso. Programa **5 min / 70°C / vel 3** hasta que se fundan. Añade el eritritol, la vainilla y la xantana: **20 seg / vel 4**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Mix-In opcional: malvaviscos extra bien fríos.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Opcional: añade malvaviscos extra bien fríos y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Los malvaviscos llevan azúcar real — difícil de eliminar. Para versión más ligera, reduce a 50g y aumenta eritritol a 70g.
 
@@ -296,11 +306,14 @@ Templa 2 min · Programa **Ice Cream** · Mix-In opcional: malvaviscos extra bie
 
 #### Preparación en TM31
 
-50g de turrón troceado en el vaso. **3 min / 60°C / vel 3** hasta pasta. Sin limpiar: añade nata, leche, yemas, cacao, eritritol y vainilla. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
+Trocea 50g de turrón y ponlo en el vaso. Programa **3 min / 60°C / vel 3** hasta obtener una pasta. Sin limpiar el vaso, añade la nata, la leche, las yemas, el cacao, el eritritol y la vainilla. Programa **8 min / 80°C / vel 3**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Mix-In: 50g turrón picado bien frío, programa Mix-In.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
+4. Haz el hueco de nuevo, añade los 50g de turrón picado bien frío y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** El turrón Jijona ya lleva azúcar y miel. No usar turrón duro de Alicante.
 
@@ -323,12 +336,15 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Mix-In: 50g 
 
 #### Preparación en TM31
 
-**Infusión:** Leche, nata, piel de limón y canela en rama. **10 min / 90°C / vel 2**. Retira piel y canela con cestillo.
-**Crema:** Añade yemas, eritritol y maicena. **5 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
+1. **Infusión:** Pon la leche, la nata, la piel de limón y la canela en rama en el vaso. Programa **10 min / 90°C / vel 2**. Retira la piel y la canela con el cestillo.
+2. **Crema:** Añade las yemas, el eritritol y la maicena. Programa **5 min / 80°C / vel 3**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Sirve con canela molida. Soplete opcional con azúcar real al servir.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Sirve con canela molida por encima. Soplete con azúcar real al servir, opcional.
 
 **📝 Sin azúcar:** Base sin azúcar. El soplete al servir es la única concesión (opcional).
 
@@ -350,11 +366,14 @@ Templa 2 min · Programa **Ice Cream** · Sirve con canela molida. Soplete opcio
 
 #### Preparación en TM31
 
-Si usas almendra molida: tritura primero **30 seg / vel 9**. Añade el resto. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
+Si usas almendra molida, tritúrala primero: **30 seg / vel 9** hasta polvo fino. Añade el resto de ingredientes y programa **8 min / 80°C / vel 3**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 30g almendras tostadas troceadas.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Opcional: añade 30g de almendras tostadas troceadas bien frías y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -376,11 +395,14 @@ Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 30g almendras tostada
 
 #### Preparación en TM31
 
-Leche, arroz, eritritol, piel de limón y canela en rama. **30 min / 90°C / vel 1** con giro inverso. Retira piel y canela. Añade vainilla. Tritura: **45 seg / vel progresiva 5-7-9** hasta crema suave. Enfría en nevera. Congela 24h en posición plana.
+Pon la leche, el arroz, el eritritol, la piel de limón y la canela en rama en el vaso. Programa **30 min / 90°C / vel 1 con giro inverso**. Retira la piel y la canela. Añade la vainilla y tritura: **45 seg / vel progresiva 5-7-9** hasta crema suave. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3-4 min (base densa) · Programa **Ice Cream** · Re-Spin con 2 cdas leche fría · Sirve con canela molida.
+1. Saca la tarrina del congelador y deja templar 3-4 minutos (base densa).
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Sirve con canela molida por encima.
 
 **📝 Sin azúcar:** Ya adaptada. Base 100% española — muy reconfortante.
 
@@ -400,11 +422,14 @@ Templa 3-4 min (base densa) · Programa **Ice Cream** · Re-Spin con 2 cdas lech
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. Mezcla: **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso y mezcla: **30 seg / vel 5**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 3 cdas del fruto seco elegido tostado y picado.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Opcional: añade 3 cdas del fruto seco elegido tostado y picado, bien frío, y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Con pasta azucarada comercial, reduce eritritol. Con pasta 100% pura, añade 70g eritritol.
 
@@ -424,11 +449,14 @@ Templa 2 min · Programa **Ice Cream** · Mix-In opcional: 3 cdas del fruto seco
 
 #### Preparación en TM31
 
-400 ml de leche, eritritol y vainilla en el vaso. **5 min / 90°C / vel 3**. Disuelve la maicena en los 100 ml restantes y añade. **5 min / 90°C / vel 3** hasta que espese. Enfría. Congela 24h en posición plana.
+Vierte 400 ml de leche, el eritritol y la vainilla en el vaso. Programa **5 min / 90°C / vel 3**. Disuelve la maicena en los 100 ml de leche restantes y añádela al vaso. Programa **5 min / 90°C / vel 3** hasta que espese. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: chocolate negro rallado bien frío, programa Mix-In.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Añade el chocolate negro rallado bien frío y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Sustituye azúcar glas por eritritol → ~400 kcal menos por tarrina.
 
@@ -449,11 +477,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: cho
 
 #### Preparación en TM31
 
-Mascarpone en el vaso: **20 seg / vel 4** hasta liso. Añade nata, eritritol, limoncello, ralladura y xantana: **30 seg / vel 5**. Congela 24h en posición plana.
+Pon el mascarpone en el vaso y trabájalo: **20 seg / vel 4** hasta que quede liso. Añade la nata, el eritritol, el limoncello, la ralladura y la xantana: **30 seg / vel 5**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. Sin alcohol: sustituye limoncello por 30 ml zumo de limón.
 
@@ -473,11 +503,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco fría.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche de coco fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. Xantana imprescindible en bases veganas sin yemas.
 
@@ -499,11 +531,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco fría.
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol, mantequilla y vainilla en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade la salsa de caramelo: **10 seg / vel 3** en remolino. Congela 24h en posición plana.
+Pon la nata, la leche, las yemas, el eritritol, la mantequilla y la vainilla en el vaso. Programa **8 min / 80°C / vel 3**. Deja enfriar a 50°C y añade la salsa de caramelo: **10 seg / vel 3**. Vierte en la tarrina y deja enfriar a temperatura ambiente antes de congelar 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. La mantequilla salada es esencial — no sustituir por normal.
 
@@ -524,11 +558,14 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes (café completamente frío) en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
+Asegúrate de que el café esté completamente frío. Vierte todos los ingredientes en el vaso y programa **8 min / 80°C / vel 3**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In opcionales: chips de chocolate, merengue, praliné o caramelo.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Opcional: añade chips de chocolate, merengue, praliné o caramelo bien fríos y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Ya adaptada. El café debe estar completamente frío antes de mezclar.
 
@@ -551,11 +588,14 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In opci
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h en posición plana.
+Pon la nata, la leche, las yemas, el eritritol y la xantana en el vaso. Programa **8 min / 80°C / vel 3**. Deja enfriar a 50°C y añade el zumo y la ralladura de limón: **10 seg / vel 3**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: galletas bien frías, programa Mix-In.
+1. Saca la tarrina del congelador y deja templar 3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Añade las galletas bien frías y troceadas, y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -576,11 +616,13 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: gal
 
 #### Preparación en TM31
 
-Albaricoques, miel, limón y xantana en el vaso. Tritura: **30 seg / vel 9**. Añade nata y leche: **20 seg / vel 4**. *(Sin cocción.)* Congela 24h en posición plana.
+Pon los albaricoques, la miel, el limón y la xantana en el vaso. Tritura: **30 seg / vel 9**. Añade la nata y la leche: **20 seg / vel 4**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3-4 min · Programa **Sorbet** o **Ice Cream** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 3-4 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream** (o **Sorbet** para textura más ligera).
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Sustituye miel por 50g eritritol → ~180 kcal menos por tarrina.
 
@@ -600,11 +642,13 @@ Templa 3-4 min · Programa **Sorbet** o **Ice Cream** · Re-Spin con 1 cda leche
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 4**. *(Sin cocción.)* Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso: **30 seg / vel 4**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2-3 min · Programa **Frozen Yogurt** · Re-Spin con 1 cda leche fría.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Frozen Yogurt**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Sustituye miel por 50g eritritol.
 
@@ -625,11 +669,13 @@ Templa 2-3 min · Programa **Frozen Yogurt** · Re-Spin con 1 cda leche fría.
 
 #### Preparación en TM31
 
-Moras, miel y xantana en el vaso. **3 min / 80°C / vel 3**. Deja enfriar. Tritura: **30 seg / vel 9**. Cuela si hay semillas. Añade nata, leche y vainilla: **20 seg / vel 4**. Congela 24h en posición plana.
+Pon las moras, la miel y la xantana en el vaso. Programa **3 min / 80°C / vel 3**. Deja enfriar unos minutos y tritura: **30 seg / vel 9**. Cuela si hay semillas. Añade la nata, la leche y la vainilla: **20 seg / vel 4**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3-4 min · Programa **Ice Cream** o **Sorbet** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 3-4 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream** (o **Sorbet** para textura más ligera).
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Sustituye miel por 50g eritritol.
 
@@ -651,11 +697,13 @@ Templa 3-4 min · Programa **Ice Cream** o **Sorbet** · Re-Spin con 1 cda leche
 
 #### Preparación en TM31
 
-Leche, nata, eritritol, vainilla, aroma y xantana en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
+Vierte la leche, la nata, el eritritol, la vainilla, el aroma y la xantana en el vaso. Mezcla: **30 seg / vel 5**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Mix-In: bastones de caramelo bien fríos.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Añade los bastones de caramelo bien fríos y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Base sin azúcar. Los bastones llevan azúcar real — omítelos para versión 100% sin azúcar.
 
@@ -677,11 +725,14 @@ Templa 2 min · Programa **Ice Cream** · Mix-In: bastones de caramelo bien frí
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. Congela 24h en posición plana.
+Vierte todos los ingredientes excepto el chocolate en el vaso. Mezcla: **30 seg / vel 5**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix-In: chips de chocolate bien fríos.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche de coco fría y ejecuta **Re-Spin**.
+4. Añade los chips de chocolate bien fríos y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Ya adaptada. Aroma concentrado (Sosa, Lorann) da mejor resultado que menta fresca.
 
@@ -703,11 +754,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **8 min / 80°C / vel 3** hasta crema espesa. Enfría mínimo 2 horas. Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso. Programa **8 min / 80°C / vel 3** hasta obtener una crema espesa. Vierte en un bol y deja enfriar en la nevera mínimo 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Gelato**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. El gelato lleva más leche y menos nata que el helado clásico — textura más suave.
 
@@ -729,11 +782,13 @@ Templa 2 min · Programa **Gelato** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 40°C. Añade mermelada y whisky: **20 seg / vel 3**. Congela 24h en posición plana.
+Pon la nata, la leche, las yemas, el eritritol y la xantana en el vaso. Programa **8 min / 80°C / vel 3**. Deja enfriar a 40°C y añade la mermelada y el whisky: **20 seg / vel 3**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** La mermelada lleva azúcar. Usa mermelada sin azúcar para versión más ligera.
 
@@ -754,11 +809,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Frambuesas, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela las semillas. Añade nata, leche y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
+Pon las frambuesas, el eritritol y el limón en el vaso. Programa **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Cuela las semillas con un colador fino. Añade la nata, la leche y la xantana: **20 seg / vel 4**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
+1. Saca la tarrina del congelador y deja templar 3-4 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -780,11 +837,13 @@ Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Infusiona el azafrán en 2 cdas de leche caliente durante 10 min. Añade todos los ingredientes (incluido azafrán con su leche) al vaso. **8 min / 80°C / vel 3**. Enfría mínimo 2 horas para que el azafrán desarrolle su aroma. Congela 24h en posición plana.
+Infusiona el azafrán en 2 cdas de leche caliente durante 10 minutos. Añade todos los ingredientes (incluido el azafrán con su leche) al vaso. Programa **8 min / 80°C / vel 3**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas para que el azafrán desarrolle su aroma. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. Azafrán de calidad es clave.
 
@@ -805,11 +864,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Crema de castañas comercial lleva azúcar. Para versión light: puré castaña 100% + 80g eritritol.
 
@@ -830,11 +891,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso. Programa **8 min / 80°C / vel 3**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** El azúcar moreno define el sabor (caramelo, melaza). Alternativa: eritritol oscuro + 3g extracto de caramelo.
 
@@ -855,11 +918,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Si usas sésamo entero: tritura primero **30 seg / vel 9** hasta pasta. Añade el resto. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
+Si usas sésamo entero, tritúralo primero: **30 seg / vel 9** hasta pasta. Añade el resto de ingredientes y programa **8 min / 80°C / vel 3**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. El tahini negro tiene sabor más intenso y ligeramente amargo que el blanco.
 
@@ -881,11 +946,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Nata, leche, yemas, eritritol y xantana en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h en posición plana.
+Pon la nata, la leche, las yemas, el eritritol y la xantana en el vaso. Programa **8 min / 80°C / vel 3**. Deja enfriar a 50°C y añade el zumo y la ralladura de limón: **10 seg / vel 3**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. Más limpio y ácido que el Lemon Pie (sin base de galleta).
 
@@ -906,11 +973,13 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 5** hasta disolver el extracto de malta. *(Sin cocción.)* Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso: **30 seg / vel 5** hasta disolver el extracto de malta. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. Ovomaltine lleva algo de azúcar — usa extracto de malta puro sin azúcar para control estricto.
 
@@ -930,11 +999,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche de coco fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** El dulce de leche lleva azúcar real. Para versión más ligera: dulce de leche sin azúcar + eritritol.
 
@@ -955,11 +1026,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco.
 
 #### Preparación en TM31
 
-Pulpa, eritritol y limón en el vaso. **2 min / 60°C / vel 3** para disolver el eritritol. Añade nata, leche y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
+Pon la pulpa, el eritritol y el limón en el vaso. Programa **2 min / 60°C / vel 3** para disolver el eritritol. Añade la nata, la leche y la xantana: **20 seg / vel 4**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
+1. Saca la tarrina del congelador y deja templar 3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. La acidez del maracuyá equilibra bien el eritritol.
 
@@ -981,11 +1054,13 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes (café frío) en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
+Asegúrate de que el café esté completamente frío. Vierte todos los ingredientes en el vaso: **30 seg / vel 5**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. Más ligera que la v1 por menos nata y sin yemas.
 
@@ -1007,11 +1082,14 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. Congela 24h en posición plana.
+Vierte todos los ingredientes excepto el chocolate en el vaso. Mezcla: **30 seg / vel 5**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix-In: chips de chocolate bien fríos.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche de coco fría y ejecuta **Re-Spin**.
+4. Añade los chips de chocolate bien fríos y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Ya adaptada. Versión vegana del nº 20.
 
@@ -1032,11 +1110,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche de coco · Mix
 
 #### Preparación en TM31
 
-Nata, leche, yemas y eritritol en el vaso. **8 min / 80°C / vel 3**. Deja enfriar a 50°C. Añade zumo y ralladura: **10 seg / vel 3**. Enfría. Congela 24h en posición plana.
+Pon la nata, la leche, las yemas y el eritritol en el vaso. Programa **8 min / 80°C / vel 3**. Deja enfriar a 50°C y añade el zumo y la ralladura de naranja: **10 seg / vel 3**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. Más cremoso que el sorbete de naranja por las yemas y la nata.
 
@@ -1059,11 +1139,14 @@ Templa 3 min · Programa **Ice Cream** · Re-Spin con 1 cda leche.
 
 #### Preparación en TM31
 
-Melocotones, eritritol y limón en el vaso. **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade nata, leche, vainilla y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
+Pon los melocotones, el eritritol y el limón en el vaso. Programa **3 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade la nata, la leche, la vainilla y la xantana: **20 seg / vel 4**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Sirve con coulis de frambuesa.
+1. Saca la tarrina del congelador y deja templar 3-4 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
+4. Sirve con coulis de frambuesa al lado.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -1085,11 +1168,14 @@ Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata · Sirve con 
 
 #### Preparación en TM31
 
-Todos los ingredientes excepto el chocolate en el vaso. **30 seg / vel 5**. *(Sin cocción.)* Congela 24h en posición plana.
+Vierte todos los ingredientes excepto el chocolate en el vaso. Mezcla: **30 seg / vel 5**. *(Sin cocción.)* Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: chips bien fríos.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Añade los chips de chocolate bien fríos y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Ya adaptada.
 
@@ -1107,13 +1193,15 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: chi
 
 #### Preparación en TM31
 
-**Praliné:** En sartén, funde azúcar hasta caramelo dorado, añade sésamo, extiende en papel de horno, deja enfriar y rompe en trozos.
-
-**Base:** Todos los ingredientes de la base en el vaso. **8 min / 80°C / vel 3**. Enfría. Congela 24h en posición plana.
+1. **Praliné:** En una sartén a fuego medio, funde el azúcar hasta obtener un caramelo dorado. Añade el sésamo tostado, mezcla rápido y extiende sobre papel de horno. Deja enfriar completamente y rompe en trozos.
+2. **Base:** Vierte todos los ingredientes de la base en el vaso. Programa **8 min / 80°C / vel 3**. Vierte en un bol y deja enfriar en la nevera al menos 2 horas. Luego rellena la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: praliné bien frío troceado.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
+4. Añade el praliné bien frío y troceado, y ejecuta **Mix-In**.
 
 **📝 Sin azúcar:** Base con eritritol. El praliné requiere azúcar real (caramelización).
 
@@ -1135,11 +1223,13 @@ Templa 2 min · Programa **Ice Cream** · Re-Spin con 1 cda leche · Mix-In: pra
 
 #### Preparación en TM31
 
-Fresas, eritritol y limón en el vaso. **5 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade nata, leche, cordial y xantana: **20 seg / vel 4**. Congela 24h en posición plana.
+Pon las fresas, el eritritol y el limón en el vaso. Programa **5 min / 80°C / vel 3**. Tritura: **30 seg / vel 9**. Añade la nata, la leche, el cordial y la xantana: **20 seg / vel 4**. Vierte en la tarrina y congela 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
+1. Saca la tarrina del congelador y deja templar 3-4 minutos.
+2. Monta en la máquina y ejecuta el programa **Ice Cream**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de nata fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. El cordial de saúco tiene algo de azúcar — usa extracto concentrado sin azúcar para versión light.
 
@@ -1159,11 +1249,13 @@ Templa 3-4 min · Programa **Ice Cream** · Re-Spin con 1 cda nata.
 
 #### Preparación en TM31
 
-Todos los ingredientes en el vaso. **5 min / 60°C / vel 3** para disolver eritritol y maicena. Deja enfriar. Congela 24h en posición plana.
+Vierte todos los ingredientes en el vaso. Programa **5 min / 60°C / vel 3** para disolver el eritritol y la maicena. Vierte en la tarrina y deja enfriar a temperatura ambiente antes de congelar 24h en posición plana.
 
 #### En la Ninja CREAMi Deluxe
 
-Templa 2-3 min · Programa **Frozen Yogurt** · Re-Spin con 1 cda leche.
+1. Saca la tarrina del congelador y deja templar 2-3 minutos.
+2. Monta en la máquina y ejecuta el programa **Frozen Yogurt**.
+3. Haz un hueco en el centro con una cuchara, añade 1-2 cdas de leche fría y ejecuta **Re-Spin**.
 
 **📝 Sin azúcar:** Ya adaptada. La maicena evita que el yogur se cristalice al congelar.
 

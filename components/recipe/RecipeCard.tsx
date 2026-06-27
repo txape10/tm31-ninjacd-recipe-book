@@ -30,7 +30,7 @@ export default function RecipeCard({ recipe, currentUserEmail }: Props) {
         />
       </div>
 
-      <Link href={`/recetas/${recipe.slug}`} className="block">
+      <Link href={`/recetas/${recipe.slug}`} className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-card rounded-xl">
         {/* Foto / placeholder */}
         <div className="relative h-40 overflow-hidden bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/10">
           {recipe.cover_image_url ? (

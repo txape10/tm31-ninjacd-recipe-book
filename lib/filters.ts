@@ -15,11 +15,15 @@ export function applyRecipeFilters(
   userEmail?: string,
 ): RecipeWithTags[] {
   return recipes.filter((r) => {
-    if (filters.showMine && r.created_by !== userEmail) return false
+    if (filters.showMine && (!userEmail || r.created_by !== userEmail)) return false
     if (filters.showFavorites && !r.is_favorited) return false
     if (filters.search) {
       const q = filters.search.toLowerCase()
-      if (!r.title.toLowerCase().includes(q)) return false
+      const matchesTitle = r.title.toLowerCase().includes(q)
+      const matchesNotes = r.notes?.toLowerCase().includes(q) ?? false
+      const matchesSource = r.source?.toLowerCase().includes(q) ?? false
+      const matchesTags = r.tags.some((t) => t.toLowerCase().includes(q))
+      if (!(matchesTitle || matchesNotes || matchesSource || matchesTags)) return false
     }
     if (filters.program && r.program !== filters.program) return false
     if (filters.difficulty && r.difficulty !== filters.difficulty) return false

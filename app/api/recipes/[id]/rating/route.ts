@@ -2,12 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { ratingSchema } from '@/lib/validation'
-
-function buildVisibilityArgs(userEmail?: string, isAdmin?: boolean): { clause: string; args: string[] } {
-  if (isAdmin) return { clause: '1=1', args: [] }
-  if (userEmail) return { clause: '(is_public = 1 OR created_by = ?)', args: [userEmail] }
-  return { clause: 'is_public = 1', args: [] }
-}
+import { buildVisibilityFilter } from '@/lib/recipes'
 
 export async function POST(request: NextRequest, props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params
@@ -30,10 +25,10 @@ export async function POST(request: NextRequest, props: { params: Promise<{ id: 
   }
   const { rating } = result.data
 
-  const { clause, args } = buildVisibilityArgs(session.user.email, session.user.isAdmin)
+  const { sql: clause, args: visArgs } = buildVisibilityFilter(session.user)
   const { rows } = await db.execute({
     sql: `SELECT id FROM recipes WHERE id = ? AND ${clause}`,
-    args: [id, ...args],
+    args: [id, ...visArgs],
   })
   if (!rows[0]) {
     return NextResponse.json({ error: 'Receta no encontrada' }, { status: 404 })

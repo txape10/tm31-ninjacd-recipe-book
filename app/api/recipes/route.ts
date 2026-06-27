@@ -23,32 +23,29 @@ export async function POST(request: NextRequest) {
   }
 
   const d = result.data
-
-  // Verificar slug único
-  const { rows: existing } = await db.execute({
-    sql: 'SELECT id FROM recipes WHERE slug = ?',
-    args: [d.slug],
-  })
-  if (existing.length > 0) {
-    return NextResponse.json({ error: 'El slug ya existe, elige otro' }, { status: 409 })
-  }
-
   const id = crypto.randomUUID()
 
-  // Insertar receta
-  await db.execute({
-    sql: `INSERT INTO recipes
-            (id, title, slug, section, appliance, program, difficulty,
-             calories_per_serving, source, notes, has_mixin, is_public,
-             created_by, created_at, updated_at)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'), datetime('now'))`,
-    args: [
-      id, d.title, d.slug, d.section, d.appliance, d.program, d.difficulty,
-      d.calories_per_serving, d.source, d.notes,
-      d.has_mixin ? 1 : 0, d.is_public ? 1 : 0,
-      session.user.email,
-    ],
-  })
+  try {
+    await db.execute({
+      sql: `INSERT INTO recipes
+              (id, title, slug, section, appliance, program, difficulty,
+               calories_per_serving, source, notes, has_mixin, is_public,
+               created_by, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'), datetime('now'))`,
+      args: [
+        id, d.title, d.slug, d.section, d.appliance, d.program, d.difficulty,
+        d.calories_per_serving, d.source, d.notes,
+        d.has_mixin ? 1 : 0, d.is_public ? 1 : 0,
+        session.user.email,
+      ],
+    })
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : ''
+    if (msg.includes('UNIQUE') || msg.includes('unique')) {
+      return NextResponse.json({ error: 'El slug ya existe, elige otro' }, { status: 409 })
+    }
+    throw err
+  }
 
   // Insertar grupos de ingredientes e ingredientes
   for (let gi = 0; gi < d.ingredient_groups.length; gi++) {
@@ -83,7 +80,7 @@ export async function POST(request: NextRequest) {
     }
   }
 
-  // Insertar tags: primero INSERT OR IGNORE de todos, luego leer IDs en batch
+  // Insertar tags: INSERT OR IGNORE en todos, luego leer IDs en batch
   if (d.tags.length > 0) {
     for (const tagName of d.tags) {
       await db.execute({
