@@ -56,7 +56,7 @@ export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
   const isRecetasActive = pathname === '/recetas' || pathname.startsWith('/recetas/')
 
   return (
-    <aside className="flex flex-col w-64 h-screen sticky top-0 bg-sidebar border-r border-sidebar-border px-3 py-6 shrink-0 overflow-y-auto">
+    <aside className="flex flex-col w-64 h-screen sticky top-0 bg-sidebar border-r border-sidebar-border px-3 py-6 shrink-0">
       <div className="mb-8 px-2">
         <h1 className="font-heading text-xl font-bold text-foreground leading-tight">
           Recetario
@@ -64,7 +64,7 @@ export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
         <p className="text-xs text-muted-foreground mt-0.5">Ninja CREAMi Deluxe</p>
       </div>
 
-      <nav className="flex-1 space-y-1">
+      <nav className="flex-1 space-y-1 overflow-y-auto min-h-0">
         {NAV_ITEMS.map((item) => {
           const active = pathname === item.href || pathname.startsWith(item.href + '/')
           return (
@@ -149,7 +149,7 @@ export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
         )}
       </nav>
 
-      <div className="mt-4 space-y-2">
+      <div className="mt-4 space-y-2 shrink-0">
         <ThemeToggle />
 
         {isLoggedIn && nick ? (
