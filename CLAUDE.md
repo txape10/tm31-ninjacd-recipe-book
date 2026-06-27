@@ -197,7 +197,7 @@ docs/                       — NO sube a git (.gitignore)
 | **4** | Sistema de votos + favoritos + formularios crear/editar | ✅ Completada |
 | **5** | Diseño visual avanzado + fotos de receta | ✅ Completada |
 | **6** | PWA + offline | ✅ Completada |
-| **7** | Tests + QA | ⏳ Pendiente |
+| **7** | Tests + QA | ✅ Completada |
 
 ## Hoja de ruta — detalle por fase
 
