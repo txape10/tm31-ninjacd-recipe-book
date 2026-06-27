@@ -210,7 +210,7 @@ lib/
   invite-codes.ts             — createInviteCode, validateInviteCode, markCodeUsed, listInviteCodes
   email.ts                    — sendInviteCode con Resend (HTML responsive, enlace directo a /register)
   session-config.ts           — getSessionConfig() compartida
-  recipes.ts                  — getRecipes, getRecipeBySlug, getRecipeDetail, canEditRecipe
+  recipes.ts                  — getRecipes, getRecipeBySlug, getRecipeDetail, getRecipeById, canEditRecipe
                                  buildVisibilityFilter (usa user.id), buildRecipeSelect, helpers insert (db.batch)
   filters.ts                  — applyRecipeFilters(recipes, filters, userId) — búsqueda NFD + filtro "Mis recetas"
   validation.ts               — zod schemas: loginSchema, recipeSchema, ratingSchema,
@@ -241,8 +241,9 @@ docs/                         — NO sube a git (.gitignore)
 - **Sidebar sin flash**: `recetas/layout.tsx` es async, llama `getSession()` server-side y pasa `isLoggedIn`, `isAdmin`, `nick` como props.
 - **Búsqueda sin acentos**: `normalize('NFD').replace(/\p{Diacritic}/gu, '')` antes de comparar — "frappe" encuentra "Frappé".
 - **Race condition edición concurrente**: PUT `/api/recipes/[id]` incluye `AND updated_at = ?` en el WHERE del UPDATE y verifica `rowsAffected > 0` → 409 atómico si hubo edición concurrente.
-- **Inserciones atómicas**: `insertIngredientGroups`, `insertRecipeSteps`, `insertRecipeTags` usan `db.batch(statements, 'write')` — todas las operaciones se ejecutan juntas o ninguna.
-- **Email de invitación**: `lib/email.ts` encapsula Resend. `POST /api/admin/invite-codes` acepta `{ email? }` en el body; si se pasa, envía el código por email (fallo de envío no bloquea la creación del código).
+- **Inserciones atómicas**: `insertIngredientGroups`, `insertRecipeSteps`, `insertRecipeTags` usan `db.batch(statements, 'write')` — todas las operaciones se ejecutan juntas o ninguna. `insertRecipeTags` usa `INSERT INTO recipe_tags ... SELECT ... FROM tags WHERE name IN (...)` dentro del mismo batch, eliminando cualquier race condition entre INSERT y SELECT.
+- **`getRecipeById`**: función en `lib/recipes.ts` que devuelve `{ id, created_by, updated_at }` — usada en PUT/DELETE de receta. No duplicar en rutas API.
+- **Email de invitación**: `lib/email.ts` encapsula Resend. `POST /api/admin/invite-codes` acepta `{ email? }` en el body; si se pasa, envía el código por email (fallo de envío no bloquea la creación del código). El código va **solo en el cuerpo del email**, nunca en la URL. El enlace va a `/register` sin parámetros.
 - **Filtro "Mis recetas"**: `applyRecipeFilters` recibe `userId` (UUID), compara con `recipe.created_by` (también UUID). Prop `currentUserId` en RecipeCard (antes era `currentUserEmail`, bug que impedía detectar recetas propias).
 - **`PasswordStrengthIndicator`** importa de `lib/password-strength.ts` (sin bcryptjs) para ser usable como Client Component.
 - **`useSearchParams()` en login/page.tsx**: extraído a `<LoginBanners>` envuelto en `<Suspense>` — necesario en Next.js 16 para prerendering estático.
@@ -316,6 +317,7 @@ SEED_ADMIN_NICK=tu_nick
 | **7** | Tests + QA | ✅ Completada |
 | **8** | Auth en BD: tabla users, bcrypt, códigos de invitación, registro, panel admin | ✅ Completada |
 | **9** | Correcciones arquitectura: proxy PUBLIC_PATHS, filtro userId, seed UUID, transacciones batch, race condition atómica, email invitación (Resend) | ✅ Completada |
+| **10** | Correcciones de calidad: listInviteCodes { sql, args }, tags .trim().min(1), cast seguro normalizeRecipeRow, email código solo en body con tono cálido, insertRecipeTags INSERT-SELECT atómico, getRecipeById centralizado, RouteContext unificado | ✅ Completada |
 
 ## Backlog / ideas para el futuro
 

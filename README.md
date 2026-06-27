@@ -105,8 +105,8 @@ Abre [http://localhost:3000](http://localhost:3000) e inicia sesión con tu usua
 ## Flujo de registro de nuevos usuarios
 
 1. El admin accede a `/admin/users` y genera un código de invitación.
-2. Comparte el código con el nuevo usuario (8 caracteres, válido 24 horas, un solo uso).
-3. El nuevo usuario abre `/register`, introduce el código, elige email, nick y contraseña.
+2. Opcionalmente introduce el email del invitado — el código se envía por email automáticamente con Resend.
+3. El nuevo usuario abre `/register`, introduce el código (8 caracteres, válido 24 horas, un solo uso), elige email, nick y contraseña.
 4. Una vez registrado, puede iniciar sesión en `/login`.
 
 ## Scripts disponibles
@@ -182,6 +182,7 @@ Personal recipe web app for the **Ninja CREAMi Deluxe**, built with Next.js 16. 
 | UI | shadcn/ui + Tailwind CSS v4 |
 | Database | Turso (distributed SQLite) |
 | Auth | `users` table in Turso + bcryptjs + `iron-session` v8 |
+| Email | Resend (invite codes) |
 | Image storage | Vercel Blob |
 | Hosting | Vercel |
 | PWA | `@ducanh2912/next-pwa` |
