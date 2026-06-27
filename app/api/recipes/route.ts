@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { recipeSchema } from '@/lib/validation'
+import { insertIngredientGroups, insertRecipeSteps, insertRecipeTags } from '@/lib/recipes'
 import crypto from 'crypto'
 
 export async function POST(request: NextRequest) {
@@ -47,59 +48,9 @@ export async function POST(request: NextRequest) {
     throw err
   }
 
-  // Insertar grupos de ingredientes e ingredientes
-  for (let gi = 0; gi < d.ingredient_groups.length; gi++) {
-    const group = d.ingredient_groups[gi]
-    const groupId = crypto.randomUUID()
-    await db.execute({
-      sql: `INSERT INTO ingredient_groups (id, recipe_id, label, position) VALUES (?, ?, ?, ?)`,
-      args: [groupId, id, group.label, gi],
-    })
-    for (let ii = 0; ii < group.items.length; ii++) {
-      await db.execute({
-        sql: `INSERT INTO ingredients (id, group_id, text, position) VALUES (?, ?, ?, ?)`,
-        args: [crypto.randomUUID(), groupId, group.items[ii], ii],
-      })
-    }
-  }
-
-  // Insertar pasos
-  const stepsByAppliance: Record<string, typeof d.steps> = {}
-  for (const step of d.steps) {
-    if (!stepsByAppliance[step.appliance]) stepsByAppliance[step.appliance] = []
-    stepsByAppliance[step.appliance].push(step)
-  }
-  for (const [appliance, steps] of Object.entries(stepsByAppliance)) {
-    for (let si = 0; si < steps.length; si++) {
-      const step = steps[si]
-      await db.execute({
-        sql: `INSERT INTO recipe_steps (id, recipe_id, appliance, step_order, title, description)
-              VALUES (?, ?, ?, ?, ?, ?)`,
-        args: [crypto.randomUUID(), id, appliance, si + 1, step.title, step.description],
-      })
-    }
-  }
-
-  // Insertar tags: INSERT OR IGNORE en todos, luego leer IDs en batch
-  if (d.tags.length > 0) {
-    for (const tagName of d.tags) {
-      await db.execute({
-        sql: `INSERT OR IGNORE INTO tags (id, name) VALUES (?, ?)`,
-        args: [crypto.randomUUID(), tagName],
-      })
-    }
-    const placeholders = d.tags.map(() => '?').join(',')
-    const { rows: tagRows } = await db.execute({
-      sql: `SELECT id, name FROM tags WHERE name IN (${placeholders})`,
-      args: d.tags,
-    })
-    for (const row of tagRows) {
-      await db.execute({
-        sql: `INSERT OR IGNORE INTO recipe_tags (recipe_id, tag_id) VALUES (?, ?)`,
-        args: [id, row.id as string],
-      })
-    }
-  }
+  await insertIngredientGroups(id, d.ingredient_groups)
+  await insertRecipeSteps(id, d.steps)
+  await insertRecipeTags(id, d.tags)
 
   return NextResponse.json({ ok: true, id, slug: d.slug }, { status: 201 })
 }

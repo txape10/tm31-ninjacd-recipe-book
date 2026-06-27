@@ -12,6 +12,7 @@ const DIFFICULTIES = ['Fácil', 'Media', 'Media-Alta', 'Alta']
 
 export type RecipeFormData = {
   id?: string
+  updated_at?: string
   cover_image_url?: string | null
   title: string
   slug: string

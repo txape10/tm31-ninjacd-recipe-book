@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
+import { tagUpdateSchema } from '@/lib/validation'
 
 export async function PATCH(request: NextRequest, props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params
@@ -15,10 +16,11 @@ export async function PATCH(request: NextRequest, props: { params: Promise<{ id:
     return NextResponse.json({ error: 'JSON no válido' }, { status: 400 })
   }
 
-  const name = (body as Record<string, unknown>).name
-  if (typeof name !== 'string' || name.trim() === '') {
-    return NextResponse.json({ error: 'Nombre requerido' }, { status: 400 })
+  const result = tagUpdateSchema.safeParse(body)
+  if (!result.success) {
+    return NextResponse.json({ error: 'Datos no válidos', issues: result.error.issues }, { status: 400 })
   }
+  const { name } = result.data
 
   const { rows } = await db.execute({ sql: 'SELECT id FROM tags WHERE id = ?', args: [id] })
   if (!rows[0]) return NextResponse.json({ error: 'Tag no encontrado' }, { status: 404 })

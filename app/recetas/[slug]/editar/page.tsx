@@ -20,6 +20,7 @@ export default async function EditarRecetaPage(props: PageProps<'/recetas/[slug]
         mode="edit"
         initial={{
           id: recipe.id,
+          updated_at: recipe.updated_at,
           cover_image_url: recipe.cover_image_url,
           title: recipe.title,
           slug: recipe.slug,

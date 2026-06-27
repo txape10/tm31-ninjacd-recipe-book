@@ -1,17 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
-import { canEditRecipe } from '@/lib/recipes'
+import { canEditRecipe, insertIngredientGroups, insertRecipeSteps, insertRecipeTags } from '@/lib/recipes'
 import { recipeSchema } from '@/lib/validation'
-import crypto from 'crypto'
 
-async function getRecipeById(id: string): Promise<{ id: string; created_by: string } | null> {
+async function getRecipeById(id: string): Promise<{ id: string; created_by: string; updated_at: string } | null> {
   const { rows } = await db.execute({
-    sql: 'SELECT id, created_by FROM recipes WHERE id = ?',
+    sql: 'SELECT id, created_by, updated_at FROM recipes WHERE id = ?',
     args: [id],
   })
   if (!rows[0]) return null
-  return { id: rows[0].id as string, created_by: rows[0].created_by as string }
+  return {
+    id: rows[0].id as string,
+    created_by: rows[0].created_by as string,
+    updated_at: rows[0].updated_at as string,
+  }
 }
 
 export async function PUT(request: NextRequest, props: RouteContext<'/api/recipes/[id]'>) {
@@ -36,6 +39,15 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
     body = await request.json()
   } catch {
     return NextResponse.json({ error: 'JSON no válido' }, { status: 400 })
+  }
+
+  // Protección contra edición concurrente: el cliente envía el updated_at que leyó
+  const clientUpdatedAt = (body as Record<string, unknown>).updated_at
+  if (typeof clientUpdatedAt === 'string' && clientUpdatedAt !== recipe.updated_at) {
+    return NextResponse.json(
+      { error: 'La receta fue modificada por otra sesión. Recarga la página antes de guardar.' },
+      { status: 409 },
+    )
   }
 
   const result = recipeSchema.safeParse(body)
@@ -69,62 +81,9 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
     ],
   })
 
-  // Re-insertar ingredientes (delete + insert)
-  await db.execute({ sql: 'DELETE FROM ingredient_groups WHERE recipe_id = ?', args: [id] })
-  for (let gi = 0; gi < d.ingredient_groups.length; gi++) {
-    const group = d.ingredient_groups[gi]
-    const groupId = crypto.randomUUID()
-    await db.execute({
-      sql: `INSERT INTO ingredient_groups (id, recipe_id, label, position) VALUES (?, ?, ?, ?)`,
-      args: [groupId, id, group.label, gi],
-    })
-    for (let ii = 0; ii < group.items.length; ii++) {
-      await db.execute({
-        sql: `INSERT INTO ingredients (id, group_id, text, position) VALUES (?, ?, ?, ?)`,
-        args: [crypto.randomUUID(), groupId, group.items[ii], ii],
-      })
-    }
-  }
-
-  // Re-insertar pasos
-  await db.execute({ sql: 'DELETE FROM recipe_steps WHERE recipe_id = ?', args: [id] })
-  const stepsByAppliance: Record<string, typeof d.steps> = {}
-  for (const step of d.steps) {
-    if (!stepsByAppliance[step.appliance]) stepsByAppliance[step.appliance] = []
-    stepsByAppliance[step.appliance].push(step)
-  }
-  for (const [appliance, steps] of Object.entries(stepsByAppliance)) {
-    for (let si = 0; si < steps.length; si++) {
-      const step = steps[si]
-      await db.execute({
-        sql: `INSERT INTO recipe_steps (id, recipe_id, appliance, step_order, title, description)
-              VALUES (?, ?, ?, ?, ?, ?)`,
-        args: [crypto.randomUUID(), id, appliance, si + 1, step.title, step.description],
-      })
-    }
-  }
-
-  // Re-insertar tags
-  await db.execute({ sql: 'DELETE FROM recipe_tags WHERE recipe_id = ?', args: [id] })
-  if (d.tags.length > 0) {
-    for (const tagName of d.tags) {
-      await db.execute({
-        sql: `INSERT OR IGNORE INTO tags (id, name) VALUES (?, ?)`,
-        args: [crypto.randomUUID(), tagName],
-      })
-    }
-    const placeholders = d.tags.map(() => '?').join(',')
-    const { rows: tagRows } = await db.execute({
-      sql: `SELECT id, name FROM tags WHERE name IN (${placeholders})`,
-      args: d.tags,
-    })
-    for (const row of tagRows) {
-      await db.execute({
-        sql: `INSERT OR IGNORE INTO recipe_tags (recipe_id, tag_id) VALUES (?, ?)`,
-        args: [id, row.id as string],
-      })
-    }
-  }
+  await insertIngredientGroups(id, d.ingredient_groups)
+  await insertRecipeSteps(id, d.steps)
+  await insertRecipeTags(id, d.tags)
 
   return NextResponse.json({ ok: true, slug: d.slug })
 }

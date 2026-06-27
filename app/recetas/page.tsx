@@ -1,4 +1,5 @@
 import { Suspense } from 'react'
+import Link from 'next/link'
 import { getSession } from '@/lib/auth'
 import { getRecipes } from '@/lib/recipes'
 import { applyRecipeFilters } from '@/lib/filters'
@@ -72,6 +73,14 @@ export default async function RecetasPage({ searchParams }: Props) {
           <p className="text-muted-foreground text-sm">
             Prueba a cambiar la búsqueda o quitar algún filtro.
           </p>
+          {session.user && (
+            <Link
+              href="/recetas/nueva"
+              className="px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
+            >
+              + Crear receta
+            </Link>
+          )}
         </div>
       ) : (
         <div className="space-y-10">

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 type Tag = { id: string; name: string; recipe_count: number }
 
@@ -12,6 +12,8 @@ export default function TagsManager({ initialTags }: Props) {
   const [editName, setEditName] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
+  const [pendingDelete, setPendingDelete] = useState<Tag | null>(null)
+  const dialogRef = useRef<HTMLDialogElement>(null)
 
   function startEdit(tag: Tag) {
     setEditingId(tag.id)
@@ -49,8 +51,21 @@ export default function TagsManager({ initialTags }: Props) {
     }
   }
 
-  async function handleDelete(id: string, name: string) {
-    if (!confirm(`¿Eliminar el tag "${name}"?`)) return
+  function requestDelete(tag: Tag) {
+    setPendingDelete(tag)
+    dialogRef.current?.showModal()
+  }
+
+  function cancelDelete() {
+    dialogRef.current?.close()
+    setPendingDelete(null)
+  }
+
+  async function confirmDelete() {
+    if (!pendingDelete) return
+    dialogRef.current?.close()
+    const { id } = pendingDelete
+    setPendingDelete(null)
     setBusy(true)
     setError(null)
     try {
@@ -93,7 +108,7 @@ export default function TagsManager({ initialTags }: Props) {
                 <span className="text-xs text-muted-foreground">{tag.recipe_count} {tag.recipe_count === 1 ? 'receta' : 'recetas'}</span>
                 <button onClick={() => startEdit(tag)} disabled={busy} className="text-xs text-muted-foreground hover:text-foreground disabled:opacity-50 transition-colors">Renombrar</button>
                 <button
-                  onClick={() => handleDelete(tag.id, tag.name)}
+                  onClick={() => requestDelete(tag)}
                   disabled={busy || tag.recipe_count > 0}
                   title={tag.recipe_count > 0 ? 'En uso — desasigna primero' : 'Eliminar'}
                   className="text-xs text-destructive hover:text-destructive/80 disabled:opacity-30 transition-colors"
@@ -105,6 +120,36 @@ export default function TagsManager({ initialTags }: Props) {
           </div>
         ))}
       </div>
+
+      {/* Dialog de confirmación de borrado */}
+      <dialog
+        ref={dialogRef}
+        className="rounded-xl border border-border bg-card p-6 shadow-xl backdrop:bg-black/40 max-w-sm w-full"
+        onClose={cancelDelete}
+      >
+        <h2 className="font-heading text-base font-semibold text-foreground mb-2">
+          Eliminar tag
+        </h2>
+        <p className="text-sm text-muted-foreground mb-6">
+          ¿Eliminar el tag <span className="font-semibold text-foreground">&ldquo;{pendingDelete?.name}&rdquo;</span>? Esta acción no se puede deshacer.
+        </p>
+        <div className="flex justify-end gap-3">
+          <button
+            type="button"
+            onClick={cancelDelete}
+            className="px-4 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Cancelar
+          </button>
+          <button
+            type="button"
+            onClick={confirmDelete}
+            className="px-4 py-2 rounded-lg text-sm bg-destructive text-destructive-foreground hover:bg-destructive/90 transition-colors"
+          >
+            Eliminar
+          </button>
+        </div>
+      </dialog>
     </div>
   )
 }

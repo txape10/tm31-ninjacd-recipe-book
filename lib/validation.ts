@@ -29,7 +29,7 @@ export const recipeSchema = z.object({
   has_mixin: z.boolean(),
   is_public: z.boolean(),
   tags: z.array(z.string()),
-  ingredient_groups: z.array(ingredientGroupSchema),
+  ingredient_groups: z.array(ingredientGroupSchema).min(1, 'Debe haber al menos un grupo de ingredientes'),
   steps: z.array(recipeStepSchema),
 })
 
@@ -37,6 +37,11 @@ export const ratingSchema = z.object({
   rating: z.number().min(1).max(5).refine(v => Number.isInteger(v * 2), 'Pasos de 0.5'),
 })
 
+export const tagUpdateSchema = z.object({
+  name: z.string().min(1, 'El nombre es obligatorio').max(50, 'Máximo 50 caracteres'),
+})
+
 export type LoginInput = z.infer<typeof loginSchema>
 export type RecipeInput = z.infer<typeof recipeSchema>
 export type RatingInput = z.infer<typeof ratingSchema>
+export type TagUpdateInput = z.infer<typeof tagUpdateSchema>
