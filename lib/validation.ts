@@ -28,7 +28,7 @@ export const recipeSchema = z.object({
   notes: z.string().nullable(),
   has_mixin: z.boolean(),
   is_public: z.boolean(),
-  tags: z.array(z.string()),
+  tags: z.array(z.string().trim().min(1, 'El tag no puede estar vacío').max(50, 'Máximo 50 caracteres por tag')),
   ingredient_groups: z.array(ingredientGroupSchema).min(1, 'Debe haber al menos un grupo de ingredientes'),
   steps: z.array(recipeStepSchema),
 })

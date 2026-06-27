@@ -73,15 +73,18 @@ export type InviteCodeRow = {
 }
 
 export async function listInviteCodes(): Promise<InviteCodeRow[]> {
-  const { rows } = await db.execute(`
-    SELECT ic.code, ic.expires_at, ic.used_at,
-           uc.nick AS created_by_nick,
-           uu.nick AS used_by_nick
-      FROM invite_codes ic
-      JOIN users uc ON uc.id = ic.created_by
-      LEFT JOIN users uu ON uu.id = ic.used_by
-     ORDER BY ic.expires_at DESC
-  `)
+  const { rows } = await db.execute({
+    sql: `
+      SELECT ic.code, ic.expires_at, ic.used_at,
+             uc.nick AS created_by_nick,
+             uu.nick AS used_by_nick
+        FROM invite_codes ic
+        JOIN users uc ON uc.id = ic.created_by
+        LEFT JOIN users uu ON uu.id = ic.used_by
+       ORDER BY ic.expires_at DESC
+    `,
+    args: [],
+  })
 
   const now = new Date()
   return rows.map((r) => {

@@ -78,7 +78,8 @@ function normalizeRecipeRow(row: Record<string, unknown>): RecipeWithTags {
     notes: row.notes as string | null,
     has_mixin: row.has_mixin as number,
     is_public: (row.is_public as number) === 1,
-    created_by: (row.user_id ?? row.created_by) as string,
+    // user_id NOT NULL garantizado por migración 009; created_by es columna legacy por compatibilidad
+    created_by: (row.user_id as string | null) ?? (row.created_by as string | null) ?? '',
     created_at: row.created_at as string,
     updated_at: row.updated_at as string,
     tags: row.tags_concat ? (row.tags_concat as string).split(',') : [],
