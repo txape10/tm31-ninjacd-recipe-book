@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Credenciales incorrectas' }, { status: 401 })
   }
 
-  const user = await validateCredentials(result.data.email, result.data.password)
+  const user = await validateCredentials(result.data.emailOrNick, result.data.password)
   if (!user) {
     return NextResponse.json({ error: 'Credenciales incorrectas' }, { status: 401 })
   }

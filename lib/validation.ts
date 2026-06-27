@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
 export const loginSchema = z.object({
-  email: z.string().email('Email no válido'),
+  emailOrNick: z.string().min(1, 'Introduce tu email o nick'),
   password: z.string().min(1, 'La contraseña es obligatoria'),
 })
 
@@ -70,6 +70,7 @@ export const changePasswordSchema = z.object({
 })
 
 export type LoginInput = z.infer<typeof loginSchema>
+
 export type RecipeInput = z.infer<typeof recipeSchema>
 export type RatingInput = z.infer<typeof ratingSchema>
 export type TagUpdateInput = z.infer<typeof tagUpdateSchema>

@@ -40,6 +40,17 @@ async function getUserByEmail(email: string): Promise<DbUser | null> {
   return rows[0] as unknown as DbUser
 }
 
+async function getUserByEmailOrNick(emailOrNick: string): Promise<DbUser | null> {
+  const byEmail = await getUserByEmail(emailOrNick)
+  if (byEmail) return byEmail
+  const { rows } = await db.execute({
+    sql: 'SELECT id, email, nick, password_hash, is_admin, is_blocked, password_version FROM users WHERE nick = ?',
+    args: [emailOrNick],
+  })
+  if (rows.length === 0) return null
+  return rows[0] as unknown as DbUser
+}
+
 export async function getUserById(id: string): Promise<Omit<DbUser, 'password_hash'> | null> {
   const { rows } = await db.execute({
     sql: 'SELECT id, email, nick, is_admin, is_blocked, password_version FROM users WHERE id = ?',
@@ -49,8 +60,8 @@ export async function getUserById(id: string): Promise<Omit<DbUser, 'password_ha
   return rows[0] as unknown as Omit<DbUser, 'password_hash'>
 }
 
-export async function validateCredentials(email: string, password: string): Promise<SessionUser | null> {
-  const user = await getUserByEmail(email)
+export async function validateCredentials(emailOrNick: string, password: string): Promise<SessionUser | null> {
+  const user = await getUserByEmailOrNick(emailOrNick)
   if (!user) {
     // Ejecutar bcrypt igualmente para evitar timing attacks que enumeren emails válidos
     await verifyPassword(password, '$2a$12$invalidhashpaddingtoconstanttime000000000000000000000')

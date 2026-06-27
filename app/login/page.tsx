@@ -30,7 +30,7 @@ function LoginBanners() {
 
 export default function LoginPage() {
   const router = useRouter()
-  const [email, setEmail] = useState('')
+  const [emailOrNick, setEmailOrNick] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
@@ -44,7 +44,7 @@ export default function LoginPage() {
       const res = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ emailOrNick, password }),
       })
 
       if (!res.ok) {
@@ -76,18 +76,18 @@ export default function LoginPage() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-1">
-            <label htmlFor="email" className="text-sm font-medium text-foreground">
-              Email
+            <label htmlFor="emailOrNick" className="text-sm font-medium text-foreground">
+              Email o nick
             </label>
             <input
-              id="email"
-              type="email"
+              id="emailOrNick"
+              type="text"
               required
-              autoComplete="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              autoComplete="username"
+              value={emailOrNick}
+              onChange={(e) => setEmailOrNick(e.target.value)}
               className="w-full rounded-lg border border-border bg-input/30 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              placeholder="tu@email.com"
+              placeholder="tu@email.com o tu_nick"
             />
           </div>
 
