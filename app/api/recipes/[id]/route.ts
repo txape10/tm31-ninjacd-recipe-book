@@ -1,23 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
-import { canEditRecipe, insertIngredientGroups, insertRecipeSteps, insertRecipeTags } from '@/lib/recipes'
+import { canEditRecipe, getRecipeById, insertIngredientGroups, insertRecipeSteps, insertRecipeTags } from '@/lib/recipes'
 import { recipeSchema } from '@/lib/validation'
 
-async function getRecipeById(id: string): Promise<{ id: string; created_by: string; updated_at: string } | null> {
-  const { rows } = await db.execute({
-    sql: 'SELECT id, user_id AS created_by, updated_at FROM recipes WHERE id = ?',
-    args: [id],
-  })
-  if (!rows[0]) return null
-  return {
-    id: rows[0].id as string,
-    created_by: rows[0].created_by as string,
-    updated_at: rows[0].updated_at as string,
-  }
-}
-
-export async function PUT(request: NextRequest, props: RouteContext<'/api/recipes/[id]'>) {
+export async function PUT(request: NextRequest, props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params
   const session = await getSession()
 
@@ -86,7 +73,7 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
   return NextResponse.json({ ok: true, slug: d.slug })
 }
 
-export async function DELETE(_request: NextRequest, props: RouteContext<'/api/recipes/[id]'>) {
+export async function DELETE(_request: NextRequest, props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params
   const session = await getSession()
 

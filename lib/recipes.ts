@@ -260,20 +260,25 @@ export async function insertRecipeTags(recipeId: string, tags: string[]): Promis
         args: [crypto.randomUUID(), tagName],
       })
     }
+    const placeholders = tags.map(() => '?').join(',')
+    statements.push({
+      sql: `INSERT OR IGNORE INTO recipe_tags (recipe_id, tag_id)
+            SELECT ?, id FROM tags WHERE name IN (${placeholders})`,
+      args: [recipeId, ...tags],
+    })
   }
   await db.batch(statements, 'write')
+}
 
-  if (tags.length === 0) return
-  const placeholders = tags.map(() => '?').join(',')
-  const { rows: tagRows } = await db.execute({
-    sql: `SELECT id FROM tags WHERE name IN (${placeholders})`,
-    args: tags,
+export async function getRecipeById(id: string): Promise<{ id: string; created_by: string; updated_at: string } | null> {
+  const { rows } = await db.execute({
+    sql: 'SELECT id, user_id AS created_by, updated_at FROM recipes WHERE id = ?',
+    args: [id],
   })
-  const tagStatements: { sql: string; args: string[] }[] = tagRows.map((row) => ({
-    sql: 'INSERT OR IGNORE INTO recipe_tags (recipe_id, tag_id) VALUES (?, ?)',
-    args: [recipeId, row.id as string],
-  }))
-  if (tagStatements.length > 0) {
-    await db.batch(tagStatements, 'write')
+  if (!rows[0]) return null
+  return {
+    id: rows[0].id as string,
+    created_by: rows[0].created_by as string,
+    updated_at: rows[0].updated_at as string,
   }
 }
