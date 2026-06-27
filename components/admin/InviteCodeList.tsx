@@ -17,6 +17,7 @@ const STATUS_LABEL: Record<string, string> = {
 export default function InviteCodeList({ refresh }: { refresh?: number }) {
   const [codes, setCodes] = useState<InviteCodeRow[]>([])
   const [loading, setLoading] = useState(true)
+  const [revoking, setRevoking] = useState<Record<string, boolean>>({})
 
   const fetchCodes = useCallback(async () => {
     try {
@@ -32,6 +33,23 @@ export default function InviteCodeList({ refresh }: { refresh?: number }) {
 
   useEffect(() => { fetchCodes() }, [fetchCodes, refresh])
 
+  async function revokeCode(code: string) {
+    setRevoking((prev) => ({ ...prev, [code]: true }))
+    try {
+      const res = await fetch(`/api/admin/invite-codes/${code}`, { method: 'DELETE' })
+      if (!res.ok) {
+        const data = await res.json() as { error?: string }
+        alert(data.error ?? 'Error al revocar el código')
+        return
+      }
+      await fetchCodes()
+    } catch {
+      alert('Error de red al revocar el código')
+    } finally {
+      setRevoking((prev) => ({ ...prev, [code]: false }))
+    }
+  }
+
   if (loading) return <p className="text-sm text-muted-foreground">Cargando…</p>
   if (codes.length === 0) return <p className="text-sm text-muted-foreground">Sin códigos generados.</p>
 
@@ -45,6 +63,7 @@ export default function InviteCodeList({ refresh }: { refresh?: number }) {
             <th className="text-left px-4 py-3 font-medium text-muted-foreground">Generado por</th>
             <th className="text-left px-4 py-3 font-medium text-muted-foreground">Expira</th>
             <th className="text-left px-4 py-3 font-medium text-muted-foreground">Usado por</th>
+            <th className="text-left px-4 py-3 font-medium text-muted-foreground">Acciones</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-border">
@@ -61,6 +80,20 @@ export default function InviteCodeList({ refresh }: { refresh?: number }) {
                 {new Date(c.expiresAt).toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' })}
               </td>
               <td className="px-4 py-3 text-muted-foreground">{c.usedByNick ?? '—'}</td>
+              <td className="px-4 py-3">
+                {c.status === 'pending' ? (
+                  <button
+                    type="button"
+                    onClick={() => revokeCode(c.code)}
+                    disabled={revoking[c.code]}
+                    className="text-xs px-2 py-1 rounded border border-destructive/50 text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
+                  >
+                    {revoking[c.code] ? 'Revocando…' : 'Revocar'}
+                  </button>
+                ) : (
+                  <span className="text-muted-foreground/40">—</span>
+                )}
+              </td>
             </tr>
           ))}
         </tbody>

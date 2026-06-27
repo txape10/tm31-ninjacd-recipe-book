@@ -27,12 +27,13 @@ type DbUser = {
   nick: string
   password_hash: string
   is_admin: number
+  is_blocked: number
   password_version: number
 }
 
 async function getUserByEmail(email: string): Promise<DbUser | null> {
   const { rows } = await db.execute({
-    sql: 'SELECT id, email, nick, password_hash, is_admin, password_version FROM users WHERE email = ?',
+    sql: 'SELECT id, email, nick, password_hash, is_admin, is_blocked, password_version FROM users WHERE email = ?',
     args: [email],
   })
   if (rows.length === 0) return null
@@ -41,7 +42,7 @@ async function getUserByEmail(email: string): Promise<DbUser | null> {
 
 export async function getUserById(id: string): Promise<Omit<DbUser, 'password_hash'> | null> {
   const { rows } = await db.execute({
-    sql: 'SELECT id, email, nick, is_admin, password_version FROM users WHERE id = ?',
+    sql: 'SELECT id, email, nick, is_admin, is_blocked, password_version FROM users WHERE id = ?',
     args: [id],
   })
   if (rows.length === 0) return null
@@ -58,6 +59,8 @@ export async function validateCredentials(email: string, password: string): Prom
 
   const ok = await verifyPassword(password, user.password_hash)
   if (!ok) return null
+
+  if (user.is_blocked === 1) return null
 
   return {
     id: user.id,
