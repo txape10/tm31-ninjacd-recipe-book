@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { useState, useRef, useEffect } from 'react'
 import ThemeToggle from '@/components/ThemeToggle'
 
 const NAV_ITEMS = [
@@ -18,6 +19,8 @@ export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
   const pathname = usePathname()
   const router = useRouter()
   const searchParams = useSearchParams()
+  const [userMenuOpen, setUserMenuOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
 
   const showMine = searchParams.get('showMine') === '1'
   const showFavorites = searchParams.get('showFavorites') === '1'
@@ -33,11 +36,22 @@ export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
   }
 
   async function handleLogout() {
-    const res = await fetch('/api/auth/logout', { method: 'POST' })
-    if (!res.ok) return
+    setUserMenuOpen(false)
+    await fetch('/api/auth/logout', { method: 'POST' })
     router.push('/login')
     router.refresh()
   }
+
+  // Cerrar el menú al hacer click fuera
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setUserMenuOpen(false)
+      }
+    }
+    if (userMenuOpen) document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [userMenuOpen])
 
   const isRecetasActive = pathname === '/recetas' || pathname.startsWith('/recetas/')
 
@@ -68,7 +82,6 @@ export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
           )
         })}
 
-        {/* Filtros — solo en la sección de recetas y si está logueado */}
         {isLoggedIn && isRecetasActive && (
           <div className="pt-2 pb-1">
             <p className="px-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">
@@ -138,23 +151,53 @@ export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
 
       <div className="mt-4 space-y-2">
         <ThemeToggle />
-        {isLoggedIn && nick && (
-          <Link
-            href="/perfil"
-            className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50 transition-colors"
-          >
-            <span className="w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center font-medium">
-              {nick[0].toUpperCase()}
-            </span>
-            <span className="truncate">{nick}</span>
-          </Link>
-        )}
-        <button
-          onClick={handleLogout}
-          className="w-full px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50 text-left transition-colors"
-        >
-          Cerrar sesión
-        </button>
+
+        {isLoggedIn && nick ? (
+          <div className="relative" ref={menuRef}>
+            <button
+              type="button"
+              onClick={() => setUserMenuOpen((o) => !o)}
+              className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm hover:bg-sidebar-accent/50 transition-colors group"
+            >
+              <span className="w-8 h-8 rounded-full bg-primary/20 text-primary text-sm flex items-center justify-center font-semibold shrink-0 group-hover:bg-primary/30 transition-colors">
+                {nick[0].toUpperCase()}
+              </span>
+              <span className="flex-1 text-left truncate text-foreground font-medium">{nick}</span>
+              <svg
+                className={`w-4 h-4 text-muted-foreground transition-transform ${userMenuOpen ? 'rotate-180' : ''}`}
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            {userMenuOpen && (
+              <div className="absolute bottom-full mb-1 left-0 right-0 bg-popover border border-border rounded-lg shadow-lg overflow-hidden z-50">
+                <Link
+                  href="/perfil"
+                  onClick={() => setUserMenuOpen(false)}
+                  className="flex items-center gap-2 px-4 py-2.5 text-sm text-foreground hover:bg-sidebar-accent/50 transition-colors"
+                >
+                  <svg className="w-4 h-4 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  Perfil
+                </Link>
+                <div className="h-px bg-border" />
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-destructive hover:bg-destructive/10 transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                  </svg>
+                  Cerrar sesión
+                </button>
+              </div>
+            )}
+          </div>
+        ) : null}
       </div>
     </aside>
   )
