@@ -30,6 +30,13 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: 'black-translucent',
     title: 'Recetario',
+    startupImage: [
+      { url: '/splash/iphone.png', media: '(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)' },
+      { url: '/splash/ipad.png',   media: '(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)' },
+    ],
+  },
+  icons: {
+    apple: '/icons/icon-192x192.png',
   },
 }
 

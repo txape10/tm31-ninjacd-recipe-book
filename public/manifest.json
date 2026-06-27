@@ -1,0 +1,26 @@
+{
+  "name": "Recetario Ninja CREAMi Deluxe",
+  "short_name": "Recetario",
+  "description": "Recetario personal de helados Ninja CREAMi Deluxe",
+  "start_url": "/recetas",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#1a1a2e",
+  "orientation": "portrait-primary",
+  "lang": "es",
+  "categories": ["food", "productivity"],
+  "icons": [
+    { "src": "/icons/icon-96x96.png",   "sizes": "96x96",   "type": "image/png" },
+    { "src": "/icons/icon-128x128.png", "sizes": "128x128", "type": "image/png" },
+    { "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-256x256.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "/icons/icon-384x384.png", "sizes": "384x384", "type": "image/png" },
+    { "src": "/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "/splash/iphone.png", "type": "image/png", "sizes": "1125x2436", "form_factor": "narrow" },
+    { "src": "/splash/ipad.png",   "type": "image/png", "sizes": "1668x2224", "form_factor": "wide" }
+  ]
+}
