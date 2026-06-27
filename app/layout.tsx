@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next'
+import { Suspense } from 'react'
 import { Inter, Poppins, JetBrains_Mono } from 'next/font/google'
 import { ThemeProvider } from '@/components/ThemeProvider'
+import InstallBanner from '@/components/pwa/InstallBanner'
 import './globals.css'
 
 const inter = Inter({
@@ -59,6 +61,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider>{children}</ThemeProvider>
+        <Suspense fallback={null}>
+          <InstallBanner />
+        </Suspense>
       </body>
     </html>
   )
