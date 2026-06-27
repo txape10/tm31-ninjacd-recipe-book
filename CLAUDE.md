@@ -182,7 +182,7 @@ components/
     ChangePasswordForm.tsx     — formulario cambio de contraseña
     PasswordStrengthIndicator.tsx — barra de robustez (importa de lib/password-strength)
   admin/
-    InviteCodeGenerator.tsx    — botón generar + copiar al portapapeles
+    InviteCodeGenerator.tsx    — campo email opcional + generar + copiar + confirmación envío
     InviteCodeList.tsx         — tabla de códigos con estado (pending/used/expired)
   recipe/
     RecipeCard.tsx             — card con foto, rating, favorito
@@ -208,10 +208,11 @@ lib/
   password.ts                 — hashPassword, verifyPassword (bcryptjs) + re-export de password-strength
   password-strength.ts        — validatePasswordStrength (sin bcrypt, importable en cliente)
   invite-codes.ts             — createInviteCode, validateInviteCode, markCodeUsed, listInviteCodes
+  email.ts                    — sendInviteCode con Resend (HTML responsive, enlace directo a /register)
   session-config.ts           — getSessionConfig() compartida
   recipes.ts                  — getRecipes, getRecipeBySlug, getRecipeDetail, canEditRecipe
-                                 buildVisibilityFilter (usa user.id), buildRecipeSelect, helpers insert
-  filters.ts                  — applyRecipeFilters con búsqueda sin distinción de acentos (normalize NFD)
+                                 buildVisibilityFilter (usa user.id), buildRecipeSelect, helpers insert (db.batch)
+  filters.ts                  — applyRecipeFilters(recipes, filters, userId) — búsqueda NFD + filtro "Mis recetas"
   validation.ts               — zod schemas: loginSchema, recipeSchema, ratingSchema,
                                  tagUpdateSchema, registerSchema, changePasswordSchema
 
@@ -239,7 +240,10 @@ docs/                         — NO sube a git (.gitignore)
 - **Favoritos**: tabla `recipe_favorites` (recipe_id, user_id, PK compuesto). FavoriteButton hace optimistic update y revierte en error.
 - **Sidebar sin flash**: `recetas/layout.tsx` es async, llama `getSession()` server-side y pasa `isLoggedIn`, `isAdmin`, `nick` como props.
 - **Búsqueda sin acentos**: `normalize('NFD').replace(/\p{Diacritic}/gu, '')` antes de comparar — "frappe" encuentra "Frappé".
-- **Race condition edición concurrente**: PUT `/api/recipes/[id]` compara `updated_at` del cliente con el de la BD → 409 si difieren.
+- **Race condition edición concurrente**: PUT `/api/recipes/[id]` incluye `AND updated_at = ?` en el WHERE del UPDATE y verifica `rowsAffected > 0` → 409 atómico si hubo edición concurrente.
+- **Inserciones atómicas**: `insertIngredientGroups`, `insertRecipeSteps`, `insertRecipeTags` usan `db.batch(statements, 'write')` — todas las operaciones se ejecutan juntas o ninguna.
+- **Email de invitación**: `lib/email.ts` encapsula Resend. `POST /api/admin/invite-codes` acepta `{ email? }` en el body; si se pasa, envía el código por email (fallo de envío no bloquea la creación del código).
+- **Filtro "Mis recetas"**: `applyRecipeFilters` recibe `userId` (UUID), compara con `recipe.created_by` (también UUID). Prop `currentUserId` en RecipeCard (antes era `currentUserEmail`, bug que impedía detectar recetas propias).
 - **`PasswordStrengthIndicator`** importa de `lib/password-strength.ts` (sin bcryptjs) para ser usable como Client Component.
 - **`useSearchParams()` en login/page.tsx**: extraído a `<LoginBanners>` envuelto en `<Suspense>` — necesario en Next.js 16 para prerendering estático.
 
@@ -262,10 +266,28 @@ docs/                         — NO sube a git (.gitignore)
 ## Variables de entorno necesarias
 
 ```env
+# Base de datos
 TURSO_DATABASE_URL=libsql://...
 TURSO_AUTH_TOKEN=...
-IRON_SESSION_PASSWORD=...   # mínimo 32 chars (openssl rand -hex 32)
-BLOB_READ_WRITE_TOKEN=...   # Vercel Blob, para subida de fotos
+
+# Sesión
+IRON_SESSION_PASSWORD=...        # mínimo 32 chars — openssl rand -hex 32
+
+# Vercel Blob (fotos de receta)
+BLOB_READ_WRITE_TOKEN=...        # desde Vercel Dashboard > Storage > tu blob store
+
+# Email — Resend (plan gratuito: 3.000/mes, 100/día)
+RESEND_API_KEY=re_...            # desde resend.com/api-keys
+NEXT_PUBLIC_APP_URL=https://...  # URL pública de la app (para los enlaces en los emails)
+```
+
+### Variables temporales solo para el primer setup
+
+```env
+# Solo necesarias para ejecutar seed-admin.mjs (borrar después)
+SEED_ADMIN_EMAIL=tu@email.com
+SEED_ADMIN_PASSWORD=contraseña-segura
+SEED_ADMIN_NICK=tu_nick
 ```
 
 ## Fuentes de datos originales
@@ -293,12 +315,14 @@ BLOB_READ_WRITE_TOKEN=...   # Vercel Blob, para subida de fotos
 | **6** | PWA + offline | ✅ Completada |
 | **7** | Tests + QA | ✅ Completada |
 | **8** | Auth en BD: tabla users, bcrypt, códigos de invitación, registro, panel admin | ✅ Completada |
+| **9** | Correcciones arquitectura: proxy PUBLIC_PATHS, filtro userId, seed UUID, transacciones batch, race condition atómica, email invitación (Resend) | ✅ Completada |
 
 ## Backlog / ideas para el futuro
 
 - Secciones adicionales: Thermomix TM31, sous vide, horno de vapor...
-- Búsqueda full-text por título e ingredientes
+- Búsqueda full-text por título e ingredientes (FTS en Turso, en lugar de filtro JS client-side)
 - Compartir receta con link público (sin login)
 - Exportar receta a PDF
 - Importar recetas desde el recetario oficial Ninja (scraper / markdown parser)
-- Envío automático de códigos de invitación por email (Resend)
+- Recomendaciones basadas en favoritos (JOIN simple en getRecipes)
+- Versioning de recetas (tabla recipe_versions para auditoría/rollback)

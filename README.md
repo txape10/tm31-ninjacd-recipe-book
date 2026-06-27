@@ -24,6 +24,7 @@ App web personal de recetas para la **Ninja CREAMi Deluxe**, construida con Next
 | UI | shadcn/ui + Tailwind CSS v4 |
 | Base de datos | Turso (SQLite distribuido) |
 | Auth | Tabla `users` en Turso + bcryptjs + `iron-session` v8 |
+| Email | Resend (invitaciones) |
 | Almacenamiento de imágenes | Vercel Blob |
 | Hosting | Vercel |
 | PWA | `@ducanh2912/next-pwa` |
@@ -53,13 +54,22 @@ TURSO_AUTH_TOKEN=tu-token
 # Genera con: openssl rand -hex 32
 IRON_SESSION_PASSWORD=una-cadena-aleatoria-de-al-menos-32-caracteres
 
-# Vercel Blob (opcional, para subida de fotos)
+# Vercel Blob (para subida de fotos)
 BLOB_READ_WRITE_TOKEN=vercel_blob_rw_...
+
+# Resend — email de invitación (plan gratuito: 3.000/mes)
+# Obtener en https://resend.com/api-keys
+RESEND_API_KEY=re_...
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 
-Aplica las migraciones:
+Aplica las migraciones en orden:
 
 ```bash
+node scripts/migrate.mjs migrations/001_init.sql
+node scripts/migrate.mjs migrations/002_add_ownership.sql
+node scripts/migrate.mjs migrations/003_ratings_and_favorites.sql
+node scripts/migrate.mjs migrations/004_cover_image.sql
 node scripts/migrate.mjs migrations/005_users.sql
 node scripts/migrate.mjs migrations/006_invite_codes.sql
 node scripts/migrate.mjs migrations/007_migrate_to_user_ids.sql
@@ -75,7 +85,7 @@ Crea el primer usuario admin:
 # SEED_ADMIN_PASSWORD=contraseña-segura
 # SEED_ADMIN_NICK=tu_nick
 node scripts/seed-admin.mjs
-# Puedes eliminar esas variables del .env.local tras ejecutarlo
+# Elimina esas tres variables del .env.local tras ejecutarlo
 ```
 
 Carga las recetas de ejemplo (opcional):
