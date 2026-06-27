@@ -18,6 +18,11 @@ export async function POST() {
     return NextResponse.json({ error: 'Acceso denegado' }, { status: 403 })
   }
 
-  const result = await createInviteCode(session.user.id)
-  return NextResponse.json(result, { status: 201 })
+  try {
+    const result = await createInviteCode(session.user.id)
+    return NextResponse.json(result, { status: 201 })
+  } catch (err) {
+    console.error('[invite-codes] Error al crear código:', err)
+    return NextResponse.json({ error: 'No se pudo generar el código. Inténtalo de nuevo.' }, { status: 500 })
+  }
 }
