@@ -56,7 +56,7 @@ export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
   const isRecetasActive = pathname === '/recetas' || pathname.startsWith('/recetas/')
 
   return (
-    <aside className="flex flex-col w-64 min-h-screen bg-sidebar border-r border-sidebar-border px-3 py-6 shrink-0">
+    <aside className="flex flex-col w-64 h-screen sticky top-0 bg-sidebar border-r border-sidebar-border px-3 py-6 shrink-0 overflow-y-auto">
       <div className="mb-8 px-2">
         <h1 className="font-heading text-xl font-bold text-foreground leading-tight">
           Recetario
