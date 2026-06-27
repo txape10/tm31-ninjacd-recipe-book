@@ -196,7 +196,7 @@ docs/                       — NO sube a git (.gitignore)
 | **3b** | Fix tema claro/oscuro (Tailwind v4 @custom-variant) | ✅ Completada |
 | **4** | Sistema de votos + favoritos + formularios crear/editar | ✅ Completada |
 | **5** | Diseño visual avanzado + fotos de receta | ✅ Completada |
-| **6** | PWA + offline | ⏳ Pendiente |
+| **6** | PWA + offline | ✅ Completada |
 | **7** | Tests + QA | ⏳ Pendiente |
 
 ## Hoja de ruta — detalle por fase
