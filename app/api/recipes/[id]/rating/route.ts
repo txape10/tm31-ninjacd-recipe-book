@@ -35,9 +35,9 @@ export async function POST(request: NextRequest, props: { params: Promise<{ id: 
   }
 
   await db.execute({
-    sql: `INSERT OR REPLACE INTO recipe_ratings (recipe_id, user_email, rating, created_at)
+    sql: `INSERT OR REPLACE INTO recipe_ratings (recipe_id, user_id, rating, created_at)
           VALUES (?, ?, ?, datetime('now'))`,
-    args: [id, session.user.email, rating],
+    args: [id, session.user.id, rating],
   })
 
   const { rows: statsRows } = await db.execute({

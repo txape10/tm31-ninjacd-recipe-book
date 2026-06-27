@@ -1,8 +1,32 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState, FormEvent, Suspense } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+
+function LoginBanners() {
+  const searchParams = useSearchParams()
+  const registered = searchParams.get('registered') === '1'
+  const passwordChanged = searchParams.get('passwordChanged') === '1'
+
+  if (!registered && !passwordChanged) return null
+
+  return (
+    <>
+      {registered && (
+        <p role="status" className="text-sm text-center text-green-500 bg-green-500/10 border border-green-500/20 rounded-lg px-3 py-2">
+          Cuenta creada. Ya puedes iniciar sesión.
+        </p>
+      )}
+      {passwordChanged && (
+        <p role="status" className="text-sm text-center text-green-500 bg-green-500/10 border border-green-500/20 rounded-lg px-3 py-2">
+          Contraseña actualizada. Inicia sesión con la nueva contraseña.
+        </p>
+      )}
+    </>
+  )
+}
 
 export default function LoginPage() {
   const router = useRouter()
@@ -46,6 +70,10 @@ export default function LoginPage() {
           <p className="text-sm text-muted-foreground">Ninja CREAMi Deluxe</p>
         </div>
 
+        <Suspense>
+          <LoginBanners />
+        </Suspense>
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-1">
             <label htmlFor="email" className="text-sm font-medium text-foreground">
@@ -87,6 +115,13 @@ export default function LoginPage() {
             {loading ? 'Entrando…' : 'Entrar'}
           </Button>
         </form>
+
+        <p className="text-center text-sm text-muted-foreground">
+          ¿Tienes un código de invitación?{' '}
+          <Link href="/register" className="text-primary hover:underline font-medium">
+            Regístrate
+          </Link>
+        </p>
       </div>
     </main>
   )

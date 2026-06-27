@@ -1,11 +1,15 @@
 import { getIronSession, IronSession } from 'iron-session'
 import { cookies } from 'next/headers'
-import { timingSafeEqual } from 'crypto'
 import { getSessionConfig } from './session-config'
+import { db } from './db'
+import { verifyPassword } from './password'
 
 export type SessionUser = {
+  id: string
   email: string
+  nick: string
   isAdmin: boolean
+  passwordVersion: number
 }
 
 export type AppSession = {
@@ -17,40 +21,58 @@ export async function getSession(): Promise<IronSession<AppSession>> {
   return getIronSession<AppSession>(cookieStore, getSessionConfig())
 }
 
-function safeEqual(a: string, b: string): boolean {
-  try {
-    return timingSafeEqual(Buffer.from(a), Buffer.from(b))
-  } catch {
-    // timingSafeEqual throws if buffers have different lengths
-    return false
+type DbUser = {
+  id: string
+  email: string
+  nick: string
+  password_hash: string
+  is_admin: number
+  password_version: number
+}
+
+async function getUserByEmail(email: string): Promise<DbUser | null> {
+  const { rows } = await db.execute({
+    sql: 'SELECT id, email, nick, password_hash, is_admin, password_version FROM users WHERE email = ?',
+    args: [email],
+  })
+  if (rows.length === 0) return null
+  return rows[0] as unknown as DbUser
+}
+
+export async function getUserById(id: string): Promise<Omit<DbUser, 'password_hash'> | null> {
+  const { rows } = await db.execute({
+    sql: 'SELECT id, email, nick, is_admin, password_version FROM users WHERE id = ?',
+    args: [id],
+  })
+  if (rows.length === 0) return null
+  return rows[0] as unknown as Omit<DbUser, 'password_hash'>
+}
+
+export async function validateCredentials(email: string, password: string): Promise<SessionUser | null> {
+  const user = await getUserByEmail(email)
+  if (!user) {
+    // Ejecutar bcrypt igualmente para evitar timing attacks que enumeren emails válidos
+    await verifyPassword(password, '$2a$12$invalidhashpaddingtoconstanttime000000000000000000000')
+    return null
+  }
+
+  const ok = await verifyPassword(password, user.password_hash)
+  if (!ok) return null
+
+  return {
+    id: user.id,
+    email: user.email,
+    nick: user.nick,
+    isAdmin: user.is_admin === 1,
+    passwordVersion: user.password_version,
   }
 }
 
-export function validateCredentials(email: string, password: string): SessionUser | null {
-  const users = [
-    {
-      email: process.env.USER1_EMAIL ?? '',
-      password: process.env.USER1_PASSWORD ?? '',
-      isAdmin: process.env.USER1_ADMIN === 'true',
-    },
-    {
-      email: process.env.USER2_EMAIL ?? '',
-      password: process.env.USER2_PASSWORD ?? '',
-      isAdmin: process.env.USER2_ADMIN === 'true',
-    },
-  ]
-
-  // Always check all users to prevent timing attacks that enumerate valid emails
-  let match: (typeof users)[0] | null = null
-
-  for (const user of users) {
-    const emailMatch = safeEqual(user.email, email)
-    const passwordMatch = safeEqual(user.password, password)
-    if (emailMatch && passwordMatch && user.email !== '') {
-      match = user
-    }
-  }
-
-  if (!match) return null
-  return { email: match.email, isAdmin: match.isAdmin }
+export async function checkPasswordVersion(userId: string, storedVersion: number): Promise<boolean> {
+  const { rows } = await db.execute({
+    sql: 'SELECT password_version FROM users WHERE id = ?',
+    args: [userId],
+  })
+  if (rows.length === 0) return false
+  return (rows[0].password_version as number) === storedVersion
 }

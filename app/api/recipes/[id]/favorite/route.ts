@@ -3,7 +3,7 @@ import { getSession } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { buildVisibilityFilter } from '@/lib/recipes'
 
-async function checkAccess(id: string, user: { email: string; isAdmin: boolean }): Promise<boolean> {
+async function checkAccess(id: string, user: import('@/lib/auth').SessionUser): Promise<boolean> {
   const { sql: clause, args } = buildVisibilityFilter(user)
   const { rows } = await db.execute({
     sql: `SELECT r.id FROM recipes r WHERE r.id = ? AND ${clause}`,
@@ -26,9 +26,9 @@ export async function POST(_request: NextRequest, props: { params: Promise<{ id:
   }
 
   await db.execute({
-    sql: `INSERT OR IGNORE INTO recipe_favorites (recipe_id, user_email, created_at)
+    sql: `INSERT OR IGNORE INTO recipe_favorites (recipe_id, user_id, created_at)
           VALUES (?, ?, datetime('now'))`,
-    args: [id, session.user.email],
+    args: [id, session.user.id],
   })
 
   return NextResponse.json({ ok: true, is_favorited: true })
@@ -48,8 +48,8 @@ export async function DELETE(_request: NextRequest, props: { params: Promise<{ i
   }
 
   await db.execute({
-    sql: `DELETE FROM recipe_favorites WHERE recipe_id = ? AND user_email = ?`,
-    args: [id, session.user.email],
+    sql: `DELETE FROM recipe_favorites WHERE recipe_id = ? AND user_id = ?`,
+    args: [id, session.user.id],
   })
 
   return NextResponse.json({ ok: true, is_favorited: false })

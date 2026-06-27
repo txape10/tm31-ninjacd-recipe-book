@@ -7,6 +7,7 @@ export default async function RecetasLayout({ children }: LayoutProps<'/recetas'
   const session = await getSession()
   const isLoggedIn = !!session.user
   const isAdmin = session.user?.isAdmin ?? false
+  const nick = session.user?.nick
 
   return (
     <div className="flex min-h-screen">
@@ -14,7 +15,7 @@ export default async function RecetasLayout({ children }: LayoutProps<'/recetas'
       <div className="hidden lg:flex">
         {/* Suspense necesario porque Sidebar usa useSearchParams() */}
         <Suspense fallback={<div className="w-64 min-h-screen bg-sidebar border-r border-sidebar-border shrink-0" />}>
-          <Sidebar isLoggedIn={isLoggedIn} isAdmin={isAdmin} />
+          <Sidebar isLoggedIn={isLoggedIn} isAdmin={isAdmin} nick={nick} />
         </Suspense>
       </div>
 

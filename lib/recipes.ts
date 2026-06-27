@@ -53,10 +53,10 @@ export function buildVisibilityFilter(user: SessionUser | undefined): { sql: str
   if (user?.isAdmin) {
     return { sql: '1=1', args: [] }
   }
-  if (user?.email) {
+  if (user?.id) {
     return {
-      sql: '(r.is_public = 1 OR r.created_by = ?)',
-      args: [user.email],
+      sql: '(r.is_public = 1 OR r.user_id = ?)',
+      args: [user.id],
     }
   }
   return { sql: 'r.is_public = 1', args: [] }
@@ -78,7 +78,7 @@ function normalizeRecipeRow(row: Record<string, unknown>): RecipeWithTags {
     notes: row.notes as string | null,
     has_mixin: row.has_mixin as number,
     is_public: (row.is_public as number) === 1,
-    created_by: row.created_by as string,
+    created_by: (row.user_id ?? row.created_by) as string,
     created_at: row.created_at as string,
     updated_at: row.updated_at as string,
     tags: row.tags_concat ? (row.tags_concat as string).split(',') : [],
@@ -95,13 +95,13 @@ function buildRecipeSelect(whereClause: string): string {
            GROUP_CONCAT(DISTINCT t.name) AS tags_concat,
            AVG(rr.rating)               AS avg_rating,
            COUNT(rr.recipe_id)          AS rating_count,
-           MAX(CASE WHEN rr.user_email = ? THEN rr.rating END) AS user_rating,
-           MAX(CASE WHEN rf.user_email = ? THEN 1 ELSE 0 END)  AS is_favorited
+           MAX(CASE WHEN rr.user_id = ? THEN rr.rating END) AS user_rating,
+           MAX(CASE WHEN rf.user_id = ? THEN 1 ELSE 0 END)  AS is_favorited
       FROM recipes r
       LEFT JOIN recipe_tags rt ON rt.recipe_id = r.id
       LEFT JOIN tags t ON t.id = rt.tag_id
       LEFT JOIN recipe_ratings rr ON rr.recipe_id = r.id
-      LEFT JOIN recipe_favorites rf ON rf.recipe_id = r.id AND rf.user_email = ?
+      LEFT JOIN recipe_favorites rf ON rf.recipe_id = r.id AND rf.user_id = ?
      WHERE ${whereClause}
      GROUP BY r.id
   `
@@ -109,11 +109,11 @@ function buildRecipeSelect(whereClause: string): string {
 
 export async function getRecipes(user?: SessionUser): Promise<RecipeWithTags[]> {
   const { sql: clause, args } = buildVisibilityFilter(user)
-  const userEmail = user?.email ?? null
+  const userId = user?.id ?? null
 
   const { rows } = await db.execute({
     sql: buildRecipeSelect(clause) + ' ORDER BY r.section, r.title',
-    args: [userEmail, userEmail, userEmail, ...args],
+    args: [userId, userId, userId, ...args],
   })
 
   return rows.map(normalizeRecipeRow)
@@ -123,11 +123,11 @@ export async function getRecipeBySlug(slug: string, user?: SessionUser): Promise
   if (!slug || !/^[a-z0-9-]+$/.test(slug)) return null
 
   const { sql: clause, args } = buildVisibilityFilter(user)
-  const userEmail = user?.email ?? null
+  const userId = user?.id ?? null
 
   const { rows } = await db.execute({
     sql: buildRecipeSelect(`r.slug = ? AND ${clause}`),
-    args: [userEmail, userEmail, userEmail, slug, ...args],
+    args: [userId, userId, userId, slug, ...args],
   })
 
   if (rows.length === 0) return null
@@ -136,11 +136,11 @@ export async function getRecipeBySlug(slug: string, user?: SessionUser): Promise
 
 export async function getRecipeDetailById(id: string, user?: SessionUser): Promise<RecipeDetail | null> {
   const { sql: clause, args } = buildVisibilityFilter(user)
-  const userEmail = user?.email ?? null
+  const userId = user?.id ?? null
 
   const { rows } = await db.execute({
     sql: buildRecipeSelect(`r.id = ? AND ${clause}`),
-    args: [userEmail, userEmail, userEmail, id, ...args],
+    args: [userId, userId, userId, id, ...args],
   })
 
   if (rows.length === 0) return null
@@ -150,7 +150,7 @@ export async function getRecipeDetailById(id: string, user?: SessionUser): Promi
 export function canEditRecipe(recipe: Pick<Recipe, 'created_by'>, user?: SessionUser): boolean {
   if (!user) return false
   if (user.isAdmin) return true
-  return recipe.created_by === user.email
+  return recipe.created_by === user.id
 }
 
 export async function getRecipeDetail(slug: string, user?: SessionUser): Promise<RecipeDetail | null> {

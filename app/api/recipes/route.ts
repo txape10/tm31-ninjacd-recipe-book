@@ -31,13 +31,13 @@ export async function POST(request: NextRequest) {
       sql: `INSERT INTO recipes
               (id, title, slug, section, appliance, program, difficulty,
                calories_per_serving, source, notes, has_mixin, is_public,
-               created_by, created_at, updated_at)
+               user_id, created_at, updated_at)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'), datetime('now'))`,
       args: [
         id, d.title, d.slug, d.section, d.appliance, d.program, d.difficulty,
         d.calories_per_serving, d.source, d.notes,
         d.has_mixin ? 1 : 0, d.is_public ? 1 : 0,
-        session.user.email,
+        session.user.id,
       ],
     })
   } catch (err) {

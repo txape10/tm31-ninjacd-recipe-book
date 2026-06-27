@@ -41,7 +41,37 @@ export const tagUpdateSchema = z.object({
   name: z.string().min(1, 'El nombre es obligatorio').max(50, 'Máximo 50 caracteres'),
 })
 
+export const inviteCodeSchema = z.object({
+  code: z.string().length(8, 'El código debe tener 8 caracteres'),
+})
+
+export const registerSchema = z.object({
+  code: z.string().length(8, 'El código debe tener 8 caracteres'),
+  email: z.string().email('Email no válido'),
+  nick: z
+    .string()
+    .min(3, 'El nick debe tener al menos 3 caracteres')
+    .max(20, 'El nick no puede superar 20 caracteres')
+    .regex(/^[a-zA-Z0-9_]+$/, 'Solo letras, números y guion bajo'),
+  password: z.string().min(8, 'Mínimo 8 caracteres'),
+  confirmPassword: z.string(),
+}).refine((d) => d.password === d.confirmPassword, {
+  message: 'Las contraseñas no coinciden',
+  path: ['confirmPassword'],
+})
+
+export const changePasswordSchema = z.object({
+  currentPassword: z.string().min(1, 'Introduce tu contraseña actual'),
+  newPassword: z.string().min(8, 'Mínimo 8 caracteres'),
+  confirmPassword: z.string(),
+}).refine((d) => d.newPassword === d.confirmPassword, {
+  message: 'Las contraseñas no coinciden',
+  path: ['confirmPassword'],
+})
+
 export type LoginInput = z.infer<typeof loginSchema>
 export type RecipeInput = z.infer<typeof recipeSchema>
 export type RatingInput = z.infer<typeof ratingSchema>
 export type TagUpdateInput = z.infer<typeof tagUpdateSchema>
+export type RegisterInput = z.infer<typeof registerSchema>
+export type ChangePasswordInput = z.infer<typeof changePasswordSchema>

@@ -6,7 +6,7 @@ import { recipeSchema } from '@/lib/validation'
 
 async function getRecipeById(id: string): Promise<{ id: string; created_by: string; updated_at: string } | null> {
   const { rows } = await db.execute({
-    sql: 'SELECT id, created_by, updated_at FROM recipes WHERE id = ?',
+    sql: 'SELECT id, user_id AS created_by, updated_at FROM recipes WHERE id = ?',
     args: [id],
   })
   if (!rows[0]) return null

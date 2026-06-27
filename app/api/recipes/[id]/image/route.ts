@@ -8,7 +8,7 @@ import { MAX_IMAGE_SIZE_BYTES, ALLOWED_IMAGE_TYPES } from '@/lib/constants'
 
 async function getRecipeOwner(id: string): Promise<{ id: string; created_by: string; cover_image_url: string | null } | null> {
   const { rows } = await db.execute({
-    sql: 'SELECT id, created_by, cover_image_url FROM recipes WHERE id = ?',
+    sql: 'SELECT id, user_id AS created_by, cover_image_url FROM recipes WHERE id = ?',
     args: [id],
   })
   if (!rows[0]) return null

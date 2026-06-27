@@ -11,9 +11,10 @@ const NAV_ITEMS = [
 type Props = {
   isLoggedIn: boolean
   isAdmin?: boolean
+  nick?: string
 }
 
-export default function Sidebar({ isLoggedIn, isAdmin = false }: Props) {
+export default function Sidebar({ isLoggedIn, isAdmin = false, nick }: Props) {
   const pathname = usePathname()
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -97,16 +98,28 @@ export default function Sidebar({ isLoggedIn, isAdmin = false }: Props) {
         )}
 
         {isLoggedIn && isAdmin && (
-          <Link
-            href="/recetas/tags"
-            className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-              pathname === '/recetas/tags'
-                ? 'bg-sidebar-accent text-foreground'
-                : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
-            }`}
-          >
-            🏷️ Gestionar tags
-          </Link>
+          <>
+            <Link
+              href="/recetas/tags"
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                pathname === '/recetas/tags'
+                  ? 'bg-sidebar-accent text-foreground'
+                  : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
+              }`}
+            >
+              🏷️ Gestionar tags
+            </Link>
+            <Link
+              href="/admin/users"
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                pathname.startsWith('/admin')
+                  ? 'bg-sidebar-accent text-foreground'
+                  : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
+              }`}
+            >
+              ⚙️ Admin
+            </Link>
+          </>
         )}
 
         {isLoggedIn && (
@@ -125,6 +138,17 @@ export default function Sidebar({ isLoggedIn, isAdmin = false }: Props) {
 
       <div className="mt-4 space-y-2">
         <ThemeToggle />
+        {isLoggedIn && nick && (
+          <Link
+            href="/perfil"
+            className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50 transition-colors"
+          >
+            <span className="w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center font-medium">
+              {nick[0].toUpperCase()}
+            </span>
+            <span className="truncate">{nick}</span>
+          </Link>
+        )}
         <button
           onClick={handleLogout}
           className="w-full px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50 text-left transition-colors"
