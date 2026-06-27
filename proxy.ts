@@ -3,7 +3,14 @@ import { getIronSession } from 'iron-session'
 import type { AppSession } from '@/lib/auth'
 import { getSessionConfig } from '@/lib/session-config'
 
-const PUBLIC_PATHS = ['/login', '/api/auth/login']
+const PUBLIC_PATHS = [
+  '/login',
+  '/register',
+  '/api/auth/login',
+  '/api/auth/logout',
+  '/api/auth/register',
+  '/api/auth/session',
+]
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl

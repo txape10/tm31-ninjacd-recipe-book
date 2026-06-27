@@ -41,15 +41,6 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
     return NextResponse.json({ error: 'JSON no válido' }, { status: 400 })
   }
 
-  // Protección contra edición concurrente: el cliente envía el updated_at que leyó
-  const clientUpdatedAt = (body as Record<string, unknown>).updated_at
-  if (typeof clientUpdatedAt === 'string' && clientUpdatedAt !== recipe.updated_at) {
-    return NextResponse.json(
-      { error: 'La receta fue modificada por otra sesión. Recarga la página antes de guardar.' },
-      { status: 409 },
-    )
-  }
-
   const result = recipeSchema.safeParse(body)
   if (!result.success) {
     return NextResponse.json({ error: 'Datos no válidos', issues: result.error.issues }, { status: 400 })
@@ -66,20 +57,27 @@ export async function PUT(request: NextRequest, props: RouteContext<'/api/recipe
     return NextResponse.json({ error: 'El slug ya existe, elige otro' }, { status: 409 })
   }
 
-  await db.execute({
+  const { rowsAffected } = await db.execute({
     sql: `UPDATE recipes
              SET title = ?, slug = ?, section = ?, appliance = ?, program = ?,
                  difficulty = ?, calories_per_serving = ?,
                  source = ?, notes = ?, has_mixin = ?, is_public = ?,
                  updated_at = datetime('now')
-           WHERE id = ?`,
+           WHERE id = ? AND updated_at = ?`,
     args: [
       d.title, d.slug, d.section, d.appliance, d.program,
       d.difficulty, d.calories_per_serving,
       d.source, d.notes, d.has_mixin ? 1 : 0, d.is_public ? 1 : 0,
-      id,
+      id, recipe.updated_at,
     ],
   })
+
+  if (rowsAffected === 0) {
+    return NextResponse.json(
+      { error: 'La receta fue modificada por otra sesión. Recarga la página antes de guardar.' },
+      { status: 409 },
+    )
+  }
 
   await insertIngredientGroups(id, d.ingredient_groups)
   await insertRecipeSteps(id, d.steps)

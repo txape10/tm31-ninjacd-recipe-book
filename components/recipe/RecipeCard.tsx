@@ -12,12 +12,12 @@ const DIFFICULTY_COLOR: Record<string, string> = {
 
 type Props = {
   recipe: RecipeWithTags
-  currentUserEmail?: string
+  currentUserId?: string
 }
 
-export default function RecipeCard({ recipe, currentUserEmail }: Props) {
-  const isOwner = currentUserEmail === recipe.created_by
-  const canFavorite = !!currentUserEmail
+export default function RecipeCard({ recipe, currentUserId }: Props) {
+  const isOwner = currentUserId === recipe.created_by
+  const canFavorite = !!currentUserId
 
   return (
     <article className="bg-card border border-border rounded-xl overflow-hidden h-full group hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-200 relative">

@@ -207,59 +207,72 @@ type GroupInput = { label: string | null; items: string[] }
 type StepInput = { appliance: 'tm31' | 'ninja'; title: string | null; description: string }
 
 export async function insertIngredientGroups(recipeId: string, groups: GroupInput[]): Promise<void> {
-  await db.execute({ sql: 'DELETE FROM ingredient_groups WHERE recipe_id = ?', args: [recipeId] })
+  const statements: { sql: string; args: (string | number | null)[] }[] = [
+    { sql: 'DELETE FROM ingredient_groups WHERE recipe_id = ?', args: [recipeId] },
+  ]
   for (let gi = 0; gi < groups.length; gi++) {
     const group = groups[gi]
     const groupId = crypto.randomUUID()
-    await db.execute({
+    statements.push({
       sql: 'INSERT INTO ingredient_groups (id, recipe_id, label, position) VALUES (?, ?, ?, ?)',
       args: [groupId, recipeId, group.label, gi],
     })
     for (let ii = 0; ii < group.items.length; ii++) {
-      await db.execute({
+      statements.push({
         sql: 'INSERT INTO ingredients (id, group_id, text, position) VALUES (?, ?, ?, ?)',
         args: [crypto.randomUUID(), groupId, group.items[ii], ii],
       })
     }
   }
+  await db.batch(statements, 'write')
 }
 
 export async function insertRecipeSteps(recipeId: string, steps: StepInput[]): Promise<void> {
-  await db.execute({ sql: 'DELETE FROM recipe_steps WHERE recipe_id = ?', args: [recipeId] })
   const byAppliance: Record<string, StepInput[]> = {}
   for (const step of steps) {
     if (!byAppliance[step.appliance]) byAppliance[step.appliance] = []
     byAppliance[step.appliance].push(step)
   }
+  const statements: { sql: string; args: (string | number | null)[] }[] = [
+    { sql: 'DELETE FROM recipe_steps WHERE recipe_id = ?', args: [recipeId] },
+  ]
   for (const [appliance, appSteps] of Object.entries(byAppliance)) {
     for (let si = 0; si < appSteps.length; si++) {
       const step = appSteps[si]
-      await db.execute({
+      statements.push({
         sql: 'INSERT INTO recipe_steps (id, recipe_id, appliance, step_order, title, description) VALUES (?, ?, ?, ?, ?, ?)',
         args: [crypto.randomUUID(), recipeId, appliance, si + 1, step.title, step.description],
       })
     }
   }
+  await db.batch(statements, 'write')
 }
 
 export async function insertRecipeTags(recipeId: string, tags: string[]): Promise<void> {
-  await db.execute({ sql: 'DELETE FROM recipe_tags WHERE recipe_id = ?', args: [recipeId] })
-  if (tags.length === 0) return
-  for (const tagName of tags) {
-    await db.execute({
-      sql: 'INSERT OR IGNORE INTO tags (id, name) VALUES (?, ?)',
-      args: [crypto.randomUUID(), tagName],
-    })
+  const statements: { sql: string; args: (string | number | null)[] }[] = [
+    { sql: 'DELETE FROM recipe_tags WHERE recipe_id = ?', args: [recipeId] },
+  ]
+  if (tags.length > 0) {
+    for (const tagName of tags) {
+      statements.push({
+        sql: 'INSERT OR IGNORE INTO tags (id, name) VALUES (?, ?)',
+        args: [crypto.randomUUID(), tagName],
+      })
+    }
   }
+  await db.batch(statements, 'write')
+
+  if (tags.length === 0) return
   const placeholders = tags.map(() => '?').join(',')
   const { rows: tagRows } = await db.execute({
     sql: `SELECT id FROM tags WHERE name IN (${placeholders})`,
     args: tags,
   })
-  for (const row of tagRows) {
-    await db.execute({
-      sql: 'INSERT OR IGNORE INTO recipe_tags (recipe_id, tag_id) VALUES (?, ?)',
-      args: [recipeId, row.id as string],
-    })
+  const tagStatements: { sql: string; args: string[] }[] = tagRows.map((row) => ({
+    sql: 'INSERT OR IGNORE INTO recipe_tags (recipe_id, tag_id) VALUES (?, ?)',
+    args: [recipeId, row.id as string],
+  }))
+  if (tagStatements.length > 0) {
+    await db.batch(tagStatements, 'write')
   }
 }

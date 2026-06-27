@@ -31,7 +31,7 @@ export default async function RecetasPage({ searchParams }: Props) {
       difficulty: params.difficulty,
       section: params.section,
     },
-    session.user?.email,
+    session.user?.id,
   )
 
   const activeFilterBadges: string[] = []
@@ -91,7 +91,7 @@ export default async function RecetasPage({ searchParams }: Props) {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {sectionRecipes.map((recipe) => (
-                  <RecipeCard key={recipe.id} recipe={recipe} currentUserEmail={session.user?.email} />
+                  <RecipeCard key={recipe.id} recipe={recipe} currentUserId={session.user?.id} />
                 ))}
               </div>
             </section>

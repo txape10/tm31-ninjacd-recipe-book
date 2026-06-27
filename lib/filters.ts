@@ -12,10 +12,10 @@ export type RecipeFilters = {
 export function applyRecipeFilters(
   recipes: RecipeWithTags[],
   filters: RecipeFilters,
-  userEmail?: string,
+  userId?: string,
 ): RecipeWithTags[] {
   return recipes.filter((r) => {
-    if (filters.showMine && (!userEmail || r.created_by !== userEmail)) return false
+    if (filters.showMine && (!userId || r.created_by !== userId)) return false
     if (filters.showFavorites && !r.is_favorited) return false
     if (filters.search) {
       const normalize = (s: string) =>
