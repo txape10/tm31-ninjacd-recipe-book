@@ -27,7 +27,7 @@ export async function POST(request: NextRequest, props: { params: Promise<{ id: 
 
   const { sql: clause, args: visArgs } = buildVisibilityFilter(session.user)
   const { rows } = await db.execute({
-    sql: `SELECT id FROM recipes WHERE id = ? AND ${clause}`,
+    sql: `SELECT r.id FROM recipes r WHERE r.id = ? AND ${clause}`,
     args: [id, ...visArgs],
   })
   if (!rows[0]) {

@@ -6,7 +6,7 @@ import { buildVisibilityFilter } from '@/lib/recipes'
 async function checkAccess(id: string, user: { email: string; isAdmin: boolean }): Promise<boolean> {
   const { sql: clause, args } = buildVisibilityFilter(user)
   const { rows } = await db.execute({
-    sql: `SELECT id FROM recipes WHERE id = ? AND ${clause}`,
+    sql: `SELECT r.id FROM recipes r WHERE r.id = ? AND ${clause}`,
     args: [id, ...args],
   })
   return rows.length > 0
