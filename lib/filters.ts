@@ -18,11 +18,13 @@ export function applyRecipeFilters(
     if (filters.showMine && (!userEmail || r.created_by !== userEmail)) return false
     if (filters.showFavorites && !r.is_favorited) return false
     if (filters.search) {
-      const q = filters.search.toLowerCase()
-      const matchesTitle = r.title.toLowerCase().includes(q)
-      const matchesNotes = r.notes?.toLowerCase().includes(q) ?? false
-      const matchesSource = r.source?.toLowerCase().includes(q) ?? false
-      const matchesTags = r.tags.some((t) => t.toLowerCase().includes(q))
+      const normalize = (s: string) =>
+        s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
+      const q = normalize(filters.search)
+      const matchesTitle = normalize(r.title).includes(q)
+      const matchesNotes = r.notes ? normalize(r.notes).includes(q) : false
+      const matchesSource = r.source ? normalize(r.source).includes(q) : false
+      const matchesTags = r.tags.some((t) => normalize(t).includes(q))
       if (!(matchesTitle || matchesNotes || matchesSource || matchesTags)) return false
     }
     if (filters.program && r.program !== filters.program) return false
