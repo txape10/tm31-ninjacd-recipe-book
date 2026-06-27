@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import { useRouter } from 'next/navigation'
 import InviteCodeGenerator from '@/components/admin/InviteCodeGenerator'
 import InviteCodeList from '@/components/admin/InviteCodeList'
 
@@ -11,6 +12,12 @@ export default function AdminUsersPage() {
   const [loading, setLoading] = useState(true)
   const [codeRefresh, setCodeRefresh] = useState(0)
   const [blockingId, setBlockingId] = useState<string | null>(null)
+  const router = useRouter()
+
+  async function handleLogout() {
+    await fetch('/api/auth/logout', { method: 'POST' })
+    router.push('/login')
+  }
 
   const fetchUsers = useCallback(async () => {
     const res = await fetch('/api/admin/users')
@@ -48,9 +55,23 @@ export default function AdminUsersPage() {
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-10 space-y-10">
-      <div>
-        <h1 className="text-2xl font-heading font-bold text-foreground">Panel de administración</h1>
-        <p className="text-sm text-muted-foreground mt-1">Gestión de usuarios y códigos de invitación</p>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-heading font-bold text-foreground">Panel de administración</h1>
+          <p className="text-sm text-muted-foreground mt-1">Gestión de usuarios y códigos de invitación</p>
+        </div>
+        <div className="flex gap-2 shrink-0">
+          <a href="/recetas" className="text-sm px-3 py-1.5 rounded-lg border border-border text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors">
+            ← Recetas
+          </a>
+          <button
+            type="button"
+            onClick={handleLogout}
+            className="text-sm px-3 py-1.5 rounded-lg border border-border text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors"
+          >
+            Cerrar sesión
+          </button>
+        </div>
       </div>
 
       {/* Usuarios */}
